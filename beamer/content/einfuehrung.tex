@@ -1,0 +1,201 @@
+\section{Intro} 
+
+\subsection{Anwendungsbereiche, Sinn \& Zweck}
+\begin{frame}[t]
+\frametitle{Einf\"uhrung}
+\framesubtitle{Sinn -- Unsinn -- Wahnsinn}
+\bigskip
+\bigskip
+\bigskip
+
+\begin{columns}[t]
+\begin{column}{.3\textwidth}
+\textbf{Sinnvoll}\\[3mm]
+\begin{itemize}
+\item Artikel
+\item Bücher
+\item wissenschaftliche Arbeiten
+\item Bewerbungen
+\end{itemize}
+\end{column}
+\begin{column}{.30\textwidth}
+\textbf{Unsinn}\\[3mm]
+\begin{itemize}
+\item private Briefe
+\item Geburtstags-einladungen
+\item Getr"ankekarten
+\end{itemize}
+\end{column}
+\begin{column}{.3\textwidth}
+\textbf{Wahnsinn}\\[3mm]
+\begin{itemize}
+\item Einkaufszettel
+\item Brainstorming
+\item \ldots 
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+
+\begin{frame} 
+\frametitle{Vom Code zum Dokument}
+\framesubtitle{Kein WYSIWYG} 
+\begin{columns}
+\begin{column}{.7\textwidth}
+\image{\textwidth}{image/worddoc.jpg}{\textbf{W}hat \textbf{Y}ou \textbf{S}ee \textbf{I}s \textbf{W}hat \textbf{Y}ou
+\textbf{G}et}{img:worddoc}
+\end{column}
+\begin{column}{.3\textwidth}
+\image{\textwidth}{image/codescreen.png}{\textbf{W}hat \textbf{W}ill \textbf{I} \textbf{G}et?}{img:codescreen}
+%% Compile Animation
+\end{column}
+\end{columns}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Einf\"uhrung}
+\framesubtitle{Vorgehensweise}
+\begin{columns}[onlytextwidth]
+\begin{column}{0.40\textwidth}
+\image{.8\textwidth}{image/codescreen.png}{Textdatei mit \LaTeX ~-Code}{img:code}
+\end{column}
+\begin{column}{0.25\textwidth}
+\image{.8\textwidth}{image/miktex.jpg}{Compiler (z.B. MikTeX)}{img:miktex}
+\end{column}
+\begin{column}{0.25\textwidth}
+\image{.6\textwidth}{image/pdflogo.png}{sch\"ones, lesbares und druckbares Dokument}{img:pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+%-------------------------------------------------------------------------------
+
+\subsection{Vorteile \& Nachteile}
+\begin{frame}
+\frametitle{Einf\"uhrung}
+\framesubtitle{Vorteile \& Nachteile}
+Vorteile
+\begin{itemize}
+\item  dynamische Verzeichnisse und Referenzen
+\item  automatische Layouts
+\item  einfaches verteiltes Arbeiten möglich
+\end{itemize}
+Nachteile
+\begin{itemize}
+\item  Was kommt später raus?
+\item  viele, zum Teil komplexe Befehle
+\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+
+\subsection{\LaTeX --Compiler}
+\begin{frame}
+\frametitle{Einf\"uhrung}
+\framesubtitle{\LaTeX - Compiler}
+\begin{columns}[t]
+\begin{column}{.4\textwidth}
+\textbf{Software unter Windows:}\\
+\begin{itemize}
+  \item MikTex (http://www.miktex.org)\\
+   2 Varianten: Basic oder  Complete
+  \item ProTeXt (http://www.tug.org/protext)\\
+enthält MikTex, TeXnicCenter und Ghostscript – einfache Installation\\
+\end{itemize}
+\end{column}
+\begin{column}{.6\textwidth}
+\textbf{Software unter *nix:}
+\begin{itemize}
+  \item TeXLive\\
+Pakete unter Ubuntu: {\ttfamily texlive-full} ist das Meta-Paket mit Allen
+ben\"otigten Paketen. Enthält auch Folgende:
+\begin{itemize}
+  \item {\ttfamily texlive-base
+  \item texlive-lang-german}
+\end{itemize}
+Installation: {\ttfamily sudo apt-get install texlive-full}
+\item MacOS: MacTeX (http://www.tug.org/mactex/2009)\\
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+
+\subsection{Freie Editoren}
+
+\subsubsection{*nix}
+\begin{frame}
+\frametitle{Einf\"uhrung}
+\framesubtitle{Freie Editoren -- Linus \& MacOS }
+\begin{itemize}
+ \item Kile\footnote{http://kile.sourceforge.net/}\\KDE-Programm, auch unter Gnome\slash Unity etc.
+ verwendbar. Installation auf Debiansystemen mit {\ttfamily sudo apt-get
+ install kile}.
+  \item Vim \LaTeX -suite (Plugin)\footnote{http://vim-latex.sourceforge.net/}\\
+  Ein Traum f"ur Vim-User.
+  \item TexShop (MacOS)\footnote{http://pages.uoregon.edu/koch/texshop/}
+\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+
+\subsubsection{Windows}
+\begin{frame}
+\frametitle{Einf\"uhrung}
+\framesubtitle{Freie Editoren -- Windows}
+\begin{itemize}
+\item TeXnicCenter\footnote{http://www.texniccenter.org/}
+  %\item \ldots
+\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+
+\subsubsection{Cross-Platform}
+\begin{frame}
+\frametitle{Einf\"uhrung}
+\framesubtitle{Freie Editoren -- Cross-Platform}
+\begin{itemize}
+  \item TeXMaker\footnote{http://www.xm1math.net/texmaker}\\
+   Sehr solide, verwenden wir hier im Tutorium.
+  \item TeXlipse\footnote{http://texlipse.sourceforge.net/}\\ F"ur fortgeschrittene User, Plugin f"ur
+  Eclipse. Gute IDE-Unterst\"utzung, Code-Completion, Autobuilds, Versionsverwaltung etc.
+\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{TeXmaker}
+\framesubtitle{\"Uberblick}
+\image{\textwidth}{image/texmaker_overview.png}{Das Standardfenster des Texmaker}{img:texmaker1}
+
+\end{frame}
+
+%-------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{TeXmaker}
+\framesubtitle{Synctex}
+\image{\textwidth}{image/synctex.png}{Synctex}{img:synctex}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Mein erstes \LaTeX~-Dokument}
+\begin{block}{Neue Befehle:}
+\begin{itemize}
+\item \begin{ttfamily}\color{nounibaredII}\textbackslash documentclass\color{nounibagreenI}\color{black}\{article\}\end{ttfamily}
+\item \begin{ttfamily}\color{unibablueI}\textbackslash begin\color{black}\{document\}\end{ttfamily}
+\item \begin{ttfamily}\color{unibablueI}\textbackslash end\color{black}\{document\}\end{ttfamily}
+\end{itemize}
+\end{block}
+Das ist alles was man f\"ur ein \LaTeX -Dokument braucht. Und das probieren wir jetzt aus!
+
+\end{frame}

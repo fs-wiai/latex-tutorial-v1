@@ -1,0 +1,111 @@
+\section{Vert. Arbeiten}
+\begin{frame}
+\frametitle{Ein handfestes Dokument aufbauen}
+\framesubtitle{\ldots und dabei die volle Charme von \LaTeX ~erleben!}
+\begin{block}{Neue Befehle in diesem Abschnitt}
+\begin{itemize}
+  \item \color{nounibaredI}\textbackslash input\color{black}\{\}
+  \item \color{nounibaredI}\textbackslash tableofcontents\color{black}
+  \item \color{nounibaredI}\textbackslash listoffigures\color{black}
+  \item \color{nounibaredI}\textbackslash listoftables\color{black}
+  \item \color{nounibaredI}\textbackslash vspace\color{black}\{\}
+  \item \color{nounibaredI}\textbackslash today\color{black}
+\item \color{unibablueI}\textbackslash begin\color{black}\{titlepage\} \ldots \color{unibablueI}\textbackslash end\color{black}\{titlepage\} 
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Aufbau von einem gr\"o\ss erem Dokument}
+
+\begin{columns}
+\begin{column}{.5\textwidth}
+\footnotesize
+\begin{figure}[t]
+\begin{tikzpicture}[dirtree]
+\node {main.tex} 
+        child {node{command.tex}}
+        child {node {titlepage.tex}}
+        child {node {aufgabe2.tex}}
+        child {node {aufgabe3.tex}}
+        child {node {aufgabe4.tex}};
+\end{tikzpicture}
+\end{figure}
+\end{column}
+\begin{column}{.5\textwidth}
+In der main.tex werden alle anderen Dateien zu einem Dokument zusammengefasst. 
+Dazu muss man die einzelnen Dateien daf\"ur anpassen.
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{\ldots ~und das wollen wir nun machen:}
+Es muss \textbf{alles} (einschliesslich) vor und nach \color{unibablueI}\textbackslash begin\color{black}- 
+und\color{unibablueI}~\textbackslash end\color{black}\{document\} gel\"oscht werden:\\[5mm]
+\begin{columns}
+\begin{column}{.47\textwidth}
+\sout{\color{nounibaredI}\color{nounibaredI}\textbackslash documentclass\color{black}\color{nounibagreenI}[pdftex]\color{black}\{article\} \\
+\color{nounibaredI}\textbackslash usepackage\color{black}\{babel\}\\
+\color{nounibaredI}\color{unibablueI}\textbackslash\color{unibablueI}begin\color{black}\color{black}\{document\} }\\
+Dieses Dokument kann nun mit dem Befehl \color{nounibaredI}\color{nounibaredI}\textbackslash input\color{nounibaredI}\textbackslash \color{black}\{Dateiname\} in LaTeX eingebunden werden.\color{nounibaredI}\color{nounibaredI}\textbackslash \color{nounibaredI}\textbackslash \color{black}  \\
+\sout{\color{nounibaredI}\color{unibablueI}\textbackslash\color{unibablueI}end\color{black}\color{black}\{document\} }
+\end{column}
+\begin{column}{.47\textwidth}
+Mit dem Befehl \color{nounibaredI}\textbackslash input\color{black}\{pfad/zur/datei\} kann man danach
+ diese in eine andere {\ttfamily .tex}-Datei einbinden. 
+
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Verteiltes Arbeiten}
+\framesubtitle{\ldots den \"Uberblick behalten}
+\begin{columns}{2}
+\begin{column}{.6\textwidth}
+\image{\textwidth}{image/outline.png}{Texmaker listet die {\ttfamily\color{nounibaredI}\textbackslash input}\color{black}s}{img:outline}
+\end{column}
+\begin{column}{.3\textwidth}
+\begin{alertblock}{Achtung:}
+Die Pfadangabe ist immer relativ zur Hauptdatei!
+\end{alertblock}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}[t]
+\frametitle{Exkurs: Titelseite}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\input{content/listings/titlepage}
+\end{column}
+\begin{column}{0.5\textwidth}
+\color{nounibaredI}\color{unibablueI}\textbackslash\color{unibablueI}begin\color{black}\color{black}\{titlepage\} \\\color{black}
+\color{nounibaredI}\color{unibablueI}\textbackslash\color{unibablueI}begin\color{black}\color{black}\{center\} \\
+\color{nounibaredI}\color{nounibaredI}\textbackslash Huge\color{black} \color{nounibaredI}\color{nounibaredI}\textbackslash LaTeX\color{nounibaredI}\textbackslash \color{nounibaredI}\textbackslash \color{black} \\
+\color{nounibaredI}\color{nounibaredI}\textbackslash vspace\color{black}\{5mm\} \color{nounibaredI}\color{nounibaredI}\textbackslash LARGE\color{black} Eine kurze Einführung\color{nounibaredI}\color{nounibaredI}\textbackslash \color{nounibaredI}\textbackslash \color{black} \\
+\color{nounibaredI}\color{nounibaredI}\textbackslash vspace\color{black}\{12mm\} \color{nounibaredI}\color{nounibaredI}\textbackslash Large\color{black}  Universität Bamberg\color{nounibaredI}\color{nounibaredI}\textbackslash \color{nounibaredI}\textbackslash \color{black}\color{nounibagreenI}[5mm]\color{black} \\
+\color{nounibaredI}\color{nounibaredI}\textbackslash large\color{black} \color{nounibaredI}\color{nounibaredI}\textbackslash today\color{nounibaredI}\textbackslash \color{nounibaredI}\textbackslash \color{black} \\
+Fachschaft WIAI\color{nounibaredI}\color{nounibaredI}\textbackslash normalsize\color{black} \color{nounibaredI}\color{nounibaredI}\textbackslash \color{nounibaredI}\textbackslash \color{black} \\
+\color{nounibaredI}\color{unibablueI}\textbackslash\color{unibablueI}end\color{black}\color{black}\{center\} \\
+\color{nounibaredI}\color{unibablueI}\textbackslash\color{unibablueI}end\color{black}\color{black}\{titlepage\} \\\color{black}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Verteiltes Arbeiten}
+\framesubtitle{Befehle zur Seitennumerierung}
+\begin{block}{Seitennumerierung}
+\begin{itemize}
+\item \color{nounibaredI}\textbackslash thispagestyle\color{black}\{empty\} -- Keine Seitennumerierung
+\item \color{nounibaredI}\textbackslash setcounter\color{black}\{page\}\{1\} -- Setzt die Seitennummerierung auf einen bestimmten Wert
+\item \color{nounibaredI}\textbackslash pagenumbering\color{black}\{Roman$\mid$roman$\mid$arabic$\mid$Alph$\mid$alph\} -- Definiert die Seitenz\"ahlung
+\item \color{nounibaredI}\textbackslash  newpage \color{black}-- Erzeugt eine neue Seite
+\end{itemize}
+\end{block}
+\end{frame}

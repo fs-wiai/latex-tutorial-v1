@@ -1,0 +1,167 @@
+\section{Tabellen}
+
+\begin{frame}
+\frametitle{Tabellen}
+\framesubtitle{Einf\"ugen von Tabellen}
+
+\begin{exampleblock}{Neue Pakete in diesem Abschnitt}
+\begin{itemize}
+\item longtable
+\end{itemize}
+\end{exampleblock}
+
+\begin{block}{Neue Befehle in diesem Abschnitt}
+\begin{itemize}
+\item \color{unibablueI}\textbackslash begin\color{black}\{tabular\} \dots
+~\color{unibablueI}\textbackslash end\color{black}\{tabular\}
+\item \color{unibablueI}\textbackslash begin\color{black}\{table\} \dots
+~\color{unibablueI}\textbackslash end\color{black}\{table\}
+\item \color{unibablueI}\textbackslash begin\color{black}\{longtable\} \dots
+~\color{unibablueI}\textbackslash end\color{black}\{longtable\}
+\item \color{unibablueI}\textbackslash begin\color{black}\{tabbing\} \dots
+~\color{unibablueI}\textbackslash end\color{black}\{tabbing\}
+\item \color{nounibaredI}$|$\color{black}
+\item \color{nounibaredI}\& \color{black}
+\item \color{nounibaredI}\textbackslash hline\color{black}
+\item \color{nounibaredI}\textbackslash multicolumn\color{black}\{\}\{\}\{\}
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Tabellen}
+\framesubtitle{``table'' \& \glqq tabular\grqq}
+\textbf{Aufbau:}\\[2mm]
+\color{unibablueI}\begin{ttfamily}\textbackslash begin\color{black}\{table\}\color{nounibagreenI}[Position]\color{black}\\
+\color{unibablueI}\textbackslash begin\color{black}\{tabular\}\{\textit{Spaltendefinitionen}\}\\
+\textit{Tabelleninhalt}\\
+\color{unibablueI}\textbackslash end\color{black}\{tabular\}\\
+\color{nounibaredI}\textbackslash caption\color{black}\{Untertitel\}\\
+\color{nounibaredI}\textbackslash label\color{black}\{tab:bsptab1\}\\
+\color{unibablueI}\textbackslash end\color{black}\{table\}\\
+~\\
+\end{ttfamily}
+
+\begin{block}{Reminder: Positionsangaben f\"ur die meisten \LaTeX -- Umgebungen}
+\color{nounibagreenI}[h]\color{black}~oder \color{nounibagreenI}[H]\color{black}~= hier an dieser Stelle\\
+\color{nounibagreenI}[t]\color{black}~= oben auf der Seite\\ 
+\color{nounibagreenI}[b]\color{black}~= unten auf der Seite\\ 
+\color{nounibagreenI}[p]\color{black}~= Platzierung auf der einer eigenen Seite
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Tabellen}
+\framesubtitle{Spaltendefinitionen}
+Hier wird bestimmt wie die einzelnen Spalten ausgerichtet sein sollen
+und wie die senkrechten Tabellenlinien gesetzt werden sollen:\\[3mm]
+\begin{tabbing}[H]p{Spaltenbreite}xxx\=\kill
+\textbf{Befehle:}\\
+l \>= linksbündige Spalte\\
+c \>= zentrierte Spalte\\
+r \>= rechtsbündige Spalte\\
+p\{Spaltenbreite\} \>= eine linksbündige Spalte mit bestimmter Spaltenbreite\\
+\color{nounibaredI}$|$\color{black} \>= setzt eine senkrechte Tabellenlinie an
+dieser Stelle\\
+\end{tabbing}
+\end{frame}
+
+\begin{frame}
+\frametitle{Tabellen}
+\framesubtitle{Ein Blick ins Innere}
+\begin{ttfamily}
+\input{content/listings/tabular_escaped.tex}
+\end{ttfamily}
+\end{frame}
+
+\begin{frame}
+\frametitle{Tabellen}
+\framesubtitle{Tabelleninhalt}
+Hier werden die definierten Spalten mit Inhalt gefüllt.\\[3mm]
+\begin{tabbing}[H]p{Spaltenbreite}xxx\=\kill
+\textbf{Befehle:}\\
+\color{nounibaredI}\&\color{black} \>= dient zur horizontalen Trennung von Zellen\\
+\color{nounibaredI}\textbackslash \textbackslash \color{black} \>=  neue Zeile\\
+\color{nounibaredI}\textbackslash hline\color{black} \>= setzt eine waagerechte Tabellenlinie\\[2mm]
+\color{nounibaredI}\textbackslash multicolumn\color{black}\{Spaltenzahl\}\{Spaltenausrichtung\}\{Text\}\\[2mm]
+\>= Verbindet beliebig viele Spalten miteinander.\\
+\end{tabbing}
+\end{frame}
+
+\begin{frame}[t]
+
+\frametitle{Tabellen}
+\framesubtitle{Beispiel Tabular}
+\begin{footnotesize}
+\begin{ttfamily}
+\input{content/listings/tabular_escaped.tex}
+\end{ttfamily}
+\end{footnotesize}
+
+\begin{tabular}{c|p{40mm}|lr|c}
+\multicolumn{5}{c}{E-Sports Meisterschaft Franken}
+ \\
+\hline
+\hline
+Nummer & Ort & Spieler 1 & Spieler 2 & Ergebnis \\
+\hline
+1 & N\"urnberg & Wolf & Lamm & 23:10 \\
+\hline
+2 & Bamberg & Meyer & Beyer & \\
+\hline
+3 & Zirndorf & Brandst. & Brauer & 21:21 \\
+\hline
+\end{tabular}
+\end{frame}
+
+\begin{frame}{Tabellen}
+\framesubtitle{Longtable -- Tabelle mit Seitenumbruch}
+\bigskip
+Bei „tabular“ wird die Tabelle auf einer Seite angezeigt. Wenn sie nicht draufpasst, wird sie abgeschnitten.\\
+F"ur Tabellen, die länger als eine Seite sind, wird eine Tabelle benötigt die eine Trennung der Tabelle vornimmt.\\
+\textbf{Lösung: {\ttfamily longtable}}\\
+{\ttfamily longtable} ermöglicht den Seitenumbruch in der Tabelle. Ausserdem ist {\ttfamily longtable} eine eigene Umgebung, braucht deshalb keine {\ttfamily table}-Umgebung mehr!\\[3mm]
+
+\begin{ttfamily}
+\color{unibablueI}\textbackslash begin\color{black}\{longtable\}\{\textit{Spaltendefinitionen}\}\\
+\textit{Tabelleninhalt}\\
+\color{nounibaredI}\textbackslash caption\color{black}\{Untertitel\}\\
+\color{nounibaredI}\textbackslash label\color{black}\{tab:bsptab2\}\\
+\color{unibablueI}\textbackslash end\color{black}\{longtable\}
+\end{ttfamily}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Einrückungen durch „tabbing“}
+\begin{block}{Steuerung}
+\begin{itemize}
+\item[\begin{ttfamily}\color{nounibaredI}\textbackslash =\end{ttfamily}]\color{black}eine Tabulatorstelle setzen 
+\item[\begin{ttfamily}\color{nounibaredI}\textbackslash $>$\end{ttfamily}]eine Tabulatorstelle ansteuern
+\end{itemize}
+\end{block}
+
+\begin{columns}
+\begin{column}{.5\textwidth}
+\begin{ttfamily}{\scriptsize
+\input{content/listings/tabbing_escaped.tex}}
+\end{ttfamily}
+\end{column}
+\begin{column}{.5\textwidth}
+\begin{tabbing}
+Mitarb\=eiter:\\
+A  \> Daniel\\
+B  \> Martin\\
+C  \> Linus\\
+xxx\=xxx\=xxxxxxx\kill
+\> Gremien\\
+\>\> Klausuren\\
+\>\> Emails\\
+\end{tabbing}
+\end{column}
+\end{columns}
+
+Durch den Befehl\begin{ttfamily} \color{nounibaredI}\textbackslash kill\color{black}\end{ttfamily} wird der Zeileninhalt nicht angezeigt. Dadurch können Formatierungen vorgenommen werden, ohne den zugehörigen Text anzuzeigen.
+\end{frame}
