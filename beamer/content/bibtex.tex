@@ -1,0 +1,131 @@
+\section{BibTeX}
+\begin{frame}
+\frametitle{BibTeX}
+\framesubtitle{Add On f"ur \LaTeX}
+\begin{exampleblock}{Neue Pakete in diesem Abschnitt}
+\begin{itemize}
+\item natbib
+\end{itemize}
+\end{exampleblock}
+
+\begin{block}{Neue Befehle in diesem Abschnitt}
+\begin{itemize}
+\item \color{nounibaredI}\textbackslash renewcommand\color{black}\{\color{nounibaredI}\textbackslash refname\color{black}\}\{...\}
+\item \color{nounibaredI}\textbackslash bibliographystyle\color{black}\{...\}
+\item \color{nounibaredI}\textbackslash bibliography\color{black}\{...\}
+\item \color{nounibaredI}\textbackslash addcontentsline\color{black}\{toc\}\{section\}\{\color{nounibaredI}\textbackslash refname\color{black}\}
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{BibTeX und \LaTeX ~in Kombination}
+Vorteile:
+\begin{itemize}
+\item Literaturverzeichnis kann in einer vom Dokument unabh"angigen Datei gespeichert werden
+\item Speicherung der Daten im BibTeX-Format. Hierbei kann man nach Quellenart unterscheiden, z.B. mit $@$Book, $@$Article usw.
+\item Aufnahme der Eintr"age ins Literaturverzeichnis (LVZ) des Dokuments nur dann, wenn die Quelle zitiert wurde
+\item Anpassung des Aussehens des LVZ durch unterschiedlichste Style-Sheets leicht m"oglich 
+\item Entwurf eigener Style-Sheets zur Gestaltung des LVZ m"oglich
+\end{itemize}
+Nachteile:
+\begin{itemize}
+\item Das Erstellen des LVZ mit den gew"unschten Anforderungen ist zum Teil nur erschwert m"oglich
+\item Zum Teil "au\ss erst zeitaufw"andig
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{BibTeX und \LaTeX ~in Kombination}
+\framesubtitle{vgl. \url{http://de.wikipedia.org/wiki/BibTeX}}
+Beispieleintrag:\\[1ex]
+$@$BOOK\{\\
+Culik93,\\
+title = \{Die Welt der Pinguine\},\\
+publisher = \{\{BLV\}M"unchen\},\\
+year = \{1993\},\\
+author = \{B.M. Culik and R. P. Wilson\}\}\\
+\vspace*{5mm}
+Erkl"arungen zum Eintrag:
+\begin{itemize}
+\item $@$BOOK - Angabe der Quellenart, hier also ein Buch
+\item Culik93 - Definition eines eindeutigen Referenzierungsschl"ussels 
+\item title - Titel des Buches
+\item publisher - Verlag
+\item year - Erscheinungsjahr
+\item author - Autor des Buches
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{BibTeX und \LaTeX ~in Kombination}
+\begin{tabular}{|p{0.45\textwidth}|p{0.5\textwidth}|}
+\hline
+\color{nounibaredI}\textbackslash usepackage\color{black} ~natbib & Package natbib zur Darstellung eines alphabetischen LVZ notwendig\\
+\hline
+\color{nounibaredI}\textbackslash renewcommand\color{black}\{\color{nounibaredI}\textbackslash refname\color{black}\}\newline \{Literaturverzeichnis\} & Anpassung des Namens von Standard Literatur auf Literaturverzeichnis\\
+\hline
+\color{nounibaredI}\textbackslash bibliographystyle\color{black}\{alphadin\} & Auswahl des Style-Sheets zur Darstellung (hier das Style-Sheet \glqq alphadin\grqq)\\
+\hline
+\color{nounibaredI}\textbackslash bibliography\color{black}\{bibliography\} & Angabe der Einzubindenden BibTeX-Datei\\
+\hline
+\color{nounibaredI}\textbackslash addcontentsline\color{black}\{toc\}\{section\}\newline \{\color{nounibaredI}\textbackslash refname\color{black}\} & Aufnahme des LVZ ins Inhatsverzeichnis\\
+\hline
+\end{tabular}
+\end{frame}
+
+\begin{frame}
+\frametitle{BibTeX und \LaTeX ~in Kombination}
+\framesubtitle{Beispiele für Styles}
+\begin{columns}
+\begin{column}{.3\textwidth}
+\begin{itemize}
+\item \textbf{Alphadin-Style}
+\vspace*{20mm}
+\item \textbf{Abbrvdin-Style}
+\end{itemize}
+\end{column}
+\begin{column}{.7\textwidth}
+\image{\textwidth}{image/Styles1.png}{Alphadin und Abbrvdin Style}{img:Styles1}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{BibTeX und \LaTeX ~in Kombination}
+\framesubtitle{Beispiele für Styles cont'd}
+\begin{columns}
+\begin{column}{.3\textwidth}
+\begin{itemize}
+\item \textbf{Natdin-Style}
+\vspace*{20mm}
+\item \textbf{Plaindin-Style}
+\end{itemize}
+\end{column}
+\begin{column}{.7\textwidth}
+\image{\textwidth}{image/Styles2.png}{Natdin und Plaindin Style}{img:Styles2}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{BibTeX und \LaTeX ~in Kombination}
+\framesubtitle{Styles im fertigen Dokument}
+\begin{columns}
+\begin{column}{.3\textwidth}
+\begin{itemize}
+\item \textbf{Alphadin-Style}
+\vspace*{10mm}
+\item \textbf{Abbrvdin-Style}
+\vspace*{10mm}
+\item \textbf{Natdin-Style}
+\vspace*{10mm}
+\item \textbf{Plaindin-Style}
+\end{itemize}
+\end{column}
+\begin{column}{.7\textwidth}
+\vspace*{5mm}
+\image{\textwidth}{image/Styles3.png}{Styles im fertigen Dokument}{img:Styles3}
+\end{column}
+\end{columns}
+\end{frame}
