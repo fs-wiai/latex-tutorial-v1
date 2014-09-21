@@ -10,122 +10,105 @@
 
 \begin{block}{Neue Befehle in diesem Abschnitt}
 \begin{itemize}
-\item \color{nounibaredI}\textbackslash renewcommand\color{black}\{\color{nounibaredI}\textbackslash refname\color{black}\}\{...\}
-\item \color{nounibaredI}\textbackslash bibliographystyle\color{black}\{...\}
-\item \color{nounibaredI}\textbackslash bibliography\color{black}\{...\}
-\item \color{nounibaredI}\textbackslash addcontentsline\color{black}\{toc\}\{section\}\{\color{nounibaredI}\textbackslash refname\color{black}\}
+%\item \color{nounibaredI}\textbackslash renewcommand\color{black}\{\color{nounibaredI}\textbackslash refname\color{black}\}\{...\}
+\item \color{nounibaredI}\textbackslash cite\color{black}\{Author2014\}
+\item \color{nounibaredI}\textbackslash bibliographystyle\color{black}\{alpha$\mid$abbrv$\mid$natdin$\mid$apa$\mid$etc.\}
+\item \color{nounibaredI}\textbackslash bibliography\color{black}\{literature.bib\}
+%\item \color{nounibaredI}\textbackslash addcontentsline\color{black}\{toc\}\{section\}\{\color{nounibaredI}\textbackslash refname\color{black}\}
 \end{itemize}
 \end{block}
 \end{frame}
 
 \begin{frame}
 \frametitle{BibTeX und \LaTeX ~in Kombination}
-Vorteile:
+\textbf{Vorteile:}
 \begin{itemize}
-\item Literaturverzeichnis kann in einer vom Dokument unabh"angigen Datei gespeichert werden
-\item Speicherung der Daten im BibTeX-Format. Hierbei kann man nach Quellenart unterscheiden, z.B. mit $@$Book, $@$Article usw.
-\item Aufnahme der Eintr"age ins Literaturverzeichnis (LVZ) des Dokuments nur dann, wenn die Quelle zitiert wurde
-\item Anpassung des Aussehens des LVZ durch unterschiedlichste Style-Sheets leicht m"oglich 
-\item Entwurf eigener Style-Sheets zur Gestaltung des LVZ m"oglich
+\item Literaturverzeichnis wird in einer vom Dokument unabh"angigen \texttt{.bib}-Datei gespeichert.
+\item Speicherung der Daten im BibTeX-Format. Hierbei wird nach Quellenart unterscheiden, z.B. mit \color{nounibaredI}$@$book\color{black},~\color{nounibaredI}$@$article\color{black}~usw.
+\item Gro\ss e Auswahl an Zitierstilen
+\item \textbf{Automatische, dem Style entsprechende, Generierung des Literaturverzeichnises (LVZ)}
+\item Aufnahme der Eintr"age in das LVZ nur wenn die Quelle zuvor im Text zitiert wurde
 \end{itemize}
-Nachteile:
+\textbf{Nachteile:}
 \begin{itemize}
-\item Das Erstellen des LVZ mit den gew"unschten Anforderungen ist zum Teil nur erschwert m"oglich
-\item Zum Teil "au\ss erst zeitaufw"andig
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{BibTeX und \LaTeX ~in Kombination}
-\framesubtitle{vgl. \url{http://de.wikipedia.org/wiki/BibTeX}}
-Beispieleintrag:\\[1ex]
-$@$BOOK\{\\
-Culik93,\\
-title = \{Die Welt der Pinguine\},\\
-publisher = \{\{BLV\}M"unchen\},\\
-year = \{1993\},\\
-author = \{B.M. Culik and R. P. Wilson\}\}\\
-\vspace*{5mm}
-Erkl"arungen zum Eintrag:
-\begin{itemize}
-\item $@$BOOK - Angabe der Quellenart, hier also ein Buch
-\item Culik93 - Definition eines eindeutigen Referenzierungsschl"ussels 
-\item title - Titel des Buches
-\item publisher - Verlag
-\item year - Erscheinungsjahr
-\item author - Autor des Buches
+\item Das Erstellen des LVZ mit besonderen Anforderungen ist zum Teil nur erschwert m"oglich
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{BibTeX und \LaTeX ~in Kombination}
+\framesubtitle{BiTeX-Dateien}
+\begin{columns}
+\begin{column}{0.52\textwidth}
+\textbf{Beispieleintrag:}\\[1em]
+
+\color{nounibaredI}$@$book\color{black}\{Culik93,\\
+\color{nounibaredI}title\color{black} = \{Die Welt der Pinguine\},\\
+\color{nounibaredI}author\color{black} = \{B.M. Culik and R. P. Wilson\},\\
+\color{nounibaredI}publisher\color{black} = \{\{BLV\}M"unchen\},\\
+\color{nounibaredI}year\color{black} = \{1993\}\\
+\}
+\end{column}
+\begin{column}{0.55\textwidth}
+\textbf{Erkl"arungen zum Eintrag:}
+\begin{itemize}
+\item \color{nounibaredI}$@$book\color{black}~- Angabe der Quellenart, hier also ein Buch
+\item Culik93 - Definition eines eindeutigen Referenzierungsschl"ussels
+\item \color{nounibaredI}author\color{black}~- Autor des Buches
+\item \color{nounibaredI}title\color{black}~- Titel des Buches
+\item \color{nounibaredI}publisher\color{black}~- Verlag
+\item \color{nounibaredI}year\color{black}~- Erscheinungsjahr
+\end{itemize}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{BibTeX und \LaTeX ~in Kombination}
+\framesubtitle{\"Ubersicht "uber die Befehle}
 \begin{tabular}{|p{0.45\textwidth}|p{0.5\textwidth}|}
 \hline
-\color{nounibaredI}\textbackslash usepackage\color{black} ~natbib & Package natbib zur Darstellung eines alphabetischen LVZ notwendig\\
+\color{nounibaredI}\textbackslash usepackage\color{black}\{natbib\} & F"ur den Zitierstil \texttt{natdin} notwendig\\
+\hline
+\color{nounibaredI}\textbackslash bibliographystyle\color{black}\{alphadin\} & Auswahl des LVZ-Stils (hier \glqq \texttt{alphadin}\grqq)\\
+\hline
+\color{nounibaredI}\textbackslash bibliography\color{black}\{bibliography.bib\} & Angabe der einzubindenden BibTeX-Datei\\
 \hline
 \color{nounibaredI}\textbackslash renewcommand\color{black}\{\color{nounibaredI}\textbackslash refname\color{black}\}\newline \{Literaturverzeichnis\} & Anpassung des Namens von Standard Literatur auf Literaturverzeichnis\\
 \hline
-\color{nounibaredI}\textbackslash bibliographystyle\color{black}\{alphadin\} & Auswahl des Style-Sheets zur Darstellung (hier das Style-Sheet \glqq alphadin\grqq)\\
-\hline
-\color{nounibaredI}\textbackslash bibliography\color{black}\{bibliography\} & Angabe der Einzubindenden BibTeX-Datei\\
-\hline
-\color{nounibaredI}\textbackslash addcontentsline\color{black}\{toc\}\{section\}\newline \{\color{nounibaredI}\textbackslash refname\color{black}\} & Aufnahme des LVZ ins Inhatsverzeichnis\\
+\color{nounibaredI}\textbackslash addcontentsline\color{black}\{toc\}\{section\}\newline \{\color{nounibaredI}\textbackslash refname\color{black}\} & Aufnahme des LVZ ins Inhaltsverzeichnis\\
 \hline
 \end{tabular}
+
+\begin{alertblock}{Achtung: Reihenfolge beim Kompilieren beachten!}
+(1) pdflatex (2) bibtex (3) pdflatex (4) pdflatex
+\end{alertblock}
 \end{frame}
+
 
 \begin{frame}
 \frametitle{BibTeX und \LaTeX ~in Kombination}
 \framesubtitle{Beispiele für Styles}
-\begin{columns}
-\begin{column}{.3\textwidth}
-\begin{itemize}
-\item \textbf{Alphadin-Style}
-\vspace*{20mm}
-\item \textbf{Abbrvdin-Style}
-\end{itemize}
-\end{column}
-\begin{column}{.7\textwidth}
-\image{\textwidth}{image/Styles1.png}{Alphadin und Abbrvdin Style}{img:Styles1}
-\end{column}
-\end{columns}
+\image{\textwidth}{image/alpha.png}{Alpha Zitierstil}{img:alpha}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{BibTeX und \LaTeX ~in Kombination}
+\framesubtitle{Beispiele für Styles cont'd}
+\image{\textwidth}{image/IEEEtran.png}{IEEEtran Zitierstil}{img:ieeetran}
 \end{frame}
 
 \begin{frame}
 \frametitle{BibTeX und \LaTeX ~in Kombination}
 \framesubtitle{Beispiele für Styles cont'd}
-\begin{columns}
-\begin{column}{.3\textwidth}
-\begin{itemize}
-\item \textbf{Natdin-Style}
-\vspace*{20mm}
-\item \textbf{Plaindin-Style}
-\end{itemize}
-\end{column}
-\begin{column}{.7\textwidth}
-\image{\textwidth}{image/Styles2.png}{Natdin und Plaindin Style}{img:Styles2}
-\end{column}
-\end{columns}
+\image{\textwidth}{image/natdin.png}{Natdin Zitierstil}{img:natdin}
 \end{frame}
+
 
 \begin{frame}
 \frametitle{BibTeX und \LaTeX ~in Kombination}
-\framesubtitle{Styles im fertigen Dokument}
-\begin{columns}
-\begin{column}{.3\textwidth}
-\begin{itemize}
-\item \textbf{Alphadin-Style}
-\vspace*{10mm}
-\item \textbf{Abbrvdin-Style}
-\vspace*{10mm}
-\item \textbf{Natdin-Style}
-\vspace*{10mm}
-\item \textbf{Plaindin-Style}
-\end{itemize}
-\end{column}
-\begin{column}{.7\textwidth}
-\vspace*{5mm}
-\image{\textwidth}{image/Styles3.png}{Styles im fertigen Dokument}{img:Styles3}
-\end{column}
-\end{columns}
+\framesubtitle{Beispiele für Styles cont'd}
+\image{\textwidth}{image/apa.png}{Apa Zitierstil}{img:apa}
 \end{frame}
