@@ -1,6 +1,6 @@
-\section{BibTeX}
+\section{\BibTeX}
 \begin{frame}
-\frametitle{BibTeX}
+\frametitle{\BibTeX}
 \framesubtitle{Add On f"ur \LaTeX}
 \begin{exampleblock}{Neue Pakete in diesem Abschnitt}
 \begin{itemize}
@@ -20,11 +20,11 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{BibTeX und \LaTeX ~in Kombination}
+\frametitle{\BibTeX und \LaTeX ~in Kombination}
 \textbf{Vorteile:}
 \begin{itemize}
 \item Literaturverzeichnis wird in einer vom Dokument unabh"angigen \texttt{.bib}-Datei gespeichert.
-\item Speicherung der Daten im BibTeX-Format. Hierbei wird nach Quellenart unterscheiden, z.B. mit \color{nounibaredI}$@$book\color{black},~\color{nounibaredI}$@$article\color{black}~usw.
+\item Speicherung der Daten im \BibTeX -Format. Hierbei wird nach Quellenart unterscheiden, z.B. mit \color{nounibaredI}$@$book\color{black},~\color{nounibaredI}$@$article\color{black}~usw.
 \item Gro\ss e Auswahl an Zitierstilen
 \item \textbf{Automatische, dem Style entsprechende, Generierung des Literaturverzeichnises (LVZ)}
 \item Aufnahme der Eintr"age in das LVZ nur wenn die Quelle zuvor im Text zitiert wurde
@@ -36,8 +36,8 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{BibTeX und \LaTeX ~in Kombination}
-\framesubtitle{BiTeX-Dateien}
+\frametitle{\BibTeX und \LaTeX ~in Kombination}
+\framesubtitle{\BibTeX -Dateien}
 \begin{columns}
 \begin{column}{0.52\textwidth}
 \textbf{Beispieleintrag:}\\[1em]
@@ -61,54 +61,55 @@
 \end{itemize}
 \end{column}
 \end{columns}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{BibTeX und \LaTeX ~in Kombination}
-\framesubtitle{\"Ubersicht "uber die Befehle}
-\begin{tabular}{|p{0.45\textwidth}|p{0.5\textwidth}|}
-\hline
-\color{nounibaredI}\textbackslash usepackage\color{black}\{natbib\} & F"ur den Zitierstil \texttt{natdin} notwendig\\
-\hline
-\color{nounibaredI}\textbackslash bibliographystyle\color{black}\{alphadin\} & Auswahl des LVZ-Stils (hier \glqq \texttt{alphadin}\grqq)\\
-\hline
-\color{nounibaredI}\textbackslash bibliography\color{black}\{bibliography.bib\} & Angabe der einzubindenden BibTeX-Datei\\
-\hline
-\color{nounibaredI}\textbackslash renewcommand\color{black}\{\color{nounibaredI}\textbackslash refname\color{black}\}\newline \{Literaturverzeichnis\} & Anpassung des Namens von Standard Literatur auf Literaturverzeichnis\\
-\hline
-\color{nounibaredI}\textbackslash addcontentsline\color{black}\{toc\}\{section\}\newline \{\color{nounibaredI}\textbackslash refname\color{black}\} & Aufnahme des LVZ ins Inhaltsverzeichnis\\
-\hline
-\end{tabular}
-
 \begin{alertblock}{Achtung: Reihenfolge beim Kompilieren beachten!}
 (1) pdflatex (2) bibtex (3) pdflatex (4) pdflatex
 \end{alertblock}
 \end{frame}
 
+\begin{frame}
+\frametitle{\BibTeX und \LaTeX ~in Kombination}
+\framesubtitle{\"Ubersicht "uber die Befehle}
+\begin{itemize}
+
+\item \color{nounibaredI}\textbackslash cite\color{black}\{Culik93\} \hfill Zitieren eines \BibTeX Eintrages\\
+
+\item \color{nounibaredI}\textbackslash bibliographystyle\color{black}\{alphadin\} \hfill Auswahl des LVZ-Stils \glqq \texttt{alphadin}\grqq\\
+
+\item \color{nounibaredI}\textbackslash bibliography\color{black}\{bibliography.bib\} \hfill Angabe der  \BibTeX-Datei\\
+
+\item \color{nounibaredI}\textbackslash usepackage\color{black}\{natbib\} \hfill F"ur den Zitierstil \texttt{natdin} notwendig\\
+%\item \color{nounibaredI}\textbackslash renewcommand\color{black}\{\color{nounibaredI}\textbackslash refname\color{black}\}\newline \{Literaturverzeichnis\} \hfill Anpassung des Namens von Standard Literatur auf Literaturverzeichnis
+
+%\item \color{nounibaredI}\textbackslash addcontentsline\color{black}\{toc\}\{section\}\newline \{\color{nounibaredI}\textbackslash refname\color{black}\} \hfill Aufnahme des LVZ ins Inhaltsverzeichnis
+
+\end{itemize}
+
+
+\end{frame}
+
 
 \begin{frame}
-\frametitle{BibTeX und \LaTeX ~in Kombination}
+\frametitle{\BibTeX und \LaTeX ~in Kombination}
 \framesubtitle{Beispiele für Styles}
 \image{\textwidth}{image/alpha.png}{Alpha Zitierstil}{img:alpha}
 \end{frame}
 
 
 \begin{frame}
-\frametitle{BibTeX und \LaTeX ~in Kombination}
+\frametitle{\BibTeX und \LaTeX ~in Kombination}
 \framesubtitle{Beispiele für Styles cont'd}
 \image{\textwidth}{image/IEEEtran.png}{IEEEtran Zitierstil}{img:ieeetran}
 \end{frame}
 
 \begin{frame}
-\frametitle{BibTeX und \LaTeX ~in Kombination}
+\frametitle{\BibTeX und \LaTeX ~in Kombination}
 \framesubtitle{Beispiele für Styles cont'd}
 \image{\textwidth}{image/natdin.png}{Natdin Zitierstil}{img:natdin}
 \end{frame}
 
 
 \begin{frame}
-\frametitle{BibTeX und \LaTeX ~in Kombination}
+\frametitle{\BibTeX und \LaTeX ~in Kombination}
 \framesubtitle{Beispiele für Styles cont'd}
 \image{\textwidth}{image/apa.png}{Apa Zitierstil}{img:apa}
 \end{frame}

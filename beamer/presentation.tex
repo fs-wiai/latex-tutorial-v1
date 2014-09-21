@@ -48,32 +48,34 @@ compress
 
 \frame{\titlepage}
 
-%\AtBeginSection[]
+\AtBeginSection[]
+{
+  \frame<handout:0>
+  {
+    \frametitle{Outline}
+    \begin{multicols}{2}
+    \tableofcontents[currentsection,hideallsubsections]
+    \end{multicols}
+  }
+}
+
+%\AtBeginSubsection[]
 %{
 %  \frame<handout:0>
 %  {
 %    \frametitle{Outline}
-%    \tableofcontents[currentsection,hideallsubsections]
+%    \tableofcontents[sectionstyle=show/hide,subsectionstyle=show/shaded/hide,subsubsectionstyle=hide]
 %  }
 %}
 
-\AtBeginSubsection[]
-{
-  \frame<handout:0>
-  {
-    \frametitle{Outline}
-    \tableofcontents[sectionstyle=show/hide,subsectionstyle=show/shaded/hide,subsubsectionstyle=hide]
-  }
-}
-
-\AtBeginSubsubsection[]
-{
-  \frame<handout:0>
-  {
-    \frametitle{Outline}
-    \tableofcontents[sectionstyle=show/hide,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
-  }
-}
+%\AtBeginSubsubsection[]
+%{
+%  \frame<handout:0>
+%  {
+%    \frametitle{Outline}
+%    \tableofcontents[sectionstyle=show/hide,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
+%  }
+%}
 
 \newcommand<>{\highlighton}[1]{%
   \alt#2{\structure{#1}}{{#1}}
@@ -119,7 +121,7 @@ compress
 \input{content/grafiken}
 \input{content/referenzen}
 \input{content/aufgabe3}
-%\input{content/formeln}
+\input{content/formeln}
 \input{content/tabellen}
 \input{content/enumerate}
 \input{content/aufgabe4}
