@@ -1,0 +1,120 @@
+\section{Aufz\"ahlungen}
+\begin{frame}
+\frametitle{Aufzählungen}
+
+\begin{block}{Neue Befehle in diesem Abschnitt}
+\begin{itemize}
+\item \color{unibablueI}\textbackslash begin\color{black}\{itemize\} \ldots \color{unibablueI}\textbackslash end\color{black}\{itemize\} 
+\item \color{unibablueI}\textbackslash begin\color{black}\{enumerate\} \ldots \color{unibablueI}\textbackslash end\color{black}\{enumerate\} 
+\item \color{nounibaredI}\textbackslash item\color{black}
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Aufzählungen}
+\framesubtitle{Spiegelstrichlisten}
+
+\begin{columns}
+\begin{column}{.5\textwidth}
+\begin{ttfamily}
+\input{content/listings/itemize1_escaped.tex}
+\end{ttfamily}
+\end{column}
+\begin{column}{.5\textwidth}
+\begin{itemize}
+\item erster Stichpunkt
+\item zweiter Stichpunkt
+\item dritter Stichpunkt
+\item letzter Stichpunkt
+\end{itemize}
+\end{column}
+\end{columns}
+\bigskip
+
+Die einzelnen Stichpunkte werden innerhalb der „itemize“-Umgebung durch den Befehl \begin{ttfamily}\color{nounibaredI}\textbackslash item\color{black}\end{ttfamily} gekennzeichnet.
+\end{frame}
+
+\begin{frame}
+\frametitle{Aufzählungen}
+\framesubtitle{Verschachtelung}
+
+\begin{columns}
+\begin{column}{.5\textwidth}
+\begin{ttfamily}
+\input{content/listings/itemize2_escaped.tex}
+\end{ttfamily}
+\end{column}
+\begin{column}{.5\textwidth}
+\begin{itemize}
+\item erster Stichpunkt
+\item zweiter Stichpunkt
+\begin{itemize}
+\item erster Unterpunkt
+\item zweiter Unterpunkt
+\end{itemize}
+\item dritter Stichpunkt
+\item letzter Stichpunkt
+\end{itemize}
+\end{column}
+\end{columns}
+\bigskip
+Auf diese Weise kann man Unterpunkte bis auf 4 Ebenen tief schachteln.
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Aufzählungen}
+\framesubtitle{Nummerierungen}
+
+\begin{columns}
+\begin{column}{.5\textwidth}
+\begin{ttfamily}
+\input{content/listings/enumerate1_escaped.tex}
+\end{ttfamily}
+\end{column}
+\begin{column}{.5\textwidth}
+\begin{enumerate}
+\item erstens
+\begin{enumerate}
+\item erster Unterpunkt
+\item zweiter Unterpunkt
+\end{enumerate}
+\item zweitens
+\item usw.
+\end{enumerate}
+\end{column}
+\end{columns}
+\bigskip
+Auch hier werden die einzelnen Punkte durch den Befehl \begin{ttfamily}\color{nounibaredI}\textbackslash item\color{black}\end{ttfamily} gekennzeichnet. 
+Schachtelungen können wieder bis zu 4 Ebenen tief sein.
+\end{frame}
+
+\begin{frame}
+\frametitle{Gemischte Aufzählungen?}
+\framesubtitle{Geht Alles!}
+
+\begin{columns}
+\begin{column}{.5\textwidth}
+\begin{ttfamily}
+\input{content/listings/enumerate2_escaped.tex}
+\end{ttfamily}
+\end{column}
+\begin{column}{.5\textwidth}
+\begin{enumerate}
+\item erstens
+\item \begin{itemize}
+\item erster Unterpunkt
+\item zweiter Unterpunkt
+\end{itemize}
+\item drittens
+\begin{enumerate}
+\item Auch ich z"ahle!
+\end{enumerate}
+\item usw.
+\end{enumerate}
+\end{column}
+\end{columns}
+\bigskip
+Die Darstellung der jeweiligen Symbole kann mit \color{nounibaredI}\textbackslash item\color{nounibagreenI}[]\color{black}~angepasst werden. 
+\end{frame}

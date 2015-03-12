@@ -1,0 +1,22 @@
+
+\begin{frame}
+\frametitle{Referenzen}
+\framesubtitle{Abbildungen einfügen – A closer look}
+\begin{tabbing}
+\begin{ttfamily}\color{nounibaredI}\textbackslash label\color{black}\{Labelname\}\end{ttfamily} \=Mit diesem Befehl
+setzt man ein Label. Später im\\\> Text kann man dann durch eine Referenz auf dieses\\
+\> Label verweisen.\\
+\> Dies geschieht mit dem Befehl
+\begin{ttfamily}\color{nounibaredI}\textbackslash ref\color{black}\{Labelname\}\end{ttfamily}.
+\end{tabbing}
+\begin{ttfamily}Der kleine Tux ist ein Allesfresser. Egal ob Gem"use oder
+Schnittlauch, nichts ist vor ihm sicher. (siehe Bild
+\color{nounibaredI}\textbackslash ref\color{black}\{img:tux1\})\end{ttfamily}\\[3mm]
+\textbf{Ergebnis:}\\[3mm]
+\begin{minipage}{\textwidth}\begin{rm}
+Der kleine Tux ist ein Allesfresser. Egal ob Gem"use oder
+Schnittlauch, nichts ist vor ihm sicher. (siehe Bild
+1)\end{rm} \end{minipage}\\[3mm]
+\textbf{Und warum das Ganze?}\\
+Durch solche Referenzen wird immer auf das richtige Bild verwiesen, auch wenn zwischendurch noch weitere Bilder einfügt wurden.
+\end{frame}
