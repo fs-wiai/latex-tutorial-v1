@@ -1,35 +1,35 @@
 \section{Intro} 
 
-\subsection{Anwendungsbereiche, Sinn \& Zweck}
+\subsection{Scope, Sense and Purpose}
 \begin{frame}[t]
-\frametitle{Einf\"uhrung}
-\framesubtitle{Sinn -- Unsinn -- Wahnsinn}
+\frametitle{Introduction}
+\framesubtitle{Sense -- Nonsense -- Madness}
 \bigskip
 \bigskip
 \bigskip
 
 \begin{columns}[t]
 \begin{column}{.3\textwidth}
-\textbf{Sinnvoll}\\[3mm]
+\textbf{Useful}\\[3mm]
 \begin{itemize}
-\item Artikel
-\item Bücher
-\item wissenschaftliche Arbeiten
-\item Bewerbungen
+\item Articles
+\item Books
+\item Scientific papers
+\item Applications
 \end{itemize}
 \end{column}
 \begin{column}{.30\textwidth}
-\textbf{Unsinn}\\[3mm]
+\textbf{Nonsense}\\[3mm]
 \begin{itemize}
-\item private Briefe
-\item Geburtstags-einladungen
-\item Getr"ankekarten
+\item Private mail
+\item Invitations to your birthday party
+\item Drink Menu
 \end{itemize}
 \end{column}
 \begin{column}{.3\textwidth}
-\textbf{Wahnsinn}\\[3mm]
+\textbf{Madness}\\[3mm]
 \begin{itemize}
-\item Einkaufszettel
+\item Shopping list
 \item Brainstorming
 \item \ldots 
 \end{itemize}
@@ -40,8 +40,8 @@
 %-------------------------------------------------------------------------------
 
 \begin{frame} 
-\frametitle{Vom Code zum Dokument}
-\framesubtitle{Kein WYSIWYG} 
+\frametitle{From Code To Document}
+\framesubtitle{No WYSIWYG} 
 \begin{columns}
 \begin{column}{.7\textwidth}
 \image{\textwidth}{image/worddoc.jpg}{\textbf{W}hat \textbf{Y}ou \textbf{S}ee \textbf{I}s \textbf{W}hat \textbf{Y}ou
@@ -57,17 +57,17 @@
 %-------------------------------------------------------------------------------
 
 \begin{frame}
-\frametitle{Einf\"uhrung}
-\framesubtitle{Vorgehensweise}
+\frametitle{Introduction}
+\framesubtitle{Approach}
 \begin{columns}[onlytextwidth]
 \begin{column}{0.40\textwidth}
-\image{.8\textwidth}{image/codescreen.png}{Textdatei mit \LaTeX ~-Code}{img:code}
+\image{.8\textwidth}{image/codescreen.png}{Text File with \LaTeX ~-Code}{img:code}
 \end{column}
 \begin{column}{0.25\textwidth}
 \image{.8\textwidth}{image/miktex.jpg}{Compiler (z.B. MikTeX)}{img:miktex}
 \end{column}
 \begin{column}{0.25\textwidth}
-\image{.6\textwidth}{image/pdflogo.png}{sch\"ones, lesbares und druckbares Dokument}{img:pdf}
+\image{.6\textwidth}{image/pdflogo.png}{good-looking, legible and printable document}{img:pdf}
 \end{column}
 \end{columns}
 \end{frame}
@@ -75,20 +75,20 @@
 
 %-------------------------------------------------------------------------------
 
-\subsection{Vorteile \& Nachteile}
+\subsection{Advantages \& Disadvantages}
 \begin{frame}
-\frametitle{Einf\"uhrung}
-\framesubtitle{Vorteile \& Nachteile}
-Vorteile
+\frametitle{Introduction}
+\framesubtitle{Advantages \& Disadvantages}
+Advantages
 \begin{itemize}
-\item  dynamische Verzeichnisse und Referenzen
-\item  automatische Layouts
-\item  einfaches verteiltes Arbeiten möglich
+\item  dynamic directories and references
+\item  automated layouts
+\item  simple distributed work
 \end{itemize}
-Nachteile
+Disadvantages
 \begin{itemize}
-\item  Was kommt später raus?
-\item  viele, zum Teil komplexe Befehle
+\item  What do I get in the end?
+\item  many, partly complex commands
 \end{itemize}
 \end{frame}
 
@@ -96,24 +96,23 @@ Nachteile
 
 \subsection{\LaTeX --Compiler}
 \begin{frame}
-\frametitle{Einf\"uhrung}
+\frametitle{Introduction}
 \framesubtitle{\LaTeX - Compiler}
 \begin{columns}[t]
 \begin{column}{.4\textwidth}
-\textbf{Software unter Windows:}\\
+\textbf{Software for Windows:}\\
 \begin{itemize}
   \item MikTex (http://www.miktex.org)\\
-   2 Varianten: Basic oder  Complete
+   2 alternatives: Basic or  Complete
   \item ProTeXt (http://www.tug.org/protext)\\
-enthält MikTex, TeXnicCenter und Ghostscript – einfache Installation\\
+contains MikTex, TeXnicCenter and Ghostscript – simple installation\\
 \end{itemize}
 \end{column}
 \begin{column}{.6\textwidth}
-\textbf{Software unter *nix:}
+\textbf{Software for *nix:}
 \begin{itemize}
   \item TeXLive\\
-Pakete unter Ubuntu: {\ttfamily texlive-full} ist das Meta-Paket mit allen
-ben\"otigten Paketen. Enthält auch Folgende:
+Packages for Ubuntu: {\ttfamily texlive-full} is the full meta-package with all necessary packages. Also contains the following:
 \begin{itemize}
   \item {\ttfamily texlive-base
   \item texlive-lang-german}
@@ -127,18 +126,18 @@ Installation: {\ttfamily sudo apt-get install texlive-full}
 
 %-------------------------------------------------------------------------------
 
-\subsection{Freie Editoren}
+\subsection{Free Editors}
 
 \subsubsection{*nix}
 \begin{frame}
-\frametitle{Einf\"uhrung}
-\framesubtitle{Freie Editoren -- Linus \& MacOS }
+\frametitle{Introduction}
+\framesubtitle{Free Editors -- Linus \& MacOS }
 \begin{itemize}
- \item Kile\footnote{http://kile.sourceforge.net/}\\KDE-Programm, auch unter Gnome\slash Unity etc.
- verwendbar. Installation auf Debiansystemen mit {\ttfamily sudo apt-get
+ \item Kile\footnote{http://kile.sourceforge.net/}\\KDE-program, also usable under Gnome\slash Unity etc.
+ Installation for Debian systemes with {\ttfamily sudo apt-get
  install kile}.
   \item Vim \LaTeX -suite (Plugin)\footnote{http://vim-latex.sourceforge.net/}\\
-  Ein Traum f"ur Vim-User.
+  Dream for Vim users.
   \item TexShop (MacOS)\footnote{http://pages.uoregon.edu/koch/texshop/}
 \end{itemize}
 \end{frame}
@@ -147,8 +146,8 @@ Installation: {\ttfamily sudo apt-get install texlive-full}
 
 \subsubsection{Windows}
 \begin{frame}
-\frametitle{Einf\"uhrung}
-\framesubtitle{Freie Editoren -- Windows}
+\frametitle{Introduction}
+\framesubtitle{Free Editors -- Windows}
 \begin{itemize}
 \item TeXnicCenter\footnote{http://www.texniccenter.org/}
   %\item \ldots
@@ -159,15 +158,15 @@ Installation: {\ttfamily sudo apt-get install texlive-full}
 
 \subsubsection{Cross-Platform}
 \begin{frame}
-\frametitle{Einf\"uhrung}
-\framesubtitle{Freie Editoren -- Cross-Platform}
+\frametitle{Introduction}
+\framesubtitle{Free Editors -- Cross-Platform}
 \begin{itemize}
   \item TeXMaker\footnote{http://www.xm1math.net/texmaker}\\
-   Sehr solide, verwenden wir hier im Tutorium.
+   Used in this turorial.
   \item TeXstudio\footnote{http://sourceforge.net/projects/texstudio/?source=dlp}\\
-  "Ahnlich wie der TeXMaker, allerdings etwas m"achtiger.
-  \item TeXlipse\footnote{http://texlipse.sourceforge.net/}\\ F"ur fortgeschrittene User, Plugin f"ur
-  Eclipse. Gute IDE-Unterst\"utzung, Code-Completion, Autobuilds, Versionsverwaltung etc.
+  Like TeXMaker, but something more powerful.
+  \item TeXlipse\footnote{http://texlipse.sourceforge.net/}\\ For advanced users, plugin for
+  Eclipse. Good IDE support, code-completion, autobuilds, version control etc.
 \end{itemize}
 \end{frame}
 
@@ -175,8 +174,8 @@ Installation: {\ttfamily sudo apt-get install texlive-full}
 
 \begin{frame}
 \frametitle{TeXmaker}
-\framesubtitle{\"Uberblick}
-\image{\textwidth}{image/texmaker_overview.png}{Das Standardfenster des Texmaker}{img:texmaker1}
+\framesubtitle{Overview}
+\image{\textwidth}{image/texmaker_overview.png}{Standard window of the Texmaker}{img:texmaker1}
 
 \end{frame}
 
@@ -190,14 +189,14 @@ Installation: {\ttfamily sudo apt-get install texlive-full}
 \end{frame}
 
 \begin{frame}
-\frametitle{Mein erstes \LaTeX~-Dokument}
-\begin{block}{Neue Befehle:}
+\frametitle{My very first \LaTeX -document}
+\begin{block}{New commands:}
 \begin{itemize}
 \item \begin{ttfamily}\color{nounibaredII}\textbackslash documentclass\color{nounibagreenI}\color{black}\{article\}\end{ttfamily}
 \item \begin{ttfamily}\color{unibablueI}\textbackslash begin\color{black}\{document\}\end{ttfamily}
 \item \begin{ttfamily}\color{unibablueI}\textbackslash end\color{black}\{document\}\end{ttfamily}
 \end{itemize}
 \end{block}
-Das ist alles was man f\"ur ein \LaTeX -Dokument braucht. Und das probieren wir jetzt aus!
+That is all you need for a \LaTeX -document. Let's try!
 
 \end{frame}
