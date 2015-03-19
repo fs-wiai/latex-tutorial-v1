@@ -1,9 +1,9 @@
-\section{Fu\ss noten}
+\section{Footnotes}
 
 \begin{frame}
-\frametitle{Fu\ss noten}
-\framesubtitle{Einbau von Fu\ss noten}
-\begin{block}{Neue Befehle in diesem Abschnitt}
+\frametitle{Footnotes}
+\framesubtitle{Use Of Footnotes}
+\begin{block}{New commands in this section}
 \begin{itemize}
 \item \color{nounibaredI}\textbackslash footnote
 \item \textbackslash footnotemark\color{nounibagreenI}[]\color{black}
@@ -14,8 +14,8 @@
 %-------------------------------------------------------------------------------
 
 \begin{frame}
-\frametitle{Fu\ss noten}
-\framesubtitle{Befehle}
+\frametitle{Footnotes}
+\framesubtitle{Commands}
 \begin{columns}
 \begin{column}{0.5\textwidth}
 \begin{ttfamily}\scriptsize
@@ -23,15 +23,17 @@
 \end{ttfamily}
 \end{column}
 \begin{column}{0.5\textwidth}
-\begin{ttfamily}\color{nounibaredI}\textbackslash footnote\color{black}\{Fu\ss notentext\}\end{ttfamily} Erstellt eine Fußnote an dieser Stelle mit automatischer Nummerierung.
+\begin{ttfamily}\color{nounibaredI}\textbackslash footnote\color{black}\{footnotetext\}\end{ttfamily} Creates a footnote at this position with
+automatical numbering.
 
-\begin{ttfamily}\color{nounibaredI}\textbackslash footnote\color{nounibagreenI}[Zahl]\color{black}\{Fu\ss notentext\}\end{ttfamily} Eine manuelle Nummerierung ist ebenfalls möglich.
+\begin{ttfamily}\color{nounibaredI}\textbackslash footnote\color{nounibagreenI}[number]\color{black}\{footnotetext\}\end{ttfamily} A manual
+numbering is possible, too.
 
-\begin{ttfamily}\color{nounibaredI}\textbackslash footnotemark\color{nounibagreenI}[Zahl]\color{black}\end{ttfamily}
-Eine Zahl kann auch ohne Fußnotentext eingetragen werden
+\begin{ttfamily}\color{nounibaredI}\textbackslash footnotemark\color{nounibagreenI}[number]\color{black}\end{ttfamily}
+It is also possible to use a number without a footnotetext.
 \end{column}
 \end{columns}
 \bigskip
-Die Nummerierung erfolgt automatisch und ist fortlaufend, unabhängig davon, ob
-eine neue Seite oder {\ttfamily section} beginnt.
+The numbering is automatical and continous, independent of 
+a new page or {\ttfamily section}.
 \end{frame}

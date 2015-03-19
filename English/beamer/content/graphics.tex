@@ -1,20 +1,20 @@
-\section{Grafiken}
+\section{Graphics}
 \begin{frame}
-\frametitle{Grafiken}
-\framesubtitle{Einbinden von Grafiken} 
-\begin{exampleblock}{Neue Pakete in diesem Abschnitt}
+\frametitle{Graphics}
+\framesubtitle{Use Of Graphics} 
+\begin{exampleblock}{New packages in this section}
 \begin{itemize}
 \item graphicx 
 \item float
 \end{itemize}
 \end{exampleblock}
 
-\begin{block}{Neue Befehle in diesem Abschnitt}
+\begin{block}{New commands in this section}
 \begin{itemize}
-\item \color{nounibaredI}\textbackslash includegraphics\color{black}\{Datei\}
-\item \color{nounibaredI}\textbackslash caption\color{black}\{Bildunterschrift\}
-\item \begin{ttfamily}\color{nounibaredI}\textbackslash label\color{black}\{Label\}
-\item \color{nounibaredI}\textbackslash ref\color{black}\{Referenz\}\end{ttfamily}
+\item \color{nounibaredI}\textbackslash includegraphics\color{black}\{File\}
+\item \color{nounibaredI}\textbackslash caption\color{black}\{caption\}
+\item \begin{ttfamily}\color{nounibaredI}\textbackslash label\color{black}\{label\}
+\item \color{nounibaredI}\textbackslash ref\color{black}\{reference\}\end{ttfamily}
 \end{itemize}
 \end{block}
 
@@ -23,26 +23,26 @@
 %-------------------------------------------------------------------------------
 
 \begin{frame}
-\frametitle{Grafiken}
-\framesubtitle{Abbildungen einfügen}
+\frametitle{Graphics}
+\framesubtitle{Insert Graphics}
 \begin{tabbing}
-\textbackslash includegraphics[option]\{Datei\}xx\=\=\=\kill
+\textbackslash includegraphics[option]\{File\}xx\=\=\=\kill
 \begin{ttfamily}
 \color{unibablueI}\textbackslash begin\color{black}\{figure\}\color{nounibagreenI}[option]\color{black}
 \end{ttfamily}
-\>\>\textbf{Mögliche Optionen für die Positionierung:}\\
-\>\>\begin{ttfamily}\color{nounibagreenI}[h]\color{black}\end{ttfamily} = Hier an dieser Stelle\\
-\>\>\begin{ttfamily}\color{nounibagreenI}[t]\color{black}\end{ttfamily} = Oben auf der Seite\\
-\>\>\begin{ttfamily}\color{nounibagreenI}[b]\color{black}\end{ttfamily} = Unten auf der Seite\\
-\>\>\begin{ttfamily}\color{nounibagreenI}[p]\color{black}\end{ttfamily} = Platzierung auf einer eigenen
-Seite\\[5mm]
+\>\>\textbf{Possible options for positioning:}\\
+\>\>\begin{ttfamily}\color{nounibagreenI}[h]\color{black}\end{ttfamily} = At this very position\\
+\>\>\begin{ttfamily}\color{nounibagreenI}[t]\color{black}\end{ttfamily} = On top of the page\\
+\>\>\begin{ttfamily}\color{nounibagreenI}[b]\color{black}\end{ttfamily} = On bottom of the page\\
+\>\>\begin{ttfamily}\color{nounibagreenI}[p]\color{black}\end{ttfamily} = Positioning on an own
+page\\[5mm]
 ~\\[5mm]
-\color{nounibaredI}\textbackslash includegraphics\color{nounibagreenI}[option]\color{black}\{datei\}
-\>\>\textbf{Mögliche Optionen für das Einfügen:}\\
-\>\>\begin{ttfamily}\color{nounibagreenI}[width=300pt]\color{black}\end{ttfamily}= Skalieren auf eine Breite\\
-\>\>\begin{ttfamily}\color{nounibagreenI}[height=5cm]\color{black}\end{ttfamily}= Skalieren auf eine Höhe\\
-\>\>scale, angle und noch viele mehr\ldots\\
-\>\>Kombinationen möglich:\\
+\color{nounibaredI}\textbackslash includegraphics\color{nounibagreenI}[option]\color{black}\{File\}
+\>\>\textbf{Possible options for insertion:}\\
+\>\>\begin{ttfamily}\color{nounibagreenI}[width=300pt]\color{black}\end{ttfamily}= scale to a width\\
+\>\>\begin{ttfamily}\color{nounibagreenI}[height=5cm]\color{black}\end{ttfamily}= scale to a height\\
+\>\>scale, angle and many more\ldots\\
+\>\>Combiantions possible:\\
 \>\>\begin{ttfamily}\color{nounibagreenI}[width=\textbackslash textwidth,height=5cm]\color{black}\end{ttfamily}
 \end{tabbing}
 \end{frame}
@@ -50,15 +50,15 @@ Seite\\[5mm]
 %-------------------------------------------------------------------------------
 
 \begin{frame}
-\frametitle{Grafiken}
-\framesubtitle{Positionierung von Abbildungen}
+\frametitle{Graphics}
+\framesubtitle{Positioning Of Figures}
 \begin{columns}
 \begin{column}{.5\textwidth}
 {\ttfamily {\footnotesize
 \input{content/listings/graphic_escaped.tex}}}
 
-\begin{alertblock}{Obacht!}
-\color{nounibaredI}\textbackslash label\color{black}\{\} immer nach \color{nounibaredI}\textbackslash caption\color{black}\{\}
+\begin{alertblock}{Attention!}
+\color{nounibaredI}\textbackslash label\color{black}\{\} always after \color{nounibaredI}\textbackslash caption\color{black}\{\}
 \end{alertblock}
 \end{column}
 
@@ -66,7 +66,7 @@ Seite\\[5mm]
 \begin{figure}
 \begin{center}
     \includegraphics[width=\textwidth]{image/tux.png}
-\caption{Der kleine Tux}
+\caption{Tiny Tux}
 \label{img:kleinertux}
 \end{center}
 \end{figure}
@@ -78,10 +78,10 @@ Seite\\[5mm]
 
 \begin{frame}[t]
 \medskip
-\frametitle{Grafiken}
-\framesubtitle{Positionierung von Abbildungen II }
-Trotz Definition einer Positionsumgebung verrutscht das Bild oft, da es nicht immer m\"oglich ist das Bild an passender Stelle einzufügen.\\
-\textbf{L\"osung:} Das Packet {\ttfamily float} liefert in den meisten F\"allen bessere Positionierungen.
+\frametitle{Graphics}
+\framesubtitle{Positioning Of Figures II}
+Despite the positioning, the figure often gets out of place, because it is not always possible to insert it at a useful position.\\
+\textbf{Solution:} The package {\ttfamily float} leads in most cases to a better positioning.
 
 \begin{columns}
 \begin{column}{.5\textwidth}
@@ -93,7 +93,7 @@ Trotz Definition einer Positionsumgebung verrutscht das Bild oft, da es nicht im
 \begin{figure}
 \begin{center}
     \includegraphics[width=35mm]{image/tux.png}
-\caption{Der kleine Tux jetzt in Float}
+\caption{Tiny Tux in Float}
 \label{img:kleinertux_float}
 \end{center}
 \end{figure}
