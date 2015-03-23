@@ -106,14 +106,14 @@
 \headcommand {\beamer@framepages {40}{40}}
 \headcommand {\slideentry {6}{0}{32}{41/41}{}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\sectionentry {7}{$\mathcal {A}3$}{42}{$\mathcal {A}3$}{0}}
+\headcommand {\sectionentry {7}{$\mathcal {T}3$}{42}{$\mathcal {T}3$}{0}}
 \headcommand {\beamer@sectionpages {36}{41}}
 \headcommand {\beamer@subsectionpages {36}{41}}
 \headcommand {\slideentry {7}{0}{33}{42/42}{}{0}}
 \headcommand {\beamer@framepages {42}{42}}
 \headcommand {\slideentry {7}{0}{34}{43/43}{}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\sectionentry {8}{Formeln}{44}{Formeln}{0}}
+\headcommand {\sectionentry {8}{Formulas}{44}{Formulas}{0}}
 \headcommand {\beamer@sectionpages {42}{43}}
 \headcommand {\beamer@subsectionpages {42}{43}}
 \headcommand {\slideentry {8}{0}{35}{44/44}{}{0}}
@@ -124,7 +124,7 @@
 \headcommand {\beamer@framepages {46}{46}}
 \headcommand {\slideentry {8}{0}{38}{47/47}{}{0}}
 \headcommand {\beamer@framepages {47}{47}}
-\headcommand {\sectionentry {9}{Tabellen}{48}{Tabellen}{0}}
+\headcommand {\sectionentry {9}{Tables}{48}{Tables}{0}}
 \headcommand {\beamer@sectionpages {44}{47}}
 \headcommand {\beamer@subsectionpages {44}{47}}
 \headcommand {\slideentry {9}{0}{39}{48/48}{}{0}}
@@ -145,7 +145,7 @@
 \headcommand {\beamer@framepages {55}{55}}
 \headcommand {\slideentry {9}{0}{47}{56/56}{}{0}}
 \headcommand {\beamer@framepages {56}{56}}
-\headcommand {\sectionentry {10}{Aufz\"ahlungen}{57}{Aufz\"ahlungen}{0}}
+\headcommand {\sectionentry {10}{Enumerations}{57}{Enumerations}{0}}
 \headcommand {\beamer@sectionpages {48}{56}}
 \headcommand {\beamer@subsectionpages {48}{56}}
 \headcommand {\slideentry {10}{0}{48}{57/57}{}{0}}
@@ -160,14 +160,14 @@
 \headcommand {\beamer@framepages {61}{61}}
 \headcommand {\slideentry {10}{0}{53}{62/62}{}{0}}
 \headcommand {\beamer@framepages {62}{62}}
-\headcommand {\sectionentry {11}{$\mathcal {A}4$}{63}{$\mathcal {A}4$}{0}}
+\headcommand {\sectionentry {11}{$\mathcal {T}4$}{63}{$\mathcal {T}4$}{0}}
 \headcommand {\beamer@sectionpages {57}{62}}
 \headcommand {\beamer@subsectionpages {57}{62}}
 \headcommand {\slideentry {11}{0}{54}{63/63}{}{0}}
 \headcommand {\beamer@framepages {63}{63}}
 \headcommand {\slideentry {11}{0}{55}{64/64}{}{0}}
 \headcommand {\beamer@framepages {64}{64}}
-\headcommand {\sectionentry {12}{Vert. Arbeiten}{65}{Vert. Arbeiten}{0}}
+\headcommand {\sectionentry {12}{Distributed Work}{65}{Distributed Work}{0}}
 \headcommand {\beamer@sectionpages {63}{64}}
 \headcommand {\beamer@subsectionpages {63}{64}}
 \headcommand {\slideentry {12}{0}{56}{65/65}{}{0}}
@@ -184,7 +184,7 @@
 \headcommand {\beamer@framepages {70}{70}}
 \headcommand {\slideentry {12}{0}{62}{71/71}{}{0}}
 \headcommand {\beamer@framepages {71}{71}}
-\headcommand {\sectionentry {13}{$\mathcal {A}5$}{72}{$\mathcal {A}5$}{0}}
+\headcommand {\sectionentry {13}{$\mathcal {T}5$}{72}{$\mathcal {T}5$}{0}}
 \headcommand {\beamer@sectionpages {65}{71}}
 \headcommand {\beamer@subsectionpages {65}{71}}
 \headcommand {\slideentry {13}{0}{63}{72/72}{}{0}}

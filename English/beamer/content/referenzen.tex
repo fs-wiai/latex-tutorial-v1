@@ -1,22 +1,21 @@
 
 \begin{frame}
-\frametitle{Referenzen}
-\framesubtitle{Abbildungen einfügen – A closer look}
+\frametitle{References}
+\framesubtitle{Insert graphics – A closer look}
 \begin{tabbing}
-\begin{ttfamily}\color{nounibaredI}\textbackslash label\color{black}\{Labelname\}\end{ttfamily} \=Mit diesem Befehl
-setzt man ein Label. Später im\\\> Text kann man dann durch eine Referenz auf dieses\\
-\> Label verweisen.\\
-\> Dies geschieht mit dem Befehl
-\begin{ttfamily}\color{nounibaredI}\textbackslash ref\color{black}\{Labelname\}\end{ttfamily}.
+\begin{ttfamily}\color{nounibaredI}\textbackslash label\color{black}\{labelname\}\end{ttfamily} \=This command gives
+a graphic a label. Later in the\\\> text you can use this label to refer to the graphic.\\
+\> This is done using the command
+\begin{ttfamily}\color{nounibaredI}\textbackslash ref\color{black}\{labelname\}\end{ttfamily}.
 \end{tabbing}
-\begin{ttfamily}Der kleine Tux ist ein Allesfresser. Egal ob Gem"use oder
-Schnittlauch, nichts ist vor ihm sicher. (siehe Bild
+\begin{ttfamily}Tiny Tux is an omnivore. Vegetables or
+chives, nothing is safe from him. (see graphic
 \color{nounibaredI}\textbackslash ref\color{black}\{img:tux1\})\end{ttfamily}\\[3mm]
-\textbf{Ergebnis:}\\[3mm]
+\textbf{Result:}\\[3mm]
 \begin{minipage}{\textwidth}\begin{rm}
-Der kleine Tux ist ein Allesfresser. Egal ob Gem"use oder
-Schnittlauch, nichts ist vor ihm sicher. (siehe Bild
+Tiny Tux is an omnivore. Vegetables or
+chives, nothing is safe from him. (see graphic
 1)\end{rm} \end{minipage}\\[3mm]
-\textbf{Und warum das Ganze?}\\
-Durch solche Referenzen wird immer auf das richtige Bild verwiesen, auch wenn zwischendurch noch weitere Bilder einfügt wurden.
+\textbf{Why labels?}\\
+With those references, you can always refer to the correct graphic, even if there are some more graphics inserted in between.
 \end{frame}
