@@ -1,0 +1,30 @@
+% Layout 1
+\input{setup/command}
+
+\begin{document}
+% Layout 1 - Titelseite
+\input{content/titlepage}
+
+%%   Seitennummerierung mit roemischer Nummerierung   %%
+\pagenumbering{Roman}
+%%   Beginne die Seitennummerierung mit 2 ab dem Inhaltsverzeichnis   %%
+\setcounter{page}{2}
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\listoftables
+\newpage
+%%   Hauptteil   %%
+%%   Seitennummerierung mit arabischer Nummerierung   %%
+\pagenumbering{arabic}
+%%   Beginne die Seitennummerierung mit 1 ab dem ersten eingebunden Dokument   %%
+\setcounter{page}{1}
+\input{content/aufgabe2}
+\newpage
+\input{content/aufgabe3}
+\newpage
+\input{content/aufgabe4}
+
+\textbf{Herzlichen Gl"uckwunsch, du hast das \LaTeX -Tutorium der Fachschaft WIAI bis zum Ende geschafft!}
+\end{document}
