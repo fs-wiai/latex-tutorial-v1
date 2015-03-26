@@ -1,12 +1,9 @@
-\documentclass[a4paper, pdftex, ngerman, 11pt]{article}
+\documentclass[a4paper, pdftex, 11pt]{article}
 %===============================================================================
-% Zweck: KTR-Seminar-Vorlage in Anlehung an G. Wirtz, Lehrstuhl Praktische Informatik
-%===============================================================================
-%===============================================================================
-% zentrale Layout-Angaben und Befehle
+% Layout and commands
 %===============================================================================
 %
-\usepackage{babel}
+\usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{fancyhdr}
 \usepackage[T1]{fontenc}						
@@ -15,86 +12,9 @@
 \usepackage{amsfonts}
 \usepackage{float}
 \usepackage{longtable}
-\usepackage{multirow}							%Package zum korrekten Einfuegen von Bildern!
-\usepackage[hyphens]{url}
-%%   Zur Gestaltung des Textes zu einem Hypertext   %%
-\usepackage{hyperref}
-\definecolor{darkblue}{rgb}{0,.05,.54}
-\hypersetup{colorlinks=true, breaklinks=true, linkcolor=darkblue, menucolor=darkblue, urlcolor=darkblue, citecolor=darkblue, filecolor=darkblue}
-\urlstyle{same}
-
-\usepackage{amsmath,amssymb,ifthen}
+\usepackage{amsmath,amssymb}
 \usepackage{graphicx}
-%
-\if pdf
-\usepackage[pdftex,bookmarksopen,bookmarksnumbered,pdfborder=0]{hyperref}
-\pdfcompresslevel=9
-\else
-\usepackage{url}
-\fi
-%\usepackage[dvips]{rotating}
-%
-% ausf\"{u}hrlichere Fehlermeldungen
-\errorcontextlines=999
-%
-% Page-Layout: A4 aus Header
-% Alternative
-%\setlength\headheight{14pt}
-%\setlength\topmargin{-15,4mm}
-%\setlength\oddsidemargin{-0,4mm}
-%\setlength\evensidemargin{-0,4mm}
-%\setlength\textwidth{160mm}
-%\setlength\textheight{252mm}
-%
+
 % Absatzeinstellungen
 \setlength\parindent{0mm}
 \setlength\parskip{2ex}
-%
-%
-% Erstellung von Abk\"{u}rzungsverzeichnis
-\newcommand{\abbrev}[2]{#1 & #2\\}
-\newcommand{\abkuerzungen}{
-\section*{Abk\"{u}rzungsverzeichnis}
-\hspace{2ex}
-\begin{tabular}{ll}
-\input{abkuerzungen.tex}
-\end{tabular}
-}
-%
-% Einbindung eines Bildes mit angegebener Breite
-% #1 = label f\"{u}r \ref-Verweise
-% #2 = Name des Bildes ohne Endung relativ zu Bilder-Verzeichnis
-% #3 = Beschriftung
-% #4 = Breite des Bildes im Dokument in cm
-\newcommand{\bildw}[4]{%
-  \begin{figure}[htb]%
-    \centering
-    \includegraphics[width=#4cm]{Bilder/#2}%
-    \vskip -0.3cm%
-    \caption{#3}%
-    \vskip -0,2cm%
-    \label{#1}%
-  \end{figure}%
-}
-%
-% Einbindung eines Bildes mit Seitenbreite
-% #1 = label f\"{u}r \ref-Verweise
-% #2 = Name des Bildes ohne Endung relativ zu Bilder-Verzeichnis
-% #3 = Beschriftung
-\newcommand{\bild}[3]{%
-  \begin{figure}[htb]%
-    \centering%
-    \includegraphics[width=\textwidth]{Bilder/#2}%
-    \vskip -0.3cm%
-    \caption{#3}%
-    \vskip -0,2cm%
-    \label{#1}%
-  \end{figure}%
-}
-%
-\numberwithin{equation}{section}
-%
-%===============================================================================
-% zentrale Layout-Angaben und Befehle
-%===============================================================================
-%

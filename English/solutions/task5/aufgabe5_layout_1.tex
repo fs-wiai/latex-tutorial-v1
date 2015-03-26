@@ -2,12 +2,12 @@
 \input{setup/command}
 
 \begin{document}
-% Layout 1 - Titelseite
+% Layout 1 - Title Page
 \input{content/titlepage}
 
-%%   Seitennummerierung mit roemischer Nummerierung   %%
+%%   Page numbering with roman numbers   %%
 \pagenumbering{Roman}
-%%   Beginne die Seitennummerierung mit 2 ab dem Inhaltsverzeichnis   %%
+%%   Begin the page numbering with 2 for the table of contents   %%
 \setcounter{page}{2}
 \tableofcontents
 \newpage
@@ -15,16 +15,16 @@
 \newpage
 \listoftables
 \newpage
-%%   Hauptteil   %%
-%%   Seitennummerierung mit arabischer Nummerierung   %%
+%%   Main part   %%
+%%   Page numbering with arabic numbers   %%
 \pagenumbering{arabic}
-%%   Beginne die Seitennummerierung mit 1 ab dem ersten eingebunden Dokument   %%
+%%   Begin the page numbering with 1, beginning from the first included document   %%
 \setcounter{page}{1}
-\input{content/aufgabe2}
+\input{content/task2}
 \newpage
-\input{content/aufgabe3}
+\input{content/task3}
 \newpage
-\input{content/aufgabe4}
+\input{content/task4}
 
-\textbf{Herzlichen Gl"uckwunsch, du hast das \LaTeX -Tutorium der Fachschaft WIAI bis zum Ende geschafft!}
+\noindent \textbf{Congratulations, you almost finishes the \LaTeX -Tutorial of Fachschaft WIAI!}
 \end{document}
