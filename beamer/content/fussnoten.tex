@@ -3,10 +3,17 @@
 \begin{frame}
 \frametitle{Fu\ss noten}
 \framesubtitle{Einbau von Fu\ss noten}
+\begin{exampleblock}{Neue Pakete in diesem Abschnitt}
+\begin{itemize}
+\item url
+\item hyperref
+\end{itemize}
+\end{exampleblock}
 \begin{block}{Neue Befehle in diesem Abschnitt}
 \begin{itemize}
 \item \color{nounibaredI}\textbackslash footnote
-\item \textbackslash footnotemark\color{nounibagreenI}[]\color{black}
+\item \textbackslash footnotemark\color{nounibagreenI}[]\color{nounibaredI}
+\item \textbackslash url\color{black}
 \end{itemize}
 \end{block}
 \end{frame}
@@ -34,4 +41,22 @@ Eine Zahl kann auch ohne Fußnotentext eingetragen werden
 \bigskip
 Die Nummerierung erfolgt automatisch und ist fortlaufend, unabhängig davon, ob
 eine neue Seite oder {\ttfamily section} beginnt.
+\end{frame}
+
+%-------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{URL}
+\framesubtitle{Klickbare Links}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{ttfamily}\scriptsize
+\input{content/listings/url_escaped.tex}
+\end{ttfamily}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{ttfamily}\color{nounibaredI}\textbackslash url\color{black}\{http:\textbackslash\textbackslash www.example.com\}\end{ttfamily}\\ 
+Erstellt einen klickbaren Link.
+\end{column}
+\end{columns}
 \end{frame}

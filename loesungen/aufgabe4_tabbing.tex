@@ -1,0 +1,92 @@
+\documentclass[a4paper, pdftex, ngerman, 11pt]{article}
+%IMMER!!!
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage[iso]{umlaute}
+
+\usepackage{longtable}
+
+\begin{document}
+\section{Aufgabe 4}
+\subsection{Tabellen \& Formeln}
+Die Tabelle \ref{tab:ani} besteht aus 3 Spalten:\\
+Die erste Spalte ist mit einem p von 25mm definiert. Die zweite und die dritte Spalte sind zentriert.
+
+\begin{longtable}{p{25mm}|c|c}
+& Fuchs & Elster\\
+\hline
+lat. Bezeichnung & Vulpes & Pica\\
+\hline
+Familie & Hunde & Rabenvögel\\
+\hline
+Ordnung & Raubtier & Sperrlingsvogel\\
+\hline
+Gewicht & m: 6,6kg w: 5,5kg & 200--250g\\
+\hline
+Länge  & m: 71,4cm w: 67,8cm & 46cm\\
+\hline
+Geschwindigkeit $ = \sqrt{v\cdot v}$ & $55\frac{km}{h}$ & mind. superschnell \\
+\hline
+Farbe & rötlich & schwarz\\
+\hline
+\caption{Wild Animals}
+\label{tab:ani}
+\end{longtable}
+
+\subsection{Aufzählungen}
+Um bei den vielen Verschachtelungen nicht den Überblick zu verlieren, sind Einrückungen der items sinnvoll.
+\begin{enumerate}
+  \item 
+  \begin{enumerate}
+    \item Vorteile des Fuchses:
+    \item
+    \begin{itemize}
+      \item schlau
+      \item schaut cool aus
+    \end{itemize}
+    \item Nachteile des Fuchses:
+    \item
+    \begin{itemize}
+      \item Pelz wird verarbeitet
+      \item sehr viele Autos fahren gerne über Füchse
+    \end{itemize}
+    \item weit verbreitet aber gefährdet
+  \end{enumerate}
+  \item
+  \begin{enumerate}
+    \item Vorteile der Elster:
+    \item
+    \begin{itemize}
+      \item kann fliegen
+      \item muss nicht umziehen
+    \end{itemize}
+    \item Nachteile der Elster:
+    \item
+    \begin{itemize}
+      \item Diebischkeit wird bestraft
+      \item viele landen hinter Gittern
+    \end{itemize}
+      \item singt ganz gut, aber ist gefährlich
+  \end{enumerate}
+\end{enumerate}
+
+%\subsection{Tabbing}
+
+%Hier wurden viele Zeilen gekillt.\\
+
+%\begin{tabbing}
+
+%xxxxx xxxxx xxxxx xxxxx xxxxx \= xxxxx xxxxx xxxxx xxxxx xxxxx\kill
+%Spitze\>Süß waren\\
+%xxxxx xxxxx xxxxx xxxxx \= xxxxx xxxxx \= xxxxx xxxxx xxxxx xxxxx\kill
+%2.Reihe\>Milch \>Eier\\
+%xxxxx xxxxx xxxxx \= xxxxx xxxxx xxxxx xxxxx \= xxxxx xxxxx xxxxx\kill
+%3.Reihe\>Nüße \>Samen\\
+%xxxxx xxxxx \= xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx \= xxxxx xxxxx\kill
+%Vorletzte\>Obst \>Gemüse\\
+%xxxxx \= xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx \= xxxxx\kill
+%Boden\>Vollkornprodukte \>Hülsenfrüchte\\
+%\end{tabbing}
+
+\end{document}
