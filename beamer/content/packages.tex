@@ -284,9 +284,46 @@ unterstrichen
 \end{columns}
 \end{frame}
 
+%-------------------------------------------------
+
 \begin{frame}
 \frametitle{Formatierungen}
 \framesubtitle{Sonderzeichen}
+
+
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{ttfamily}\scriptsize\color{nounibaredII}\textbackslash documentclass\color{nounibagreenI}[a4paper, pdftex, 12pt, ngerman]\color{black}\{article\}\\[3mm] 
+$\color{nounibaredII}\backslash$\color{nounibaredII}usepackage\color{nounibagreenI}[utf8]\color{black}\{inputenc\}\\
+$\color{nounibaredII}\backslash$\color{nounibaredII}usepackage\color{nounibagreenI}[T1]\color{black}\{fontenc\}\\
+$\color{nounibaredII}\backslash$\color{nounibaredII}usepackage\color{black}\{babel\}\\
+$\color{unibablueI}\backslash$\color{unibablueI}begin\color{black}\{document\}\\[3mm]
+Dieser \color{gray}\%Kommentar wird nicht kompiliert.\\ \color{black}
+Dies ist zu 100 \color{nounibaredII}\textbackslash \% \color{black} kein Kommentar.
+\color{unibablueI}\textbackslash end\color{black}\{document\}
+\end{ttfamily}
+\end{column}
+\begin{column}{0.5\textwidth}
+Sonderzeichen:
+\begin{itemize}
+\item Sind meist auch Steuerzeichen, z.B. wird das \% - Zeichen für Kommentare verwendet
+\item Um sie trotzdem verwenden zu können, müssen sie mit dem '\color{nounibaredI}\textbackslash \color{black}' eingeführt bzw. escaped werden
+\end{itemize}
+\end{column}
+\end{columns}
+
+
+
+
+
+
+\end{frame}
+
+%-------------------------------------------------
+
+\begin{frame}
+\frametitle{Formatierungen}
+\framesubtitle{Sonderzeichen cont'd}
 \begin{columns}
 \begin{column}{0.5\textwidth}
 \begin{ttfamily}\scriptsize\color{nounibaredII}\textbackslash documentclass\color{nounibagreenI}[a4paper, pdftex, 12pt, ngerman]\color{black}\{article\}\\[3mm] 
@@ -330,8 +367,8 @@ benötigt.\\
 %Manchmal, z.B. in \"Uberschriften m\"ussen Umlaute des Pakets ngerman mit \grqq a \grqq o
 %\grqq u und das \ss ~mit \color{nounibaredI} \textbackslash ss \color{black}gebildet werden, ansonsten reicht es das Packet {\ttfamily babel} einzubinden.
 
-\medskip
-\footnotesize Sonderzeichen \textbf{müssen} mit dem '\color{nounibaredI}\textbackslash \color{black}' eingeführt werden.
-Manchmal muss das \ss ~mit \color{nounibaredI} \textbackslash ss \color{black}gebildet werden, ansonsten reicht es das Packet {\ttfamily babel} einzubinden.\\
-Da Sonderzeichen auch Steuerzeichen sind, müssen sie im normalen Text escaped werden. Das \% - Zeichen zum Beispiel wird genutzt, um Kommentare anzuzeigen.
+\bigskip
+\footnotesize Manchmal muss das \ss ~mit \color{nounibaredI} \textbackslash ss \color{black}gebildet werden, ansonsten reicht es das Packet {\ttfamily babel} einzubinden.
+Ein Leerzeichen danach wird durch ein \color{nounibaredI} $\sim$ \color{black} (Tilde) erzwungen.
+
 \end{frame}
