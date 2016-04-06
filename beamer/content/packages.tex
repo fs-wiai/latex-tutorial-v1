@@ -8,16 +8,16 @@ Sonderzeichen}
 \begin{block}{Neue Befehle in diesem Abschnitt}
 \begin{multicols}{2}
 \begin{itemize}
-  \item \begin{ttfamily}\color{nounibaredII}\textbackslash usepackage\color{black}\{Paket\}
-  \item \color{nounibaredII}\textbackslash befehl\color{nounibagreenI}[evtl\_optionen]\color{black}\{\\Formatierter\_Text\}
+  \item \begin{ttfamily}\color{nounibaredI}\textbackslash usepackage\color{black}\{Paket\}
+  \item \color{nounibaredI}\textbackslash befehl\color{nounibagreenI}[evtl\_optionen]\color{black}\{\\Formatierter\_Text\}
   \item \color{unibablueI}\textbackslash begin\color{black}\{Umgebung\}
   \item \color{unibablueI}\textbackslash end\color{black}\{Umgebung\}
-  \item \color{nounibaredII}$\backslash\backslash$\color{black}
+  \item \color{nounibaredI}$\backslash\backslash$\color{black}
   \item \color{nounibaredI}\textbackslash newpage\color{black}
   \item \color{unibablueI}\textbackslash sub$^*$section\color{black}\{Titel\}
-  \item $\color{nounibaredII}\backslash$\color{nounibaredII}textbf\color{black}\{Text\}
-  \item $\color{nounibaredII}\backslash$\color{nounibaredII}textit\color{black}\{Text\}
-  \item $\color{nounibaredII}\backslash$\color{nounibaredII}underline\color{black}\{Text\}
+  \item $\color{nounibaredII}\backslash$\color{nounibaredI}textbf\color{black}\{Text\}
+  \item $\color{nounibaredII}\backslash$\color{nounibaredI}textit\color{black}\{Text\}
+  \item $\color{nounibaredII}\backslash$\color{nounibaredI}underline\color{black}\{Text\}
   \item \color{nounibaredI}$\color{nounibaredI}\backslash$tiny
   \item \color{nounibaredI}$\color{nounibaredI}\backslash$scriptsize
   \item \color{nounibaredI}$\color{nounibaredI}\backslash$footnotesize
@@ -62,7 +62,7 @@ Sonderzeichen}
 
 \begin{frame}
 \frametitle{Ein erstes Anwendungsbeispiel}
-\framesubtitle{Befehle cont't}
+\framesubtitle{Befehle cont'd}
 \begin{columns}
 \begin{column}{0.6\textwidth}
 \begin{ttfamily}\scriptsize
@@ -83,7 +83,7 @@ Standardtextes.\\
 
 \begin{frame}
 \frametitle{Ein erstes Anwendungsbeispiel}
-\framesubtitle{Befehle cont't}
+\framesubtitle{Befehle cont'd}
 \begin{columns}
 \begin{column}{0.6\textwidth}
 \begin{ttfamily}\scriptsize
@@ -236,7 +236,7 @@ Gliederungsbefehl \begin{ttfamily}\color{unibablueI}\textbackslash chapter\color
 
 \begin{frame}
 \frametitle{Formatierungen}
-\framesubtitle{FettKursivUnterstrichen}
+\framesubtitle{Fett Kursiv Unterstrichen}
 \begin{columns}
 \begin{column}{0.45\textwidth}
 \begin{ttfamily}\scriptsize
@@ -286,16 +286,15 @@ unterstrichen
 
 \begin{frame}
 \frametitle{Formatierungen}
-\framesubtitle{FettKursivunterstrichen}
+\framesubtitle{Sonderzeichen}
 \begin{columns}
 \begin{column}{0.5\textwidth}
 \begin{ttfamily}\scriptsize\color{nounibaredII}\textbackslash documentclass\color{nounibagreenI}[a4paper, pdftex, 12pt, ngerman]\color{black}\{article\}\\[3mm] 
 $\color{nounibaredII}\backslash$\color{nounibaredII}usepackage\color{nounibagreenI}[utf8]\color{black}\{inputenc\}\\
 $\color{nounibaredII}\backslash$\color{nounibaredII}usepackage\color{nounibagreenI}[T1]\color{black}\{fontenc\}\\
-$\color{nounibaredII}\backslash$\color{nounibaredII}usepackage\color{nounibagreenI}[iso]\color{black}\{umlaute\}\\
 $\color{nounibaredII}\backslash$\color{nounibaredII}usepackage\color{black}\{babel\}\\
-\color{gray}\% NEU NEU NEU\\
 $\color{nounibaredII}\backslash$\color{nounibaredII}usepackage\color{black}\{eurosym\}\\
+\color{gray}\% Kommentar (nicht angezeigt)\\
 $\color{unibablueI}\backslash$\color{unibablueI}begin\color{black}\{document\}\\
 $\color{nounibaredII}\backslash$\color{nounibaredII}textit\color{black}\{Einige
 Sonderzeichen:\}\\
@@ -326,8 +325,13 @@ benötigt.\\
 
 \end{column}
 \end{columns}
+%\medskip
+%\footnotesize Sonderzeichen \textbf{müssen} mit dem '\color{nounibaredI}\textbackslash \color{black}' eingeführt werden.
+%Manchmal, z.B. in \"Uberschriften m\"ussen Umlaute des Pakets ngerman mit \grqq a \grqq o
+%\grqq u und das \ss ~mit \color{nounibaredI} \textbackslash ss \color{black}gebildet werden, ansonsten reicht es das Packet {\ttfamily babel} einzubinden.
+
 \medskip
-\footnotesize Sonderzeichen müssen mit dem '\color{nounibaredI}\textbackslash \color{black}' eingeführt werden.
-Manchmal, z.B. in \"Uberschriften m\"ussen Umlaute des Pakets ngerman mit \grqq a \grqq o
-\grqq u und das \ss ~mit \color{nounibaredI} \textbackslash ss \color{black}gebildet werden, ansonsten reicht es das Packet {\ttfamily babel} einzubinden.
+\footnotesize Sonderzeichen \textbf{müssen} mit dem '\color{nounibaredI}\textbackslash \color{black}' eingeführt werden.
+Manchmal muss das \ss ~mit \color{nounibaredI} \textbackslash ss \color{black}gebildet werden, ansonsten reicht es das Packet {\ttfamily babel} einzubinden.\\
+Da Sonderzeichen auch Steuerzeichen sind, müssen sie im normalen Text escaped werden. Das \% - Zeichen zum Beispiel wird genutzt, um Kommentare anzuzeigen.
 \end{frame}
