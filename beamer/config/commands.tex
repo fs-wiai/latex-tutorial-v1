@@ -1,4 +1,4 @@
-\usepackage{doc}
+%\usepackage{doc} %for \BibTex but causes lots of errors...
 \usepackage{eurosym}
 \usepackage{etex}
 \usepackage{ulem}
@@ -57,7 +57,7 @@
 \urlstyle{leo}
 
 %% Sprache
-\ifthenelse{\equal{\lang}{ngerman}}{\usepackage[german,ngerman]{babel}}{\usepackage[\lang]{babel}}
+\ifthenelse{\equal{\lang}{ngerman}}{\usepackage[ngerman]{babel}}{\usepackage[\lang]{babel}}
 %\mode<presentation>{
 %% XXX without this the number does not appear
 %\AtBeginDocument{\def\figurename{{\scshape Fig.~\thefigure}}}
@@ -80,7 +80,7 @@
 
 %%%   Fuer anspruchsvolle Tabellen   %%
 \usepackage{longtable, colortbl}
-%\usepackage{multicol, multirow}
+\usepackage{multicol, multirow}
 %
 %%%  Für Grafiken %%
 \usepackage{graphicx}

@@ -40,37 +40,61 @@
 \framesubtitle{\ldots ~in \LaTeX ~eine wahre Schönheit!}
 
 \begin{columns}
-\begin{column}{.3\textwidth}
-{\huge $2 \sqrt{\frac{\pi ^2}{3}\cdot c_{2}}$}
-\end{column}
-
-\begin{column}{.7\textwidth}
-$\underbrace{\color{unibayellowI}\text{\$}%
-\color{black}2%
-\color{nounibaredI}\backslash \text{sqrt}%
-\color{black}\{%
-\color{nounibaredI}\backslash \text{frac}%
-\color{black}\{%
-\color{nounibaredI}\backslash \text{pi}\color{nounibaredI}\^~{}\color{black}2\}\{3\color{black}\}%
-\color{nounibaredI}\backslash%
-\color{nounibaredI}\text{cdot}~%
-\color{black} c%\color{nounibaredI}\_%
-\color{black}2\}%
-\color{unibayellowI}\$%
-}$\color{black}
-
-Die Formel-Umgebung wird durch \color{unibayellowI}\$ \color{black} angefangen und beendet.
-
-\medskip
-$\color{unibayellowI}\$\color{black}2\color{nounibaredI}$\color{nounibaredI}\backslash$sqrt\color{black}\underbrace{\{\color{nounibaredI}$\color{nounibaredI}\backslash$frac\color{black}\{\color{nounibaredI}$\color{nounibaredI}\backslash$pi\color{nounibaredI}\^ {}\color{black}2\}\{3\color{black}\}\color{nounibaredI}$\color{nounibaredI}\backslash$cdot~\color{black} c\color{nounibaredI}\_\color{black}2\}$}\color{unibayellowI}\$\color{black} 
-
-So weit reicht die Wurzel.
-
-\bigskip
-$\color{unibayellowI}\$\color{black}2\color{nounibaredI}$\color{nounibaredI}\backslash$sqrt\color{black}\{\color{nounibaredI}$\color{nounibaredI}\backslash$frac\color{black}\underbrace{\{\color{nounibaredI}$\color{nounibaredI}\backslash$pi\color{nounibaredI}\^ {}\color{black}2\}\{3\color{black}\}\color{nounibaredI}$}\color{nounibaredI}\backslash$\color{nounibaredI}cdot~\color{black} c\color{nounibaredI}\_\color{black}2\}$\color{unibayellowI}\$\color{black} 
-
-Ein Bruch hat immer Z"ahler und Nenner.
-\end{column}
+	\begin{column}{.3\textwidth}
+		{\huge $2 \sqrt{\frac{\pi ^2}{3}\cdot c_{2}}$}
+	\end{column}
+	
+	\begin{column}{.7\textwidth}
+		$\underbrace{
+			\color{unibayellowI}\text{\$}
+			\color{black}2
+			\color{nounibaredI}\backslash \text{sqrt}
+			\color{black}\{
+			\color{nounibaredI}\backslash \text{frac}
+			\color{black}\{
+			\color{nounibaredI}\backslash \text{pi}\color{nounibaredI}
+			~\hat{}~\color{black}2\}\{3\color{black}\}
+			\color{nounibaredI}\backslash
+			\color{nounibaredI}\text{cdot}~
+			\color{black} c
+			\color{nounibaredI}\_
+			\color{black}2\}
+			\color{unibayellowI}\text{\$}
+		}$
+		\color{black}
+		
+		Die Formel-Umgebung wird durch \color{unibayellowI}\$ \color{black} angefangen und beendet.
+		
+		\medskip
+		
+		$\underbrace{
+			\color{nounibaredI}\backslash \text{sqrt}
+			\color{black}\{
+			\color{nounibaredI}\backslash \text{frac}
+			\color{black}\{
+			\color{nounibaredI}\backslash \text{pi}\color{nounibaredI}
+			~\hat{}~\color{black}2\}\{3\color{black}\}
+			\color{nounibaredI}\backslash
+			\color{nounibaredI}\text{cdot}~
+			\color{black} c
+			\color{nounibaredI}\_
+			\color{black}2\}
+		}$
+		\color{black}
+		
+		Die Wurzel.
+		
+		\medskip
+		
+		$\underbrace{
+			\color{nounibaredI}\backslash \text{frac}
+			\color{black}\{
+			\color{nounibaredI}\backslash \text{pi}\color{nounibaredI}
+			~\hat{}~\color{black}2\}\{3\color{black}\}
+		}$
+		
+		Ein Bruch hat immer Z"ahler und Nenner.
+	\end{column}
 \end{columns}
 \end{frame}
 
@@ -96,7 +120,9 @@ $\sum_{i=1}^n$
 \end{column}
 \begin{column}{.6\textwidth}
 \flushleft
-{\ttfamily $\color{unibayellowI}\$$\color{nounibaredI}\backslash$\color{nounibaredI}sum\_\color{black}\{i=1\}\color{nounibaredI}\^{}\color{black}n\color{unibayellowI}\$}
+{\ttfamily \color{unibayellowI}\$\color{nounibaredI}\textbackslash
+\color{nounibaredI}sum\_\color{black}\{i=1\}\color{nounibaredI}\textasciicircum
+\color{black}n\color{unibayellowI}\$}
 \end{column}
 \end{columns}
 
@@ -107,7 +133,9 @@ $\lim_{n \rightarrow \infty}$
 \end{column}
 \begin{column}{.6\textwidth}
 \flushleft
-{\ttfamily $\color{unibayellowI}\$$\color{nounibaredI}\backslash$\color{nounibaredI}lim\_\color{black}\{n $\color{nounibaredI}\backslash$\color{nounibaredI}rightarrow $\color{nounibaredI}\backslash$infty\color{black}\}\color{unibayellowI}\$}
+{\ttfamily \color{unibayellowI}\$\color{nounibaredI}\textbackslash
+\color{nounibaredI}lim\_\color{black}\{n \color{nounibaredI}\textbackslash
+\color{nounibaredI}rightarrow \color{nounibaredI}\textbackslash infty\color{black}\}\color{unibayellowI}\$}
 \end{column}
 \end{columns}
 
@@ -118,7 +146,7 @@ $\prod\limits_{i=1}^{n+1}i = 1 \cdot 2 \cdot \ldots \cdot n \cdot (n+1)$
 \end{column}
 \begin{column}{.6\textwidth}
 \flushleft
-{\ttfamily $\color{unibayellowI}\$$\color{nounibaredI}\backslash$\color{nounibaredI}prod\textbackslash limits\_\color{black}\{i=1\}\color{nounibaredI}\^{}\color{black}\{n+1\}i = 1 \color{nounibaredI}\backslash$\color{nounibaredI}cdot \color{black}2 \color{nounibaredI}\backslash$\color{nounibaredI}cdot \color{nounibaredI}\backslash$\color{nounibaredI}ldots \color{nounibaredI}\backslash$\color{nounibaredI}cdot \color{black}n \color{nounibaredI}\backslash$\color{nounibaredI}cdot \color{black}(n+1)\color{unibayellowI}\$}
+{\ttfamily \color{unibayellowI}\$	\color{nounibaredI}\textbackslash\color{nounibaredI}prod\textbackslash  limits\_\color{black}\{i=1\}\color{nounibaredI}\^{}\color{black}\{n+1\}i = 1 \color{nounibaredI}\textbackslash \color{nounibaredI}cdot \color{black}2 \color{nounibaredI}\textbackslash \color{nounibaredI}cdot \color{nounibaredI}\textbackslash \color{nounibaredI}ldots \color{nounibaredI}\textbackslash\color{nounibaredI}cdot \color{black}n \color{nounibaredI}\textbackslash \color{nounibaredI}cdot \color{black}(n+1)\color{unibayellowI}\$}
 \end{column}
 \end{columns}
 \bigskip
