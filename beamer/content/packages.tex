@@ -317,16 +317,16 @@ Nur {\ttfamily book} und {\ttfamily report}
 \frametitle{Formatierungen}
 \framesubtitle{Fett Kursiv Unterstrichen}
 \begin{columns}
-\begin{column}{0.45\textwidth}
-\begin{ttfamily}\scriptsize
+\begin{column}{0.5\textwidth}
+\begin{ttfamily}\footnotesize
 \input{content/listings/formats_escaped.tex}
 \end{ttfamily}
 \end{column}
-\begin{column}{0.55\textwidth}
-Unter anderem folgende M"oglichkeiten:\\[3mm]
-\textbf{fetter}\\
-\textit{kursiver}\\
-\underline{unterstrichener}\\
+\begin{column}{0.5\textwidth}
+Auswahl von Möglichkeiten:\\[3mm]
+\textbf{fett}\\
+\textit{kursiv}\\
+\underline{unterstrichen}\\
 \underline{\textbf{unterstrichen und fett}}
 %\input{formats_pdf.tex}
 \begin{block}{Textformatierungen}
@@ -348,7 +348,7 @@ unterstrichen
 \framesubtitle{Schriftgr"o\ss e}
 \begin{columns}
 \begin{column}{0.5\textwidth}
-\begin{ttfamily}\scriptsize
+\begin{ttfamily}\footnotesize
 \input{content/listings/textsize_escaped.tex}
 \end{ttfamily}
 \end{column}
@@ -356,14 +356,23 @@ unterstrichen
 \rm \tiny ~unlesbarer Text \\
 \scriptsize ~sehr kleiner Text \\
 \footnotesize ~Fu\ss notengr\"o\ss e\\
+%\small ~klein\\
 \normalsize ~Standardgr\"o\ss e \\
 \large ~gr\"o\ss er \\
 \Large ~noch gr\"o\ss er \\
 \LARGE ~sehr Gro\ss \\
 \huge  ~riesig \\
+%\Huge  ~extra riesig \\
 \end{column}
 \end{columns}
+\begin{block}{Hinweis}
+Nach Größenänderung muss mit \begin{ttfamily}$\color{nounibaredII}\backslash$\color{nounibaredII}normalsize\color{black}\end{ttfamily} wieder zurück gewechselt werden!\\
+Alternative: \{\begin{ttfamily}$\color{nounibaredII}\backslash$\color{nounibaredII}large\color{black}\end{ttfamily} Größenänderung auf Klammer-Inhalt begrenzen\}
+\end{block}
+\vspace{-8mm}
 \end{frame}
+
+%TODO evtl Hinweisbox auf weitere Folie schieben und größen (Inkl hier fehlender small und Huge) nochmal auflisten
 
 %-------------------------------------------------
 
