@@ -29,35 +29,40 @@
 
 \end{frame}
 
+%-----------------------------------------------------------------------------
+
 \begin{frame}
 \frametitle{Tabellen}
-\framesubtitle{``table'' \& \glqq tabular\grqq}
-\textbf{Aufbau:}\\[2mm]
-\color{unibablueI}\begin{ttfamily}\textbackslash begin\color{black}\{table\}\color{nounibagreenI}[Position]\color{black}\\
+\framesubtitle{Einfachste Tabelle "`tabular"':}
+%\textbf{Aufbau:}\\[2mm]
+%\color{unibablueI}\begin{ttfamily}\textbackslash begin\color{black}\{table\}\color{nounibagreenI}[Position]\color{black}\\
+%\color{unibablueI}\textbackslash begin\color{black}\{tabular\}\{\textit{Spaltendefinitionen}\}\\
+%\textit{Tabelleninhalt}\\
+%\color{unibablueI}\textbackslash end\color{black}\{tabular\}\\
+%\color{nounibaredI}\textbackslash caption\color{black}\{Untertitel\}\\
+%\color{nounibaredI}\textbackslash label\color{black}\{tab:bsptab1\}\\
+%\color{unibablueI}\textbackslash end\color{black}\{table\}\\
+%~\\
+%\end{ttfamily}
+\textbf{Aufbau:}\\
+\begin{ttfamily}
 \color{unibablueI}\textbackslash begin\color{black}\{tabular\}\{\textit{Spaltendefinitionen}\}\\
-\textit{Tabelleninhalt}\\
+~~\textit{Tabelleninhalt}\\
 \color{unibablueI}\textbackslash end\color{black}\{tabular\}\\
-\color{nounibaredI}\textbackslash caption\color{black}\{Untertitel\}\\
-\color{nounibaredI}\textbackslash label\color{black}\{tab:bsptab1\}\\
-\color{unibablueI}\textbackslash end\color{black}\{table\}\\
-~\\
 \end{ttfamily}
 
-\begin{block}{Reminder: Positionsangaben f\"ur die meisten \LaTeX -- Umgebungen}
-\color{nounibagreenI}[h]\color{black}~oder \color{nounibagreenI}[H]\color{black}~= hier an dieser Stelle\\
-\color{nounibagreenI}[t]\color{black}~= oben auf der Seite\\ 
-\color{nounibagreenI}[b]\color{black}~= unten auf der Seite\\ 
-\color{nounibagreenI}[p]\color{black}~= Platzierung auf der einer eigenen Seite
-\end{block}
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Tabellen}
-\framesubtitle{Spaltendefinitionen}
+%\begin{block}{Reminder: Positionsangaben f\"ur die meisten \LaTeX -- Umgebungen}
+%\color{nounibagreenI}[h]\color{black}~oder \color{nounibagreenI}[H]\color{black}~= hier an dieser Stelle\\
+%\color{nounibagreenI}[t]\color{black}~= oben auf der Seite\\ 
+%\color{nounibagreenI}[b]\color{black}~= unten auf der Seite\\ 
+%\color{nounibagreenI}[p]\color{black}~= Platzierung auf der einer eigenen Seite
+%\end{block}
+\medskip
+\textbf{Spaltendefinition:}\\
 Hier wird bestimmt wie die einzelnen Spalten ausgerichtet sein sollen
-und wie die senkrechten Tabellenlinien gesetzt werden sollen:\\[3mm]
-\begin{tabbing}[H]p{Spaltenbreite}xxx\=\kill
+und wie die senkrechten Tabellenlinien gesetzt werden sollen:\\
+\begin{tabbing}[H]p{Spaltenbreite}
+xxx\=\kill
 \textbf{Befehle:}\\
 l \>= linksbündige Spalte\\
 c \>= zentrierte Spalte\\
@@ -68,19 +73,24 @@ dieser Stelle\\
 \end{tabbing}
 \end{frame}
 
-\begin{frame}
-\frametitle{Tabellen}
-\framesubtitle{Ein Blick ins Innere}
-\begin{ttfamily}
-\input{content/listings/tabular_escaped.tex}
-\end{ttfamily}
-\end{frame}
+
+%-----------------------------------------------------------------------------
 
 \begin{frame}
 \frametitle{Tabellen}
-\framesubtitle{Tabelleninhalt}
-Hier werden die definierten Spalten mit Inhalt gefüllt.\\[3mm]
-\begin{tabbing}[H]p{Spaltenbreite}xxx\=\kill
+\framesubtitle{Einfachste Tabelle "`tabular"':}
+\textbf{Aufbau:}\\
+\begin{ttfamily}
+\color{unibablueI}\textbackslash begin\color{black}\{tabular\}\{\textit{Spaltendefinitionen}\}\\
+~~\textit{Tabelleninhalt}\\
+\color{unibablueI}\textbackslash end\color{black}\{tabular\}\\
+\end{ttfamily}
+\medskip
+\textbf{Tabelleninhalt:}\\
+Hier wird bestimmt wie die einzelnen Spalten ausgerichtet sein sollen
+und wie die senkrechten Tabellenlinien gesetzt werden sollen:\\
+\begin{tabbing}[H]p{Spaltenbreite}
+xxx\=\kill
 \textbf{Befehle:}\\
 \color{nounibaredI}\&\color{black} \>= dient zur horizontalen Trennung von Zellen\\
 \color{nounibaredI}\textbackslash \textbackslash \color{black} \>=  neue Zeile\\
@@ -89,6 +99,51 @@ Hier werden die definierten Spalten mit Inhalt gefüllt.\\[3mm]
 \>= Verbindet beliebig viele Spalten miteinander.\\
 \end{tabbing}
 \end{frame}
+
+%----------------------------------------------------------------------------
+
+
+%\begin{frame}
+%\frametitle{Tabellen}
+%\framesubtitle{Spaltendefinitionen}
+%Hier wird bestimmt wie die einzelnen Spalten ausgerichtet sein sollen
+%und wie die senkrechten Tabellenlinien gesetzt werden sollen:\\[3mm]
+%\begin{tabbing}[H]p{Spaltenbreite}xxx\=\kill
+%\textbf{Befehle:}\\
+%l \>= linksbündige Spalte\\
+%c \>= zentrierte Spalte\\
+%r \>= rechtsbündige Spalte\\
+%p\{Spaltenbreite\} \>= eine linksbündige Spalte mit bestimmter Spaltenbreite\\
+%\color{nounibaredI}$|$\color{black} \>= setzt eine senkrechte Tabellenlinie an
+%dieser Stelle\\
+%\end{tabbing}
+%\end{frame}
+
+%-----------------------------------------------------------------------------
+
+%\begin{frame}
+%\frametitle{Tabellen}
+%\framesubtitle{Ein Blick ins Innere}
+%\begin{ttfamily}
+%\input{content/listings/tabular_escaped.tex}
+%\end{ttfamily}
+%\end{frame}
+%
+%\begin{frame}
+%\frametitle{Tabellen}
+%\framesubtitle{Tabelleninhalt}
+%Hier werden die definierten Spalten mit Inhalt gefüllt.\\[3mm]
+%\begin{tabbing}[H]p{Spaltenbreite}xxx\=\kill
+%\textbf{Befehle:}\\
+%\color{nounibaredI}\&\color{black} \>= dient zur horizontalen Trennung von Zellen\\
+%\color{nounibaredI}\textbackslash \textbackslash \color{black} \>=  neue Zeile\\
+%\color{nounibaredI}\textbackslash hline\color{black} \>= setzt eine waagerechte Tabellenlinie\\[2mm]
+%\color{nounibaredI}\textbackslash multicolumn\color{black}\{Spaltenzahl\}\{Spaltenausrichtung\}\{Text\}\\[2mm]
+%\>= Verbindet beliebig viele Spalten miteinander.\\
+%\end{tabbing}
+%\end{frame}
+
+%-----------------------------------------------------------------------------
 
 \begin{frame}[t]
 
@@ -116,6 +171,72 @@ Nummer & Ort & Spieler 1 & Spieler 2 & Ergebnis \\
 \end{tabular}
 \end{frame}
 
+%-----------------------------------------------------------------------------
+
+
+\begin{frame}[t]
+
+\frametitle{Tabellen}
+\framesubtitle{Weiteres Beispiel}
+
+\begin{block}{Hinweis}
+Zeilenumbrüche in Zellen von \color{nounibaredI}\textbackslash p\color{black}\{\} Spalten können mit \color{nounibaredI}\textbackslash newline\color{black}~ erzielt werden. Es bricht dort aber auch automatisch um.
+\end{block}
+
+\medskip
+
+\begin{footnotesize}
+\begin{ttfamily}
+\input{content/listings/table_escaped.tex}
+\end{ttfamily}
+\end{footnotesize}
+
+\medskip
+
+\begin{tabular}{|c|p{20mm}|c|c|}
+\hline
+1 & Long \newline Text & Michael & Träger \\
+\hline
+2 & Very Long Text & Valentin & Barth \\
+\hline
+\end{tabular}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------
+
+
+
+\begin{frame}
+\frametitle{Tabellen}
+\framesubtitle{Beschriften und Positionieren}
+%\textbf{Aufbau:}\\[2mm]
+Zum Beschriften müssen "`tabulars"' in einer "`table"'-Umgebung liegen (Wie bei Grafiken)\\ 
+
+\medskip
+
+\color{unibablueI}\begin{ttfamily}\textbackslash begin\color{black}\{table\}\color{nounibagreenI}[Position]\color{black}\\
+~~\color{unibablueI}\textbackslash begin\color{black}\{tabular\}\{\textit{Spaltendefinitionen}\}\\
+~~~~\textit{Tabelleninhalt}\\
+~~\color{unibablueI}\textbackslash end\color{black}\{tabular\}\\
+~~\color{nounibaredI}\textbackslash caption\color{black}\{Untertitel\}\\
+~~\color{nounibaredI}\textbackslash label\color{black}\{tab:bsptab1\}\\
+\color{unibablueI}\textbackslash end\color{black}\{table\}\\
+\end{ttfamily}
+
+\medskip
+
+\begin{block}{Reminder: Positionsangaben f\"ur die meisten \LaTeX -- Umgebungen}
+\color{nounibagreenI}[h]\color{black}~oder \color{nounibagreenI}[H]\color{black}~= hier an dieser Stelle\\
+\color{nounibagreenI}[t]\color{black}~= oben auf der Seite\\ 
+\color{nounibagreenI}[b]\color{black}~= unten auf der Seite\\ 
+\color{nounibagreenI}[p]\color{black}~= Platzierung auf der einer eigenen Seite
+\end{block}
+\end{frame}
+
+%-----------------------------------------------------------------------------
+
+
 \begin{frame}{Tabellen}
 \framesubtitle{Longtable -- Tabelle mit Seitenumbruch}
 \bigskip
@@ -133,6 +254,7 @@ F"ur Tabellen, die länger als eine Seite sind, wird eine Tabelle benötigt die 
 \end{ttfamily}
 \end{frame}
 
+%-----------------------------------------------------------------------------
 
 \begin{frame}
 \frametitle{Einrückungen durch „tabbing“}
