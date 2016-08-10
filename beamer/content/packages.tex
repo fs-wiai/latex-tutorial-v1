@@ -383,7 +383,7 @@ Alternative: \{\begin{ttfamily}$\color{nounibaredII}\backslash$\color{nounibared
 
 \begin{columns}
 \begin{column}{0.5\textwidth}
-\begin{ttfamily}\scriptsize\color{nounibaredII}\textbackslash documentclass\color{nounibagreenI}[a4paper, pdftex, 12pt, ngerman]\color{black}\{article\}\\[3mm] 
+\begin{ttfamily}\footnotesize\color{nounibaredII}\textbackslash documentclass\color{nounibagreenI}[a4paper, pdftex, 12pt, ngerman]\color{black}\{article\}\\[3mm] 
 $\color{nounibaredII}\backslash$\color{nounibaredII}usepackage\color{nounibagreenI}[utf8]\color{black}\{inputenc\}\\
 $\color{nounibaredII}\backslash$\color{nounibaredII}usepackage\color{nounibagreenI}[T1]\color{black}\{fontenc\}\\
 $\color{nounibaredII}\backslash$\color{nounibaredII}usepackage\color{black}\{babel\}\\
@@ -397,12 +397,12 @@ Dies ist zu 100 \color{nounibaredII}\textbackslash \% \color{black} kein Komment
 Sonderzeichen:
 \begin{itemize}
 \item Sind meist auch Steuerzeichen, z.B. wird das \% - Zeichen für Kommentare verwendet
-\item Um sie trotzdem verwenden zu können, müssen sie mit dem '\color{nounibaredI}\textbackslash \color{black}' eingeführt bzw. escaped werden
+\item Um sie trotzdem verwenden zu können, müssen sie mit dem '\color{nounibaredI}\textbackslash \color{black}' (Backslash) eingeführt bzw. escaped werden
 \end{itemize}
 \end{column}
 \end{columns}
 
-
+%TODO evtl kleines Bild mit Ergebnis
 
 
 
@@ -416,13 +416,13 @@ Sonderzeichen:
 \framesubtitle{Sonderzeichen cont'd}
 \begin{columns}
 \begin{column}{0.5\textwidth}
-\begin{ttfamily}\scriptsize\color{nounibaredII}\textbackslash documentclass\color{nounibagreenI}[a4paper, pdftex, 12pt, ngerman]\color{black}\{article\}\\[3mm] 
+\begin{ttfamily}\scriptsize\color{nounibaredII}\textbackslash documentclass\color{nounibagreenI}[a4paper, pdftex, 12pt, ngerman]\color{black}\{article\}\\ %[3mm] 
 $\color{nounibaredII}\backslash$\color{nounibaredII}usepackage\color{nounibagreenI}[utf8]\color{black}\{inputenc\}\\
 $\color{nounibaredII}\backslash$\color{nounibaredII}usepackage\color{nounibagreenI}[T1]\color{black}\{fontenc\}\\
-$\color{nounibaredII}\backslash$\color{nounibaredII}usepackage\color{black}\{babel\}\\
+$\color{nounibaredII}\backslash$\color{nounibaredII}usepackage\color{black}\{babel\}\\[2mm]
 $\color{nounibaredII}\backslash$\color{nounibaredII}usepackage\color{black}\{eurosym\}\\
-\color{gray}\% Kommentar (nicht angezeigt)\\
 $\color{unibablueI}\backslash$\color{unibablueI}begin\color{black}\{document\}\\
+\color{gray}\% Kommentar (nicht angezeigt)\\
 $\color{nounibaredII}\backslash$\color{nounibaredII}textit\color{black}\{Einige
 Sonderzeichen:\}\\
 \color{nounibaredII}\textbackslash \% \textbackslash \$ \textbackslash \& \textbackslash \{ \textbackslash \}
@@ -445,7 +445,7 @@ $\color{nounibaredII}\backslash$\color{nounibaredII}textit\color{black}\{Anf"uhr
 \textit{Binde-\slash Gedanken-\slash Trennstriche:} \\
 - -- --- $-$ (letzteres mathematisches Minus) \\
 
-\textit{Anführungszeichen aus (n)german:} \\
+\textit{Anführungszeichen aus ngerman:} \\
 \glqq \grqq \flqq \frqq\\[5mm]
 Für das \euro -Zeichen wird das Package \begin{ttfamily}eurosym\end{ttfamily}
 benötigt.\\
@@ -457,8 +457,11 @@ benötigt.\\
 %Manchmal, z.B. in \"Uberschriften m\"ussen Umlaute des Pakets ngerman mit \grqq a \grqq o
 %\grqq u und das \ss ~mit \color{nounibaredI} \textbackslash ss \color{black}gebildet werden, ansonsten reicht es das Packet {\ttfamily babel} einzubinden.
 
-\bigskip
-\footnotesize Manchmal muss das \ss ~mit \color{nounibaredI} \textbackslash ss \color{black}gebildet werden, ansonsten reicht es das Packet {\ttfamily babel} einzubinden.
-Ein Leerzeichen danach wird durch ein \color{nounibaredI} $\sim$ \color{black} (Tilde) erzwungen.
+%\bigskip 
+\begin{block}{Hinweis}
+\footnotesize Manchmal muss das \ss ~mit \color{nounibaredI} \textbackslash ss \color{black}gebildet werden, ansonsten reicht es das Packet {\ttfamily babel} einzubinden.\\
+Ein Leerzeichen (z.B. nach Sonderzeichen) wird durch ein \color{nounibaredI} $\sim$ \color{black} (Tilde) erzwungen.
+\end{block}
+\vspace{-8mm}
 
 \end{frame}
