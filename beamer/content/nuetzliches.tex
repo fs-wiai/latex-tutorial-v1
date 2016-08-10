@@ -1,0 +1,60 @@
+
+
+\subsection*{Nützliches} 
+
+%TODO update, wieder einbinden?
+%\begin{frame}
+%\frametitle{Nützliches}
+%\framesubtitle{Tools }
+%\begin{itemize}
+%\item Zotero\footnote{https://www.zotero.org/}\\
+%Browser Plugin zum sammeln und verwalten von Literatur.
+%\item Mendeley\footnote{https://www.mendeley.com/}\\
+%Crossplattform Literatur Manager. Funktioniert sehr gut in Verbindung mit Zotero.
+%\item Detexify\footnote{http://detexify.kirelabs.org/classify.html}\\
+%Latex Symbolsuche. Man zeichnet hier einfach das gesuchte Symbol ein und bekommt entsprechende Latex Symbole und Pakete dazu angezeigt.\\
+%\end{itemize}
+%\end{frame}
+
+%----------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Nützliches}
+\framesubtitle{Eigene Befehle}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\textbf{Definition:}\\
+\end{column}
+\begin{column}{0.5\textwidth}
+\textbf{Benutzung:}\\
+\end{column}
+\end{columns}
+\bigskip
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{ttfamily}{\normalsize
+\color{nounibaredI}\textbackslash newcommand\color{black}\{\textbackslash vektor\}[2]\{\\
+\color{unibablueI}\textbackslash begin\color{black}\{pmatrix\}\\
+\color{unibayellowI}\# 1 \color{nounibaredI}\textbackslash \textbackslash\\
+\color{unibayellowI} \# 2\\
+\color{unibablueI}\textbackslash end\color{black}\{pmatrix\}\\
+\}\\
+}
+\end{ttfamily}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{ttfamily}{\normalsize
+\color{unibayellowI}\$ \color{nounibaredI}\textbackslash vektor\color{black}\{3\}\{-2\} \color{unibayellowI}\$ \\}
+\end{ttfamily}
+\medskip
+$
+\begin{pmatrix}
+3 \\ -2
+\end{pmatrix}
+$
+\end{column}
+\end{columns}
+\bigskip
+Weitere Infos zu vielen Latex Paketen findet ihr im Latex-Wiki\footnote{http://en.wikibooks.org/wiki/LaTeX}.\\
+\end{frame}
+
