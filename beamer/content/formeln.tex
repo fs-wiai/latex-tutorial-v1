@@ -28,6 +28,7 @@
 \item \color{nounibaredI}\textbackslash cdot\color{black}
 \item \color{nounibaredI}\_\color{black}
 \item \color{nounibaredI}\^~\color{black}
+\item und viele mehr ...
 \end{itemize}
 \end{multicols}
 \end{block}
@@ -37,7 +38,7 @@
 %-------------------------------------------------------------------------------
 \begin{frame}
 \frametitle{Formeln}
-\framesubtitle{\ldots ~in \LaTeX ~eine wahre Schönheit!}
+\framesubtitle{Zerlegung eines Ausdrucks in seine Bestandteile}
 
 \begin{columns}
 	\begin{column}{.3\textwidth}
@@ -96,7 +97,18 @@
 		Ein Bruch hat immer Z"ahler und Nenner.
 	\end{column}
 \end{columns}
+
+%\bigskip
+%
+%\begin{block}{Tipp}
+%Um Ausdrücke in einer eigenen Zeile hervorzuheben, kann man auch {\ttfamily\color{unibayellowI}\$\$\color{nounibaredI} \ldots \color{unibayellowI}\$\$} schreiben. 
+%$$ Wie \sqrt[z.B.]{hier} $$
+%zwischen dem Text.
+%\end{block}
+%\vspace{-8mm}
+
 \end{frame}
+
 
 %-------------------------------------------------------------------------------
 
@@ -152,3 +164,282 @@ $\prod\limits_{i=1}^{n+1}i = 1 \cdot 2 \cdot \ldots \cdot n \cdot (n+1)$
 \bigskip
 Die  American Mathematical Society hat einen wundersch"onen Guide f"ur das {\ttfamily amsmath}-Package.\footnote{ftp://ftp.ams.org/pub/tex/doc/amsmath/amsldoc.pdf}
 \end{frame}
+
+%-------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Formeln}
+\framesubtitle{Hervorheben eines Ausdrucks}
+
+
+
+Um Ausdrücke in einer eigenen Zeile abzusetzen, kann man sie auch in {\ttfamily\color{unibayellowI}\$\$\color{nounibaredI} \ldots \color{unibayellowI}\$\$} schreiben. 
+Ein Beispiel ist folgender Ausdruck:
+$$ \sum\limits_{i=1}^{n+1} (n \cdot 2) - 5 $$
+Nach ihm geht der weitere Text einfach weiter.
+
+\bigskip
+
+Code:\\
+{\ttfamily \color{unibayellowI}\$\$	\color{nounibaredI}\textbackslash\color{nounibaredI}sum\textbackslash  limits\_\color{black}\{i=1\}\color{nounibaredI}\^{}\color{black}\{n+1\} (n \color{nounibaredI}\textbackslash \color{nounibaredI}cdot \color{black}2) - 5 \color{unibayellowI}\$\$}
+
+\end{frame}
+
+
+
+%-------------------------------------------------------------------------------
+
+
+
+\begin{frame}
+\frametitle{Formeln}
+\framesubtitle{Ausgewählte nützliche Ausdrücke}
+\begin{columns}
+\begin{column}{.4\textwidth}
+Mengensymbole:\\
+$ |A \cup B| = |A|+|B| - |A \cap B| $
+\end{column}
+\begin{column}{.6\textwidth}
+{\ttfamily \color{unibayellowI} \$\color{black} |A \color{nounibaredI}\textbackslash cup \color{black} B| = |A|+|B| - |A \color{nounibaredI}\textbackslash cap \color{black} B|\color{unibayellowI}\$ }
+\end{column}
+\end{columns}
+\bigskip
+\begin{columns}
+\begin{column}{.4\textwidth}
+Logische Verknüpfungen:\\
+$ \land, \lor, \oplus, \lnot $
+\end{column}
+\begin{column}{.6\textwidth}
+{\ttfamily \color{unibayellowI} \$ \color{nounibaredI}\textbackslash land\color{black}, \color{nounibaredI}\textbackslash lor\color{black}, \color{nounibaredI}\textbackslash oplus, \color{nounibaredI}\textbackslash lnot \color{unibayellowI} \$ }
+\end{column}
+\end{columns}
+\bigskip
+\begin{columns}
+\begin{column}{.4\textwidth}
+Multiplikation/ Kreuzprodukt:\\
+$ \cdot, \times $
+\end{column}
+\begin{column}{.6\textwidth}
+{\ttfamily \color{unibayellowI} \$ \color{nounibaredI}\textbackslash cdot\color{black}, \color{nounibaredI}\textbackslash times \color{unibayellowI} \$ }
+\end{column}
+\end{columns}
+
+\bigskip
+\begin{columns}
+\begin{column}{.4\textwidth}
+Vergleiche:\\
+$ <, \leq, =, \neq, \geq, > $
+\end{column}
+\begin{column}{.6\textwidth}
+{\ttfamily \color{unibayellowI} \$ \color{black} < \color{nounibaredI}\textbackslash leq\color{black}, =,  \color{nounibaredI}\textbackslash neq\color{black}, \color{nounibaredI}\textbackslash geq\color{black}, > \color{unibayellowI} \$ }
+\end{column}
+\end{columns}
+
+%\bigskip
+%\begin{columns}
+%\begin{column}{.4\textwidth}
+%Relation beschriften:\\
+%$ x + y \stackrel{Kommutativgesetz}= y + x $
+%\end{column}
+%\begin{column}{.6\textwidth}
+%{\ttfamily \color{unibayellowI} \$ \color{black} x + y \color{nounibaredI}\textbackslash stackrel\color{black}\{Kommutativgesetz\}= y + x \color{unibayellowI} \$ }
+%\end{column}
+%\end{columns}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Formeln}
+\framesubtitle{Ausgewählte nützliche Ausdrücke}
+\begin{columns}
+\begin{column}{.4\textwidth}
+Klammern:\\
+$ (x), [x], \lbrace x \rbrace, \lvert x \rvert $
+\end{column}
+\begin{column}{.6\textwidth}
+{\ttfamily \color{unibayellowI} \$ \color{black} (x), [x], \color{nounibaredI}\textbackslash lbrace \color{black} x \color{nounibaredI}\textbackslash rbrace, \color{nounibaredI}\textbackslash lvert \color{black} x \color{nounibaredI}\textbackslash rvert \color{unibayellowI} \$ }
+\end{column}
+\end{columns}
+
+\bigskip
+
+\begin{columns}
+\begin{column}{.4\textwidth}
+Diverse Symbole:\\
+$ \exists, \forall, \in, \notin, \infty $
+\end{column}
+\begin{column}{.6\textwidth}
+{\ttfamily \color{unibayellowI} \$ \color{nounibaredI}\textbackslash exists\color{black}, \color{nounibaredI}\textbackslash forall\color{black}, \color{nounibaredI}\textbackslash in\color{black}, \color{nounibaredI}\textbackslash notin\color{black}, \color{nounibaredI}\textbackslash infty \color{unibayellowI} \$ }
+\end{column}
+\end{columns}
+
+\bigskip
+
+\begin{columns}
+\begin{column}{.4\textwidth}
+Griechische Buchstaben:\\
+$ \varepsilon, \sigma, \Pi, \delta $
+\end{column}
+\begin{column}{.6\textwidth}
+{\ttfamily \color{unibayellowI} \$ \color{nounibaredI}\textbackslash varepsilon\color{black}, \color{nounibaredI}\textbackslash sigma\color{black}, \color{nounibaredI}\textbackslash Pi\color{black}, \color{nounibaredI}\textbackslash delta \color{unibayellowI} \$ }
+\end{column}
+\end{columns}
+
+%\bigskip
+%
+%\begin{columns}
+%\begin{column}{.4\textwidth}
+%Matrizen:\\
+%$ \begin{pmatrix}
+%	0 			& \alpha \\
+%	\beta 	& 1
+%\end{pmatrix} $\\
+%Andere Klammerungen mit bmatrix, Bmatrix, vmatrix und Vmatrix
+%\end{column}
+%\begin{column}{.6\textwidth}
+%\begin{ttfamily}
+%\begin{tabbing}
+%xx\=xx\=xxxxxx\=\kill
+%\color{unibayellowI} \$\\
+%\>\color{unibablueI}\textbackslash begin\color{black}\{pmatrix\}\\
+%\>\>0\>\& \color{nounibaredI}\textbackslash alpha \textbackslash \textbackslash \\
+%\>\>\color{nounibaredI}\textbackslash beta \color{black}\> \& 1\\
+%\>\color{unibablueI}\textbackslash end\color{black}\{pmatrix\}\\
+%\color{unibayellowI} \$\\
+%\end{tabbing}
+%\end{ttfamily}
+%\end{column}
+%\end{columns}
+%
+%\vspace{-8mm}
+
+\end{frame}
+
+%-------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Formeln}
+\framesubtitle{Ausgewählte nützliche Ausdrücke}
+Mitwachsende Klammern:\\ %TODO besserer name? Größe-Anpassende Klammern?
+\bigskip
+\begin{columns}
+\begin{column}{.2\textwidth}
+\centering
+$ \left( \frac{1}{2} \right) $
+\end{column}
+\begin{column}{.8\textwidth}
+{\ttfamily \color{unibayellowI} \$ \color{nounibaredI}\textbackslash left\color{black}( \color{nounibaredI}\textbackslash frac\color{black}\{1\}\{2\} \color{nounibaredI}\textbackslash right\color{black} ) \color{unibayellowI} \$ }
+\end{column}
+\end{columns}
+
+\bigskip
+
+\begin{columns}
+\begin{column}{.2\textwidth}
+\centering
+$ \left\lbrace  \frac{1}{2} \right\rbrace $
+\end{column}
+\begin{column}{.8\textwidth}
+{\ttfamily \color{unibayellowI} \$ \color{nounibaredI}\textbackslash left\textbackslash lbrace  \textbackslash frac\color{black}\{1\}\{2\} \color{nounibaredI}\textbackslash right\textbackslash rbrace \color{unibayellowI} \$ }
+\end{column}
+\end{columns}
+
+\bigskip
+
+
+%\begin{columns}
+%\begin{column}{.2\textwidth}
+%\centering
+%$ \left . \frac{1}{2} \right| $
+%\end{column}
+%\begin{column}{.8\textwidth}
+%{\ttfamily \color{unibayellowI} \$ \color{nounibaredI}\textbackslash left \color{black}. \color{nounibaredI}\textbackslash frac\color{black}\{1\}\{2\} \color{nounibaredI}\textbackslash right\color{black} | \color{unibayellowI} \$ }
+%\end{column}
+%\end{columns}
+%\bigskip
+
+
+
+\begin{columns}
+\begin{column}{.2\textwidth}
+\centering
+$ \left[ \frac{1}{2} \right . $
+\end{column}
+\begin{column}{.8\textwidth}
+{\ttfamily \color{unibayellowI} \$ \color{nounibaredI}\textbackslash left\color{black}[ \color{nounibaredI}\textbackslash frac\color{black}\{1\}\{2\} \color{nounibaredI}\textbackslash right \color{black}  . \color{unibayellowI} \$ }
+\end{column}
+\end{columns}
+
+\bigskip
+
+Pfeile:\\
+
+\begin{columns}
+\begin{column}{.2\textwidth}
+\centering
+$ \rightarrow $
+\end{column}
+\begin{column}{.8\textwidth}
+{\ttfamily \color{unibayellowI} \$ \color{nounibaredI}\textbackslash left\color{black}[ \color{nounibaredI}\textbackslash frac\color{black}\{1\}\{2\} \color{nounibaredI}\textbackslash right \color{black}  . \color{unibayellowI} \$ }
+\end{column}
+\end{columns}
+
+\bigskip
+
+\begin{columns}
+\begin{column}{.2\textwidth}
+\centering
+$ \Leftarrow $
+\end{column}
+\begin{column}{.8\textwidth}
+{\ttfamily \color{unibayellowI} \$ \color{nounibaredI}\textbackslash left\color{black}[ \color{nounibaredI}\textbackslash frac\color{black}\{1\}\{2\} \color{nounibaredI}\textbackslash right \color{black}  . \color{unibayellowI} \$ }
+\end{column}
+\end{columns}
+
+\bigskip
+
+\begin{columns}
+\begin{column}{.2\textwidth}
+\centering
+$ \leftrightarrow $
+\end{column}
+\begin{column}{.8\textwidth}
+{\ttfamily \color{unibayellowI} \$ \color{nounibaredI}\textbackslash left\color{black}[ \color{nounibaredI}\textbackslash frac\color{black}\{1\}\{2\} \color{nounibaredI}\textbackslash right \color{black}  . \color{unibayellowI} \$ }
+\end{column}
+\end{columns}
+
+\bigskip
+
+\begin{exampleblock}{Tipp}
+\TeX studio bietet eine graphische Auswahl für mathematische Symbole.
+\end{exampleblock}
+\vspace{-8mm}
+
+\end{frame}
+
+%-------------------------------------------------------------------------------
+
+%\begin{frame}
+%\frametitle{Formeln}
+%\framesubtitle{Ausgewählte nützliche Ausdrücke}
+%Align (Nicht innerhalb der Mathumgebung: {\ttfamily kein \color{unibayellowI} \$ ... \$ }setzen!!!):\\
+%\medskip
+%\begin{ttfamily}
+%\begin{tabbing}
+%xx\=xxxx\=xxxx\kill
+%\color{unibablueI}\textbackslash begin\color{black}\{align\}\\
+%\>i\textasciicircum 2\> =\& i \color{nounibaredI}\textbackslash cdot \color{black} i \&= \color{nounibaredI}\textbackslash sqrt\color{black}\{- 1\} \color{nounibaredI}\textbackslash cdot \textbackslash sqrt\color{black}\{-1\} \color{nounibaredI}\textbackslash \textbackslash \\
+%\>\>=\& \color{nounibaredI}\textbackslash sqrt\color{black}\{(-1) \color{nounibaredI}\textbackslash cdot \color{black} (-1)\} \&= \color{nounibaredI}\textbackslash sqrt\color{black}\{1\} \color{nounibaredI}\textbackslash \textbackslash \\
+%\>\>=\& 1 \&\color{nounibaredI}\textbackslash neq \color{black} -1\\
+%\color{unibablueI}\textbackslash end\color{black}\{align\}\\
+%\end{tabbing}
+%\end{ttfamily}
+%\begin{align}
+%i^2 =& i \cdot i &= \sqrt{- 1} \cdot \sqrt{-1} \\
+%=& \sqrt{(-1) \cdot (-1)} &= \sqrt{1} \\
+%=& 1 &\neq -1
+%\end{align}
+%\end{frame}
+
+%-------------------------------------------------------------------------------
+
