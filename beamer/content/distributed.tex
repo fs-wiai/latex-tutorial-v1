@@ -15,6 +15,8 @@
 \end{block}
 \end{frame}
 
+%-----------------------------------------------------------------------------------------
+
 \begin{frame}
 \frametitle{Aufbau von einem gr\"o\ss erem Dokument}
 
@@ -26,20 +28,24 @@
 \node {main.tex} 
         child {node {command.tex}}
         child {node {titlepage.tex}}
-        child {node {introduction.tex}}
+        %child {node {introduction.tex}}
         child {node {aufgabe1.tex}}
         child {node {aufgabe2.tex}}
         child {node {aufgabe3.tex}}
-        child {node {conclusion.tex}};
+        %child {node {conclusion.tex}} 
+        ;
+        %TODO evtl doch wieder einkommentieren?
 \end{tikzpicture}
 \end{figure}
 \end{column}
 \begin{column}{.5\textwidth}
-In der main.tex werden alle anderen Dateien zu einem Dokument zusammengefasst. 
+In der Hauptdatei (main.tex) werden alle anderen Dateien zu einem Dokument zusammengefasst. 
 Dazu muss man die einzelnen Dateien daf\"ur anpassen.
 \end{column}
 \end{columns}
 \end{frame}
+
+%-----------------------------------------------------------------------------------------
 
 \begin{frame}
 \frametitle{\ldots ~und das wollen wir nun machen:}
@@ -55,11 +61,13 @@ Dieses Dokument kann nun mit dem Befehl \color{nounibaredI}\color{nounibaredI}\t
 \end{column}
 \begin{column}{.47\textwidth}
 Mit dem Befehl \color{nounibaredI}\textbackslash input\color{black}\{pfad/zur/datei\} kann man danach
- diese in eine andere {\ttfamily .tex}-Datei einbinden. 
+ diese in eine andere {\ttfamily .tex}-Datei einbinden.
 
 \end{column}
 \end{columns}
 \end{frame}
+
+%-----------------------------------------------------------------------------------------
 
 \begin{frame}
 \frametitle{Verteiltes Arbeiten}
@@ -76,6 +84,95 @@ Die Pfadangabe ist immer relativ zur Hauptdatei!
 \end{columns}
 
 \end{frame}
+
+
+%-----------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Verzeichnisse}
+\framesubtitle{Inhaltsverzeichnis, Abbildungsverzeichnis, Tabellenverzeichnis}
+\begin{itemize}
+
+
+\item Inhaltsverzeichnis (Nach dem Deckblatt)\\
+\medskip
+\begin{ttfamily}{\normalsize
+\color{nounibaredI}\textbackslash tableofcontents\\}
+\end{ttfamily}
+\medskip
+In das Inhaltsverzeichnis werden alle Gliderungspunkte (u.a. \color{unibablueI} \textbackslash section\color{black}s) übernommen.\\
+\medskip
+%\begin{ttfamily}{\normalsize
+%\color{unibablueI} \textbackslash chapter\color{black}\{Formeln\}\\
+%\color{unibablueI} \textbackslash section\color{black}\{Kategorie ganz einfach\}\\
+%\color{unibablueI} \textbackslash subsection\color{black}\{Kategorie geschenkt\}\\
+%\color{unibablueI} \textbackslash subsection\color{black}\{Kategorie weichspüler\}\\
+%\color{unibablueI} \textbackslash section\color{black}\{Kategorie mittel\}\\
+%\color{unibablueI} \textbackslash section\color{black}\{Kategorie hart\}\\
+%\color{unibablueI} \textbackslash section\color{black}\{Kategorie ultra\}\\}
+%\end{ttfamily}
+
+\item Abbildungsverzeichnis\\
+\medskip
+\begin{ttfamily}{\normalsize
+\color{nounibaredI}\textbackslash listoffigures\\}
+\end{ttfamily}
+\medskip
+Verwendet jeweils den in der {\ttfamily \color{nounibaredI}\textbackslash caption\color{black}\{...\}} des Bildes angegebenen Titel. 
+Andere Titel mit:\\ 
+\begin{ttfamily}{\normalsize
+\color{nounibaredI} \textbackslash caption\color{nounibagreenI}[\textit{Titel für das Verzeichnis}]\color{black}\{\textit{Anderer Titel}\}\\}
+\end{ttfamily}
+\medskip
+
+\item Tabellenverzeichnis\\
+\medskip
+\begin{ttfamily}{\normalsize
+\color{nounibaredI}\textbackslash listoftables\\}
+\end{ttfamily}
+\medskip
+Vorgehensweise wie beim Abbildungsverzeichnis\\
+
+\end{itemize}
+\end{frame}
+
+%-----------------------------------------------------------------------------------------
+
+%\begin{frame}
+%\frametitle{Abbildungsverzeichnis}
+%Das Abbildungsverzeichnis.\\
+%\medskip
+%\begin{ttfamily}{\normalsize
+%\color{nounibaredI}\textbackslash listoffigures\\}
+%\end{ttfamily}
+%\medskip
+%\textbf{Beachte:}\\
+%Dabei wird als Titel für die Grafiken im Abbildungsverzeichnis jeweils der im Befehl {\ttfamily \color{nounibaredI}\textbackslash caption\color{black}\{...\}} angegebene Titel verwendet. Möchte man im Verzeichnis andere Überschriften verwenden, so kann dem {\ttfamily \color{nounibaredI}\textbackslash caption\color{black}}-Befehl dazu ein weiterer Parameter beigefügt werden:\\
+%\medskip
+%\begin{ttfamily}{\normalsize
+%\color{nounibaredI} \textbackslash caption\color{nounibagreenI}[\textit{Titel für das Verzeichnis}]\color{black}\{\textit{Anderer Titel}\}\\}
+%\end{ttfamily}
+%\end{frame}
+
+%-----------------------------------------------------------------------------------------
+
+%\begin{frame}
+%\frametitle{Tabellenverzeichnis}
+%Das Tabellenverzeichnis.\\
+%\medskip
+%\begin{ttfamily}{\normalsize
+%\color{nounibaredI}\textbackslash listoftables\\}
+%\end{ttfamily}
+%\medskip
+%\textbf{Beachte:}\\
+%Vorgehensweise wie beim Abbildungsverzeichnis:\\
+%\medskip
+%\textbf{Hinweis:}\\
+%Es ist möglich Abbildungen ins Tabellenverzeichnis aufzunehmen und umgekehrt. Dazu die Abbildung einfach in eine  {\ttfamily \color{unibablueI}table\color{black}}-Umgebung packen bzw. die Tabelle in eine {\ttfamily \color{unibablueI}figure\color{black}}-Umgebung.\\
+%\end{frame}
+
+%-----------------------------------------------------------------------------------------
+
 
 
 \begin{frame}[t]
@@ -97,6 +194,23 @@ Fachschaft WIAI\color{nounibaredI}\color{nounibaredI}\textbackslash normalsize\c
 \end{column}
 \end{columns}
 \end{frame}
+
+
+%-----------------------------------------------------------------------------------------
+
+
+\begin{frame}
+\frametitle{Verteiltes Arbeiten}
+\framesubtitle{Beispiel}
+
+\input{content/listings/distributed_escaped}
+
+%TODO evtl bild oder Box mit Hinweis auf newpage
+
+\end{frame}
+
+
+%-----------------------------------------------------------------------------------------
 
 
 \begin{frame}

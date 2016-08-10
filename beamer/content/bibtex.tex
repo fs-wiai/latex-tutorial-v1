@@ -13,7 +13,7 @@
 %\item \color{nounibaredI}\textbackslash renewcommand\color{black}\{\color{nounibaredI}\textbackslash refname\color{black}\}\{...\}
 \item \color{nounibaredI}\textbackslash cite\color{black}\{Author2014\}
 \item \color{nounibaredI}\textbackslash bibliographystyle\color{black}\{alpha$\mid$abbrv$\mid$natdin$\mid$apa$\mid$etc.\}
-\item \color{nounibaredI}\textbackslash bibliography\color{black}\{literature.bib\}
+\item \color{nounibaredI}\textbackslash bibliography\color{black}\{literature\}
 %\item \color{nounibaredI}\textbackslash addcontentsline\color{black}\{toc\}\{section\}\{\color{nounibaredI}\textbackslash refname\color{black}\}
 \end{itemize}
 \end{block}
@@ -61,9 +61,7 @@
 \end{itemize}
 \end{column}
 \end{columns}
-\begin{alertblock}{Achtung: Reihenfolge beim Kompilieren beachten!}
-(1) pdflatex (2) bibtex (3) pdflatex (4) pdflatex
-\end{alertblock}
+
 \end{frame}
 
 \begin{frame}
@@ -71,18 +69,26 @@
 \framesubtitle{\"Ubersicht "uber die Befehle}
 \begin{itemize}
 
-\item \color{nounibaredI}\textbackslash cite\color{black}\{Culik93\} \hfill Zitieren eines BibTeX Eintrages\\
-
-\item \color{nounibaredI}\textbackslash cite\color{black}[S. 85]\{Culik93\} \hfill Zitieren mit Seitenangabe\\
+\item \color{nounibaredI}\textbackslash usepackage\color{black}\{natbib\} \hfill F"ur den Zitierstil \texttt{natdin} notwendig\\
 
 \item \color{nounibaredI}\textbackslash bibliographystyle\color{black}\{alphadin\} \hfill Auswahl des LVZ-Stils \glqq \texttt{alphadin}\grqq\\
 
 \item \color{nounibaredI}\textbackslash bibliography\color{black}\{bibliography\} \hfill Angabe der  BibTeX-Datei (.bib)\\
 
-\item \color{nounibaredI}\textbackslash usepackage\color{black}\{natbib\} \hfill F"ur den Zitierstil \texttt{natdin} notwendig\\
+
 %\item \color{nounibaredI}\textbackslash renewcommand\color{black}\{\color{nounibaredI}\textbackslash refname\color{black}\}\newline \{Literaturverzeichnis\} \hfill Anpassung des Namens von Standard Literatur auf Literaturverzeichnis
 
 %\item \color{nounibaredI}\textbackslash addcontentsline\color{black}\{toc\}\{section\}\newline \{\color{nounibaredI}\textbackslash refname\color{black}\} \hfill Aufnahme des LVZ ins Inhaltsverzeichnis
+
+\item \color{nounibaredI}\textbackslash cite\color{black}\{Culik93\} \hfill Zitieren eines BibTeX Eintrages\\
+
+\item \color{nounibaredI}\textbackslash cite\color{black}[S. 85]\{Culik93\} \hfill Zitieren mit Seitenangabe\\
+
+\bigskip
+
+\begin{alertblock}{Achtung: Reihenfolge beim Kompilieren beachten!}
+(1) pdflatex (2) bibtex (3) pdflatex (4) pdflatex
+\end{alertblock}
 
 \end{itemize}
 
