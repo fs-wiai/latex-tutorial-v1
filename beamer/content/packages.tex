@@ -465,3 +465,49 @@ Ein Leerzeichen (z.B. nach Sonderzeichen) wird durch ein \color{nounibaredI} $\s
 \vspace{-8mm}
 
 \end{frame}
+
+%-------------------------------------------------
+
+%TODO required?
+\begin{frame}
+\frametitle{Formatierungen}
+\framesubtitle{Textausrichtung}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{ttfamily}\footnotesize
+%\color{unibablueI}\textbackslash \color{unibablueI}begin\color{black}\{document\}\\
+%\vspace{3mm}
+\color{unibablueI}\textbackslash \color{unibablueI}begin\color{black}\{flushleft\}\\
+Nach links ausgerichteter Text.\\
+\color{unibablueI}\textbackslash \color{unibablueI}end\color{black}\{flushleft\}\\
+\vspace{2mm}
+\color{unibablueI}\textbackslash \color{unibablueI}begin\color{black}\{center\}\\
+Mittig ausgerichteter Text.\\
+\color{unibablueI}\textbackslash \color{unibablueI}end\color{black}\{center\}\\
+\vspace{2mm}
+\color{unibablueI}\textbackslash \color{unibablueI}begin\color{black}\{flushright\}\\
+Nach rechts ausgerichteter Text.\\
+\color{unibablueI}\textbackslash \color{unibablueI}end\color{black}\{flushright\}\\
+%\vspace{3mm}
+%\color{unibablueI}\textbackslash end\color{black}\{document\}\\
+\end{ttfamily}
+\end{column}
+\begin{column}{0.5\textwidth}
+Umgebungen zur Textausrichung:\\
+\begin{itemize}
+\item flushleft	
+\item center
+\item flushright
+\end{itemize}
+\end{column}
+\end{columns}
+\begin{flushleft}
+Links ausgerichteter Text.\\
+\end{flushleft}
+\begin{center}
+Mittig ausgerichteter Text.\\
+\end{center}
+\begin{flushright}
+Rechts ausgerichteter Text.\\
+\end{flushright}
+\end{frame}
