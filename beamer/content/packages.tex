@@ -31,7 +31,9 @@ Sonderzeichen}
 \end{block}
 \end{frame}
 
+%-------------------------------------------------------
 
+%TODO in erweiterung einbauen?
 %\begin{frame}
 %\frametitle{Ein erstes Anwendungsbeispiel}
 %\framesubtitle{Pakete einbinden und Befehle anwenden}
@@ -60,44 +62,80 @@ Sonderzeichen}
 %\end{itemize}
 %\end{frame}
 
+%-------------------------------------------------------
+
 \begin{frame}
 \frametitle{Ein erstes Anwendungsbeispiel}
 \framesubtitle{Befehle cont'd}
 \begin{columns}
-\begin{column}{0.6\textwidth}
-\begin{ttfamily}\scriptsize
+\begin{column}{0.55\textwidth}
+\begin{ttfamily}\footnotesize
 \input{content/listings/minidocument_escaped}
 \end{ttfamily}
 \end{column}
 
-\begin{column}{0.4\textwidth}
+\begin{column}{0.45\textwidth}
+\color{nounibaredI}\color{nounibaredI}\textbackslash documentclass\color{black}\color{nounibagreenI}[options]\color{black}\{type\} \\
 Es gibt verschiedene Arten von Dokumenten.\\ Hier wird die Dokumentenart
-\begin{ttfamily}article\end{ttfamily} verwendet (weiter möglich:
-\begin{ttfamily}book\end{ttfamily} und \begin{ttfamily}report\end{ttfamily}) In
-\begin{ttfamily}[]\end{ttfamily} steht die Papiergröße und die Schriftgröße des
-Standardtextes.\\
+\begin{ttfamily}article\end{ttfamily} verwendet.\\
+In \begin{ttfamily}[]\end{ttfamily} steht die Papiergröße, die Schriftgröße des
+Standardtextes und die Sprache.\\
 %! TODO!
 \end{column}
 \end{columns}
 \end{frame}
 
+
+%-------------------------------------------------------
+
+
+\begin{frame}
+\frametitle{Dokumentarten}
+\framesubtitle{Exkurs}
+
+\begin{itemize}
+
+\item Für einfache Dokumente, Artikel:\\
+\textbf{scrartcl}, \textbf{article}\\
+
+\item Für komplexere Dokumente, Bachelor-/Masterarbeiten:\\
+\textbf{scrreprt}, \textbf{report}\\
+
+\item Für Bücher:\\
+\textbf{scrbook}, \textbf{book}\\
+{\ttfamily book} unterscheidet in der Regel zwischen linker und rechter Seite, wobei Unterschiede z.B. die Lage der Seitenzahl links oder rechts sein können
+
+\item \textit{Für Präsentationen:\\
+\textbf{beamer}, \textbf{seminar}, \textbf{texpower}}\\
+\vspace{0.5cm}
+
+\end{itemize}
+
+Für den \underline{europäischen} Raum sind die Dokumentklassen des \glqq KOMA-Scripts\grqq zu präferieren.\\
+Die dazugehörigen Klassen beginnen mit \glqq scr\grqq .\\
+\end{frame}
+
+%-------------------------------------------------------
+
 \begin{frame}
 \frametitle{Ein erstes Anwendungsbeispiel}
 \framesubtitle{Befehle cont'd}
 \begin{columns}
-\begin{column}{0.6\textwidth}
-\begin{ttfamily}\scriptsize
+\begin{column}{0.55\textwidth}
+\begin{ttfamily}\footnotesize
 \input{content/listings/minidocument_escaped}
  \normalsize
 \end{ttfamily}
 \end{column}
-\begin{column}{0.4\textwidth}
+\begin{column}{0.45\textwidth}
 \begin{ttfamily}\textbf{\color{unibablueI}\textbackslash begin\color{black}\{Umgebung\}}\end{ttfamily}\\
 Es beginnt eine neue Umgebung, hier das eigentliche Dokument.\\[5mm]
 
 \begin{ttfamily}\textbf{\color{unibablueI}\textbackslash end\color{black}\{Umgebung\}}\end{ttfamily}\\
 Die mit \begin{ttfamily}\textbf{\color{unibablueI}\textbackslash begin}\color{black}\{\}\end{ttfamily}
-eingeleitete Umgebung ist hier zu Ende.\\[5mm]
+eingeleitete Umgebung ist hier zu Ende.\\
+Jede geöffnete Umgebung muss auch \textbf{wieder geschlossen} werden!
+\\[5mm]
 
 \begin{ttfamily}\textbf{\color{nounibaredII}$\backslash\backslash$}\color{black}
 ~Zeilenumbruch\end{ttfamily}\\
@@ -105,33 +143,39 @@ eingeleitete Umgebung ist hier zu Ende.\\[5mm]
 \end{columns}
 \end{frame}
 
+%-------------------------------------------------------
 
 
 \begin{frame}
 \frametitle{Ein erstes Anwendungsbeispiel}
 \framesubtitle{Pakete}
 \begin{columns}
-\begin{column}{0.6\textwidth}
-\begin{ttfamily}\scriptsize
+\begin{column}{0.55\textwidth}
+\begin{ttfamily}\footnotesize
 \input{content/listings/minidocument_escaped}
  \normalsize
 \end{ttfamily}
 \end{column}
-\begin{column}{0.4\textwidth}
+\begin{column}{0.45\textwidth}
 \begin{ttfamily}\textbf{ngerman}\end{ttfamily}\\
-Für Deutschland typische Formatierungen und (Trenn)-Regeln werden verwendet.\\[5mm]
+Für Deutschland typische Formatierungen und (Trenn)-Regeln\\[5mm]
 
 \begin{ttfamily}\textbf{inputenc}\end{ttfamily}\\
 Definiert den Zeichen-\\satz, der verwendet werden soll. Es sollte immer
-\begin{ttfamily}UTF-8\end{ttfamily} verwendet werden, weil er universal auf
-allen Betriebssystemen l"auft.\\
+\begin{ttfamily}\textbf{UTF-8}\end{ttfamily} verwendet werden, weil er universal auf
+allen Betriebssystemen l"auft\\[5mm]
+
+\begin{ttfamily}\textbf{fontenc}\end{ttfamily}\\
+z.B. Umlaute\\
 \end{column}
 \end{columns}
 \end{frame}
 
+%-------------------------------------------------------
+
 \begin{frame}
-\frametitle{Exkurs}
-\framesubtitle{Zeichenkodierungen}
+\frametitle{Zeichenkodierungen}
+\framesubtitle{Exkurs}
 \begin{columns}
 \begin{column}{0.6\textwidth}
 \image{\textwidth}{image/utf8.png}{UTF-8 im Texmaker}{img:utf8}
@@ -149,39 +193,70 @@ Editor einstellen, sonst ist Ärger so gut wie vorprogrammiert!} (Kaputte
 Umlaute, Kompilierungsfehler uvm., wenn es nicht nur „Windows“-User gibt.)
 \end{frame}
 
+%-------------------------------------------------------
+
+\begin{frame}
+\frametitle{Ein erstes Anwendungsbeispiel}
+\framesubtitle{Pakete 2}
+\begin{columns}
+\begin{column}{0.55\textwidth}
+\begin{ttfamily}\footnotesize
+\input{content/listings/minidocument_escaped}
+ \normalsize
+\end{ttfamily}
+\end{column}
+\begin{column}{0.45\textwidth}
+\begin{ttfamily}\textbf{babel}\end{ttfamily}\\
+Stellt sprachspezifische Infomationen (Formatierungen, Silbentrennung, Sonderzeichen) bereit.\\
+\begin{itemize}
+\item deutsch: \begin{ttfamily}ngerman\end{ttfamily}
+\item englisch: \begin{ttfamily}english\end{ttfamily}
+\end{itemize}
+Benutzerdefinierte Trennungen kann man via {\begin{ttfamily} \color{unibaredI}\textbackslash - \end{ttfamily}} direkt angeben.\\
+
+\begin{alertblock}{Achtung}
+Die vorgestellten Packages sollten in jedem Dokument eingebunden werden!
+\end{alertblock}
+\end{column}
+\end{columns}
+\end{frame}
+
+%-------------------------------------------------------
+
 \begin{frame}
 \frametitle{Ein erstes Anwendungsbeispiel}
 \framesubtitle{Als .PDF}
 \begin{columns}
-\begin{column}{0.5\textwidth}
-\begin{ttfamily}\scriptsize
+\begin{column}{0.55\textwidth}
+\begin{ttfamily}\footnotesize
 \input{content/listings/minidocument_escaped}
  \normalsize
 \end{ttfamily}
 \end{column}
 
-\begin{column}{0.5\textwidth}
+\begin{column}{0.45\textwidth}
 \image{\textwidth}{image/minidocument.png}{Der Code von der linken Seite als .pdf.}{listing:minidocument}
 \end{column}
 \end{columns}
 \end{frame}
 
-
+%-------------------------------------------------------
 
 \begin{frame}
 \frametitle{Abschnitte}
 \framesubtitle{Kapitelmarken}
 \begin{columns}
 \begin{column}{0.5\textwidth}
-\begin{ttfamily}\scriptsize
+\begin{ttfamily}\footnotesize
 \input{content/listings/chapters_escaped.tex}
 \end{ttfamily}
 \end{column}
 \begin{column}{0.5\textwidth}
-\begin{ttfamily}\color{nounibaredI}\textbackslash newpage\color{black}\end{ttfamily}\\
-Seitenumbruch\\[3mm]
+
 \begin{ttfamily}\color{nounibaredI}\textbackslash tableofcontents\color{black}\end{ttfamily}\\
 Automatisches Inhaltsverzeichnis\\[3mm]
+\begin{ttfamily}\color{nounibaredI}\textbackslash newpage\color{black}\end{ttfamily}\\
+Seitenumbruch\\[3mm]
 \begin{ttfamily}\color{unibablueI}\textbackslash section\color{black}\{Titel\}\end{ttfamily}\\
 Ein neuer Abschnitt mit dem in \begin{ttfamily}\{\}\end{ttfamily} angegebenen Titel
 beginnt.\\[3mm]
@@ -193,35 +268,38 @@ Noch eine Ebene darunter.\\
 \end{columns}
 \end{frame}
 
+%-------------------------------------------------------
+
 \begin{frame}
 \frametitle{Abschnitte}
 \framesubtitle{Kapitelmarken .PDF}
 \begin{columns}
-\begin{column}{0.45\textwidth}
-\begin{ttfamily}\scriptsize
+\begin{column}{0.5\textwidth}
+\begin{ttfamily}\footnotesize
 \input{content/listings/chapters_escaped.tex}
 \end{ttfamily}
 \end{column}
-\begin{column}{0.55\textwidth}
+\begin{column}{0.5\textwidth}
 \image{\textwidth}{image/chapters.png}{Die Kapitel werden automatisch mitgez\"ahlt}{img:chapters}
 \end{column}
 \end{columns}
 \end{frame}
 
+%-------------------------------------------------------
 
 \begin{frame}
 \frametitle{Abschnitte}
 \framesubtitle{Part \& Chapter}
-Neben \begin{ttfamily}\color{unibablueI}\textbackslash section\color{black}\{\},
-\color{unibablueI}\textbackslash subsection\color{black}\{\}\end{ttfamily}, und \begin{ttfamily}\color{unibablueI}\textbackslash subsubsection\color{black}\{\}\end{ttfamily} gibt es auch noch den Befehl
- \begin{ttfamily}\color{unibablueI}\textbackslash part\color{black}\{\}\end{ttfamily} welcher einen größeren Teil definiert.
-\begin{ttfamily}\color{unibablueI}\textbackslash part\color{black}\{\}\end{ttfamily} füllt eine ganze eigene Seite.\\
-Neben dem Dokumentypen {\ttfamily article} existieren f"ur Flie\ss
-textdokumente noch weitere wie {\ttfamily book} und {\ttfamily report}.\\
-Bei {\ttfamily book} wird in der Regel zwischen linker und rechter Seite
-unterschieden, wobei die sich z.B. darin unterscheiden, ob die Seitenzahl links oder rechts steht, bzw. was sonst noch in der Kopf- oder Fußzeile stehen kann.
-In {\ttfamily book} und {\ttfamily report} gibt es noch den
-Gliederungsbefehl \begin{ttfamily}\color{unibablueI}\textbackslash chapter\color{black}\{\}\end{ttfamily}.
+
+Weitere Untergliederungsmöglichkeiten (neben \begin{ttfamily}\color{unibablueI}\textbackslash section\color{black}s\end{ttfamily}):
+\begin{itemize}
+\item  \begin{ttfamily}\color{unibablueI}\textbackslash part\color{black}\{\}\end{ttfamily}\\
+Definiert größeren Teil und füllt eine ganze Seite
+\item \begin{ttfamily}\color{unibablueI}\textbackslash chapter\color{black}\{\}\end{ttfamily}\\
+Gliedert in einzelne Kapitel\\
+Nur {\ttfamily book} und {\ttfamily report}
+\end{itemize}
+
 
 %\begin{columns}
 %\begin{column}{0.5\textwidth}
@@ -233,6 +311,7 @@ Gliederungsbefehl \begin{ttfamily}\color{unibablueI}\textbackslash chapter\color
 %\end{columns}
 \end{frame}
 
+%-------------------------------------------------------
 
 \begin{frame}
 \frametitle{Formatierungen}
@@ -261,6 +340,8 @@ unterstrichen
 \end{column}
 \end{columns}
 \end{frame}
+
+%-------------------------------------------------------
 
 \begin{frame}
 \frametitle{Formatierungen}
