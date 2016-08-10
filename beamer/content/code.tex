@@ -1,0 +1,107 @@
+\section{Code}
+
+\begin{frame}
+\frametitle{Code}
+\framesubtitle{Programmcode darstellen}
+
+\begin{exampleblock}{Neue Pakete in diesem Abschnitt}
+\begin{multicols}{3}
+\begin{itemize}
+\item verbatim
+\item listings
+\item color
+\end{itemize}
+\end{multicols}
+\end{exampleblock}
+
+\begin{block}{Neue Befehle in diesem Abschnitt}
+%\begin{multicols}{2}
+\begin{itemize}
+\item \color{nounibaredI}\textbackslash color\color{black}\{\}
+\item \color{nounibaredI}\textbackslash lstset\color{black}\{\}
+%TODO mehr?
+\end{itemize}
+%\end{multicols}
+\end{block}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Code}
+\framesubtitle{Unformatierte Texte \& Codeabschnitte}
+Die Verbatim Umgebung:\\
+\begin{columns}
+\begin{column}{.5\textwidth}
+\begin{verbatim}
+Dieser Satz erscheint
+so im Text.
+Auch Befehle wie
+\textbf{werden}
+nicht interpretiert.
+\end{verbatim}
+\end{column}
+\begin{column}{.5\textwidth}
+\begin{ttfamily}
+\begin{tabbing}
+x\=\kill\\
+\>\color{unibablueI}\textbackslash begin\color{black}\{verbatim\}\\
+\>Dieser Satz erscheint\\
+\>so im Text.\\
+\>Auch Befehle wie\\
+\>\textbackslash textbf\{werden\}\\
+\>nicht interpretiert.\\
+\>\color{unibablueI}\textbackslash end\color{black}\{verbatim\}\\
+\end{tabbing}
+\end{ttfamily}
+\end{column}
+\end{columns}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+
+\begin{frame}[fragile]
+\frametitle{Code}
+\framesubtitle{Unformatierte Texte \& Codeabschnitte}
+\vspace{3mm}
+%Die Verbatim Umgebung (Paket: verbatim):\\
+\scriptsize
+\lstset{language=Java, commentstyle=\color{green}}
+\begin{lstlisting}
+public static void printNumber(int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        // print the current number
+        System.out.println("Number: " + i);
+    }
+}
+\end{lstlisting}
+
+\footnotesize
+\vspace{-2mm}
+
+\begin{ttfamily}
+\begin{tabbing}
+xx\=xx\=\kill\\
+\color{nounibaredI}\textbackslash usepackage\color{black}\{listings\}\\
+\color{nounibaredI}\textbackslash usepackage\color{black}\{color\}\\
+\color{nounibaredI}\textbackslash lstset\color{black}\{language=Java, commentstyle=\color{nounibaredI}\textbackslash color\color{black}\{green\}\}\\
+\color{unibablueI}\textbackslash begin\color{black}\{lstlisting\}\\
+public static void printNumber(int n)\\
+\{\\
+\>for (int i = 0; i < n; i++)\\
+\>\{\\
+\>\>// print the current number\\
+\>\>System.out.println(\verb|"|Number: \verb|"| + i);\\
+\>\}\\
+\}\\
+\color{unibablueI}\textbackslash end\color{black}\{lstlisting\}\\
+\end{tabbing}
+\end{ttfamily}
+\normalsize
+\end{frame}
+
+
+
+%TODO hinweis auf weitere Formatierungsmöglichkeiten -> syntax hilighting (siehe Internet)
+
