@@ -26,16 +26,24 @@ Durch solche Referenzen wird immer auf das richtige Bild verwiesen, auch wenn zw
 
 %-------------------------------------
 
-%\begin{frame}
-%\frametitle{Referenzen}
-%\framesubtitle{Packet cRef}
-%
-%Mit dem Package cleveref wird die Referenz direkt in der richtigen Sprache beschriftet.\\[3mm]
-%
-%\begin{ttfamily}siehe 
-%\color{nounibaredI}\textbackslash cref\color{black}\{img:tux1\}\end{ttfamily}\\[3mm]
-%\textbf{Ergebnis:}\\[3mm]
-%\begin{minipage}{\textwidth}\begin{rm}
-%siehe \cref{img:kleinertux}\end{rm} \end{minipage}\\[3mm]
-%
-%\end{frame}
+\begin{frame}
+\frametitle{Referenzen}
+\framesubtitle{cref}
+
+Mit dem Package \textit{cleveref} wird die Referenz direkt in der richtigen Sprache beschriftet.\\[3mm]
+
+\begin{ttfamily}siehe 
+\color{nounibaredI}\textbackslash cref\color{black}\{img:tux1\}\end{ttfamily}\\[3mm]
+\textbf{Ergebnis:}\\[3mm]
+
+\begin{rm}
+siehe Abbildung 1 \end{rm}\\[3mm]
+
+\medskip
+
+\begin{exampleblock}{Hinweis}
+\begin{ttfamily}\color{nounibaredI}\textbackslash cref\color{black}\{sec:intro\}\end{ttfamily} funktioniert auch mit verweisen auf Sections, Tabellen usw. Diese werden ebenso korrekt beschriftet, müssen aber gelabelt werden: \begin{ttfamily}\color{nounibaredI}\textbackslash section\color{black}\{Introduction\}\color{nounibaredI}\textbackslash label\color{black}\{sec:intro\}\end{ttfamily}\\[3mm] %\label{sec:Introduction}
+Schreibt man \begin{ttfamily}\color{nounibaredI}\textbackslash Cref\color{black}\{img:tux1\}\end{ttfamily} groß, wird das beschreibende Wort mit einem Großbuchstaben begonnen.
+\end{exampleblock}
+
+\end{frame}
