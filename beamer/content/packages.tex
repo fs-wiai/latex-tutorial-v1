@@ -353,24 +353,26 @@ unterstrichen
 \begin{ttfamily}\footnotesize
 \input{content/listings/textsize_escaped.tex}
 \end{ttfamily}
+\begin{block}{Hinweis}
+Nach Größenänderung muss mit \begin{ttfamily}$\color{nounibaredII}\backslash$\color{nounibaredII}normalsize\color{black}\end{ttfamily} wieder zurück gewechselt werden!\\
+\end{block}
 \end{column}
 \begin{column}{0.5\textwidth}
 \rm \tiny ~unlesbarer Text \\
 \scriptsize ~sehr kleiner Text \\
 \footnotesize ~Fu\ss notengr\"o\ss e\\
-%\small ~klein\\
+\small ~klein\\
 \normalsize ~Standardgr\"o\ss e \\
 \large ~gr\"o\ss er \\
 \Large ~noch gr\"o\ss er \\
-\LARGE ~sehr Gro\ss \\
+\LARGE ~sehr gro\ss \\
 \huge  ~riesig \\
-%\Huge  ~extra riesig \\
+\Huge  ~gigantisch \\
 \end{column}
 \end{columns}
-\begin{block}{Hinweis}
-Nach Größenänderung muss mit \begin{ttfamily}$\color{nounibaredII}\backslash$\color{nounibaredII}normalsize\color{black}\end{ttfamily} wieder zurück gewechselt werden!\\
-Alternative: \{\begin{ttfamily}$\color{nounibaredII}\backslash$\color{nounibaredII}large\color{black}\end{ttfamily} Größenänderung auf Klammer-Inhalt begrenzen\}
-\end{block}
+\begin{exampleblock}{Alternative}
+\{\begin{ttfamily}$\color{nounibaredII}\backslash$\color{nounibaredII}large\color{black}\end{ttfamily} Größenänderung auf Klammer-Inhalt begrenzen\}
+\end{exampleblock}
 \vspace{-8mm}
 \end{frame}
 
@@ -465,6 +467,62 @@ benötigt.\\
 Ein Leerzeichen (z.B. nach Sonderzeichen) wird durch ein \color{nounibaredI} $\sim$ \color{black} (Tilde) erzwungen.
 \end{block}
 \vspace{-8mm}
+
+\end{frame}
+
+%-------------------------------------------------
+
+\begin{frame}
+\frametitle{Formatierungen}
+\framesubtitle{Sonderzeichen cont'd}
+
+%\scriptsize
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+\ttfamily \color{nounibaredII}\textbackslash \% \color{black}&\color{nounibaredII}\ttfamily \textbackslash \$ \color{black}&\color{nounibaredII}\ttfamily  \textbackslash \&  \color{black}&\color{nounibaredII}\ttfamily \textbackslash \{ \color{black}&\color{nounibaredII}\ttfamily \textbackslash \} \color{black}&\color{nounibaredII}\ttfamily \textbackslash \_ \color{black}&\color{nounibaredII}\ttfamily \textbackslash \#  \color{black}&\color{nounibaredII}\ttfamily \textbackslash S \color{black}&\color{nounibaredII}\ttfamily \textbackslash copyright \color{black} \rmfamily \\ 
+ \hline
+\% & \$ & \& & \{ & \} & \_ & \# & \S & \copyright \\
+ \hline
+\end{tabular} 
+
+\bigskip
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\ttfamily \color{nounibaredII}\ttfamily \textbackslash slash \color{black} &\color{unibayellowI}\$\color{nounibaredII}\ttfamily $\color{nounibaredII}\backslash$backslash\color{unibayellowI}\$\color{nounibaredII}& \color{nounibaredII} \ttfamily \textbackslash textbackslash \color{black} & \color{nounibaredII} \ttfamily \textbackslash euro \color{black}& \ttfamily \~ ~ \rmfamily \\
+ \hline
+\slash & $\backslash$ & \textbackslash & \euro & ~  \\
+ \hline
+\end{tabular} 
+
+\bigskip
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+\ttfamily \color{nounibaredII}\ttfamily \textbackslash glqq \color{black} & \color{nounibaredII} \ttfamily \textbackslash qrqq \color{black} & \color{nounibaredII} \ttfamily \textbackslash flqq \color{black}&  \color{nounibaredII} \ttfamily \textbackslash frqq \color{black} & \ttfamily - & \ttfamily -- & \ttfamily --- & \color{unibayellowI}\$\color{nounibaredII}\ttfamily \color{nounibaredII}-\color{unibayellowI}\$\color{nounibaredII} \rmfamily \\
+ \hline
+\glqq & \grqq & \flqq & \frqq & - & --  & --- & - \\
+ \hline
+\end{tabular} 
+
+
+%- -- --- $-$ (letzteres mathematisches Minus) \\
+%
+%\textit{Anführungszeichen aus ngerman:} \\
+%\glqq \grqq \flqq \frqq\\[5mm]
+%Für das \euro -Zeichen wird das Package \begin{ttfamily}eurosym\end{ttfamily}
+%benötigt.\\
+%
+%
+\bigskip
+\begin{block}{Hinweis}
+ Sonderzeichen \textbf{müssen} mit dem '\color{nounibaredI}\textbackslash \color{black}' eingeführt werden.
+
+\end{block}
+%
+%
+%%\vspace{-8mm}
 
 \end{frame}
 
