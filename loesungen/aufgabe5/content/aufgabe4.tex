@@ -16,7 +16,7 @@ Gewicht & m: 6,6kg w: 5,5kg & 200--250g\\
 \hline
 Länge  & m: 71,4cm w: 67,8cm & 46cm\\
 \hline
-Geschwindigkeit $ = \sqrt{v\cdot v}$ & $55\frac{km}{h}$ & mind. superschnell \\
+Geschwindigkeit $ = \sqrt{v\cdot v}$ & $55\frac{km}{h}$ & mind. superschnell: $\lim\limits_{x \rightarrow \infty} x \cdot v$ \\
 \hline
 Farbe & rötlich & schwarz\\
 \hline
@@ -46,11 +46,13 @@ Um bei den vielen Verschachtelungen nicht den Überblick zu verlieren, sind Einr
   \item
   \begin{enumerate}
     \item Vorteile der Elster:
+    \item
     \begin{itemize}
       \item kann fliegen
       \item muss nicht umziehen
     \end{itemize}
     \item Nachteile der Elster:
+    \item
     \begin{itemize}
       \item Diebischkeit wird bestraft
       \item viele landen hinter Gittern
@@ -59,17 +61,15 @@ Um bei den vielen Verschachtelungen nicht den Überblick zu verlieren, sind Einr
   \end{enumerate}
 \end{enumerate}
 
-\subsection{Tabbing}
-
-Hier wurde eine Zeile  um die Ecke gebracht.\\
-
-\begin{tabbing}
-
-Allerletzte \=xxxxx \= xxxxx \= xxxxx \= xxx \= xxxxx \= xxxxx \= xxxxx \= xxxxx\= xxxxx\kill
-Spitze\>\>\>\>\>Süßwaren\\
-2.Reihe\>\>\>\>Milch\>\>Eier\\
-3.Reihe\>\>\>Nüsse \>\>\>\>Samen\\
-Vorletzte\>\>Obst \>\>\>\>\>\>Gemüse\\
-Allerletze \>Vollkornprodukte\>\>\>\>\>\>\> \>Hülsenfrüchte\\
-\end{tabbing}
-
+\subsection{Code}
+\textit{Hello World} in Java:\\
+\lstset{language=Java, commentstyle=\color{green}}
+\begin{lstlisting}
+  public class Hello{
+      public static void main(String[] args){
+      
+         //Hier wird der Text ausgegeben:
+         System.out.println("Hello World!");
+      }
+  }
+\end{lstlisting}

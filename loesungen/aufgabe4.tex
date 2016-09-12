@@ -6,6 +6,8 @@
 \usepackage[iso]{umlaute}
 
 \usepackage{longtable}
+\usepackage{listings}
+\usepackage{color}
 
 \begin{document}
 \section{Aufgabe 4}
@@ -26,7 +28,7 @@ Gewicht & m: 6,6kg w: 5,5kg & 200--250g\\
 \hline
 Länge  & m: 71,4cm w: 67,8cm & 46cm\\
 \hline
-Geschwindigkeit $ = \sqrt{v\cdot v}$ & $55\frac{km}{h}$ & mind. superschnell \\
+Geschwindigkeit $ = \sqrt{v\cdot v}$ & $55\frac{km}{h}$ & mind. superschnell: $\lim\limits_{x \rightarrow \infty} x \cdot v$ \\
 \hline
 Farbe & rötlich & schwarz\\
 \hline
@@ -70,5 +72,18 @@ Um bei den vielen Verschachtelungen nicht den Überblick zu verlieren, sind Einr
       \item singt ganz gut, aber ist gefährlich
   \end{enumerate}
 \end{enumerate}
+
+\subsection{Code}
+\textit{Hello World} in Java:\\
+\lstset{language=Java, commentstyle=\color{green}}
+\begin{lstlisting}
+  public class Hello{
+      public static void main(String[] args){
+      
+         //Hier wird der Text ausgegeben:
+         System.out.println("Hello World!");
+      }
+  }
+\end{lstlisting}
 
 \end{document}
