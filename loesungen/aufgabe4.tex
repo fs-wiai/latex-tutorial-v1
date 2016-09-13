@@ -73,6 +73,13 @@ Um bei den vielen Verschachtelungen nicht den Überblick zu verlieren, sind Einr
   \end{enumerate}
 \end{enumerate}
 
+\subsection{Logik}
+Prädikatenlogische Äquivalenzen:
+\begin{itemize}
+	\item $\lnot\forall xPx \Leftrightarrow \exists x\lnot Px$
+	\item $\lnot\exists xPx \Leftrightarrow \forall x \lnot Px$
+\end{itemize}
+
 \subsection{Code}
 \textit{Hello World} in Java:\\
 \lstset{language=Java, commentstyle=\color{green}}
@@ -81,6 +88,7 @@ Um bei den vielen Verschachtelungen nicht den Überblick zu verlieren, sind Einr
       public static void main(String[] args){
       
          //Hier wird der Text ausgegeben:
+         //Alternativ: Hallo, du kleine Elster!
          System.out.println("Hello World!");
       }
   }
