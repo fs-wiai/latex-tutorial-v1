@@ -6,23 +6,20 @@ Die erste Spalte ist mit einem p von 25mm definiert. Die zweite und die dritte S
 \begin{longtable}{p{25mm}|c|c}
 & Fuchs & Elster\\
 \hline
-lat. Bezeichnung & Vulpes & Pica\\
 \hline
 Familie & Hunde & Rabenvögel\\
 \hline
-Ordnung & Raubtier & Sperrlingsvogel\\
-\hline
 Gewicht & m: 6,6kg w: 5,5kg & 200--250g\\
-\hline
-Länge  & m: 71,4cm w: 67,8cm & 46cm\\
 \hline
 Geschwindigkeit $ = \sqrt{v\cdot v}$ & $55\frac{km}{h}$ & mind. superschnell: $\lim\limits_{x \rightarrow \infty} x \cdot v$ \\
 \hline
-Farbe & rötlich & schwarz\\
+Farbe & tödlich & schwarz\\
 \hline
 \caption{Wild Animals}
 \label{tab:ani}
 \end{longtable}
+
+Der Sinn des Lebens$^2$: $\prod\limits_{i=1}^{n+1} i + \sum_{j=0}^{n} j \cdot \int\limits_{\pi}^{Daumen} 42$
 
 \subsection{Aufzählungen}
 Um bei den vielen Verschachtelungen nicht den Überblick zu verlieren, sind Einrückungen der items sinnvoll.
@@ -36,23 +33,16 @@ Um bei den vielen Verschachtelungen nicht den Überblick zu verlieren, sind Einr
       \item schaut cool aus
     \end{itemize}
     \item Nachteile des Fuchses:
-    \item
     \begin{itemize}
       \item Pelz wird verarbeitet
       \item sehr viele Autos fahren gerne über Füchse
     \end{itemize}
-    \item weit verbreitet aber gefährdet
+    \item Spam Spam Spam
   \end{enumerate}
   \item
   \begin{enumerate}
-    \item Vorteile der Elster:
-    \item
-    \begin{itemize}
-      \item kann fliegen
-      \item muss nicht umziehen
-    \end{itemize}
+    \item Vorteile der Elster...
     \item Nachteile der Elster:
-    \item
     \begin{itemize}
       \item Diebischkeit wird bestraft
       \item viele landen hinter Gittern
@@ -61,11 +51,10 @@ Um bei den vielen Verschachtelungen nicht den Überblick zu verlieren, sind Einr
   \end{enumerate}
 \end{enumerate}
 
-\subsection{Logik}
-Prädikatenlogische Äquivalenzen:
+\subsection{(Un)Logik}
 \begin{itemize}
-	\item $\lnot\forall xPx \Leftrightarrow \exists x\lnot Px$
-	\item $\lnot\exists xPx \Leftrightarrow \forall x \lnot Px$
+	\item $\lnot\forall x \Leftrightarrow \{\exists x\}$
+	\item $[\exists xPx] \rightarrow \forall x \lnot Px$
 \end{itemize}
 
 \subsection{Code}
@@ -76,7 +65,6 @@ Prädikatenlogische Äquivalenzen:
       public static void main(String[] args){
       
          //Hier wird der Text ausgegeben:
-         //Alternativ: Hallo, du kleine Elster!
          System.out.println("Hello World!");
       }
   }
