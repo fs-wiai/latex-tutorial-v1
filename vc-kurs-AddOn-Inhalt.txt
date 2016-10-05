@@ -1,0 +1,49 @@
+<h3>Grundinstallation:</h3>
+<p></p>
+<ul>
+<li><a href="http://www.texstudio.org/" target="_blank">TexStudio (plattformunabhängig)</a></li>
+<li><a href="http://miktex.org" target="_blank">MikTex (Windows)</a></li>
+<li><a href="http://tug.org/mactex/" target="_blank">MacTex</a> (OS X)</li>
+<li>TexLive (Linux)</li>
+</ul>
+<p>Wenn ihr mit einem eigenen Laptop teilnehmt, bitte den Compiler (je nach System MikTex, MacTex oder TexLive) und TexStudio vorher installieren. Wichtig: Erst den Compiler installieren und dann TexStudio!</p>
+<p></p>
+<h3>Sonderzeichen</h3>
+<p>Eine Liste von <a href="http://www.ctan.org/tex-archive/info/symbols/comprehensive/" target="_blank">Sonderzeichen</a>.</p>
+<p><span>Eine gute Übersicht gibt die Datei "symbols-a4.pdf".</span></p>
+<p></p>
+<h3>(Vektor)-Grafiken in LaTex</h3>
+<p><span>Für Vektorgraphiken eignet sich das TikZ/PGF Framework.</span></p>
+<ul>
+<li>Grafiken mit <a href="http://www.tug.org/pracjourn/2007-1/mertz/mertz.pdf" target="_blank">TikZ</a><span></span></li>
+<li><a href="http://www.texample.net/tikz/examples/" target="_blank">Beispiele</a></li>
+</ul>
+<h3>Beamer</h3>
+<p><span>Für die Erstellung von Präsentationen mit LaTeX eignet sich die Klasse Beamer. Eine kurze Einführung in Beamer </span><a href="http://frank.uvena.de/de/LaTeX/beamer/" title="Beamer" target="_blank"><span>gibt es hier</span></a><span>.</span><span> Ausführliche Informationen findet ihr in der <a href="http://tug.ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf" target="_blank">Dokumentation</a>.<br /></span></p>
+<p></p>
+<h3>Literatursuch- und -verwaltungsprogramme</h3>
+<ul>
+<li><a href="https://www.jabref.org/" target="_blank">JabRef</a></li>
+<li><a href="http://www.uni-bamberg.de/ub/die-ub-im-ueberblick/digitale-bibliothek/literaturverwaltung-mit-citavi/" target="_blank">Citavi</a></li>
+<li><a href="http://www.zotero.org/" target="_blank">Zotero</a></li>
+<li><a href="http://citeseerx.ist.psu.edu/" target="_blank">Citeseer</a></li>
+<li><a href="http://www.sciencedirect.com/" target="_blank">Sciencedirect</a></li>
+<li><a href="http://scholar.google.de/scholar?hl=de&amp;q=annette+imhausen&amp;btnG=Suche&amp;lr=&amp;as_ylo=&amp;as_vis=0" target="_blank">Google Scholar</a></li>
+</ul>
+<p></p>
+<div class="mod-indent">
+<div class="activityinstance"></div>
+</div>
+<div class="mod-indent">
+<div class="activityinstance">
+<h3>Literatur zu LaTeX:</h3>
+<ul class="liste">
+<li><a href="http://bipede.de/Downloads/LaTeX-Kurs/Kurs-Folien_2011-11-17.pdf" target="_blank">M. Kühner: LATEX Einführung für Ingenieure bzw. Doktoranden, 2011.</a></li>
+<li>Weitere Literatur zu LaTeX ist auch in der Bibliothek sowie durch Suchmaschinen verfügbar.</li>
+</ul>
+<ul class="liste">
+<li>Weitere Referenzen:<span class="extern"> <a href="http://de.wikipedia.org/wiki/LaTeX" target="_blank">http://de.wikipedia.org/wiki/LaTeX</a></span></li>
+<li>Paketverwaltung und Dokumentationen: <a href="http://www.ctan.org/" target="_blank">http://www.ctan.org/</a><a href="http://www.ctan.org/" target="_blank"><span class="extern"></span></a></li>
+</ul>
+</div>
+</div>
