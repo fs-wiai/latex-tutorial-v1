@@ -177,7 +177,7 @@
 \definecolor{unibablueIV}{HTML}{99B5CB}
 \definecolor{unibablueV}{HTML}{CCDAE5}
 
-\definecolor{unibayellowI}{HTML}{FF8000} %TODO from FFD300 to FF8000 fro better reading on projector
+\definecolor{unibayellowI}{HTML}{FFD300}
 \definecolor{unibayellowII}{HTML}{FFDC33}
 \definecolor{unibayellowIII}{HTML}{FFE566}
 \definecolor{unibayellowIV}{HTML}{FFED99}
@@ -233,14 +233,27 @@
   \vskip-\baselineskip
   \vskip-0.2cm
   \hskip-0.5cm\usebeamerfont*{frametitle}\insertframetitle
-  \vskip-0.10em
+  \vskip+0.1cm
   \hskip-0.25cm\usebeamerfont*{framesubtitle}\insertframesubtitle
+  \vskip+0.15cm
 }
 
 \setbeamertemplate{headline}
 {
 
 \begin{tikzpicture}
+\node<handout:0>[
+anchor=south west,
+  draw=black,
+  thin,
+  fill=black,
+  shape=rectangle with rounded corners,
+  minimum height=\beamer@headheight, minimum width=\textwidth,
+  rectangle with rounded corners north west=0pt,
+  rectangle with rounded corners south west=0pt,
+  rectangle with rounded corners north east=0pt,
+  rectangle with rounded corners south east=0pt,
+] at (0,0) (b) {};
 \node[
 anchor=south west,
   draw=unibablueI,
@@ -279,6 +292,6 @@ anchor=south west,
     \usebeamerfont{section in head/foot}%
     \insertshortauthor \ - \insertshortinstitute
     \hfill
-    \insertframenumber/\inserttotalframenumber
+    \insertframenumber %/\inserttotalframenumber
   \end{beamercolorbox}}
 }
