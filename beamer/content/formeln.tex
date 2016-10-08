@@ -57,7 +57,7 @@
 			~\hat{}~\color{black}2\}\{3\color{black}\}
 			\color{nounibaredI}\backslash
 			\color{nounibaredI}\text{cdot}~
-			\color{black} c
+			\color{black} \text{c}
 			\color{nounibaredI}\_
 			\color{black}2\}
 			\color{unibayellowI}\text{\$}
@@ -77,7 +77,7 @@
 			~\hat{}~\color{black}2\}\{3\color{black}\}
 			\color{nounibaredI}\backslash
 			\color{nounibaredI}\text{cdot}~
-			\color{black} c
+			\color{black} \text{c}
 			\color{nounibaredI}\_
 			\color{black}2\}
 		}$
@@ -158,11 +158,12 @@ $\prod\limits_{i=1}^{n+1}i = 1 \cdot 2 \cdot \ldots \cdot n \cdot (n+1)$
 \end{column}
 \begin{column}{.6\textwidth}
 \flushleft
-{\ttfamily \color{unibayellowI}\$	\color{nounibaredI}\textbackslash\color{nounibaredI}prod\textbackslash  limits\_\color{black}\{i=1\}\color{nounibaredI}\^{}\color{black}\{n+1\}i = 1 \color{nounibaredI}\textbackslash \color{nounibaredI}cdot \color{black}2 \color{nounibaredI}\textbackslash \color{nounibaredI}cdot \color{nounibaredI}\textbackslash \color{nounibaredI}ldots \color{nounibaredI}\textbackslash\color{nounibaredI}cdot \color{black}n \color{nounibaredI}\textbackslash \color{nounibaredI}cdot \color{black}(n+1)\color{unibayellowI}\$}
+{\ttfamily \color{unibayellowI}\$%
+\color{nounibaredI}\textbackslash\color{nounibaredI}prod\textbackslash  limits\_\color{black}\{i=1\}\color{nounibaredI}\^{}\color{black}\{n+1\} i = 1 \color{nounibaredI}\textbackslash \color{nounibaredI}cdot \color{black}2 \color{nounibaredI}\textbackslash \color{nounibaredI}cdot \color{nounibaredI}\textbackslash \color{nounibaredI}ldots \color{nounibaredI}\textbackslash\color{nounibaredI}cdot \color{black}n \color{nounibaredI}\textbackslash \color{nounibaredI}cdot \color{black}(n+1)\color{unibayellowI}\$}
 \end{column}
 \end{columns}
 \bigskip
-Die  American Mathematical Society hat einen wundersch"onen Guide f"ur das {\ttfamily amsmath}-Package.\footnote{ftp://ftp.ams.org/pub/tex/doc/amsmath/amsldoc.pdf}
+Die  American Mathematical Society hat einen n"utzlichen Guide f"ur das {\ttfamily amsmath}-Package\footnote{\url{ftp://ftp.ams.org/pub/tex/doc/amsmath/amsldoc.pdf}}.
 \end{frame}
 
 %-------------------------------------------------------------------------------
@@ -172,22 +173,28 @@ Die  American Mathematical Society hat einen wundersch"onen Guide f"ur das {\ttf
 
 
 
-Um Ausdrücke in einer eigenen Zeile abzusetzen, kann man sie auch in {\ttfamily\color{unibayellowI}\$\$\color{nounibaredI} \ldots \color{unibayellowI}\$\$} schreiben. 
+Um Ausdrücke in einer eigenen Zeile abzusetzen, kann man sie auch in {\ttfamily\color{unibayellowI}\textbackslash [\color{nounibaredI} \ldots \color{unibayellowI}\textbackslash ]} schreiben. 
 Ein Beispiel ist folgender Ausdruck:
-$$ \sum\limits_{i=1}^{n+1} (n \cdot 2) - 5 $$
+\[ \sum\limits_{i=1}^{n+1} (n \cdot 2) - 5 \]
 Nach ihm geht der weitere Text einfach weiter.
 
 \bigskip
 
 Code:\\
-{\ttfamily \color{unibayellowI}\$\$	\color{nounibaredI}\textbackslash\color{nounibaredI}sum\textbackslash  limits\_\color{black}\{i=1\}\color{nounibaredI}\^{}\color{black}\{n+1\} (n \color{nounibaredI}\textbackslash \color{nounibaredI}cdot \color{black}2) - 5 \color{unibayellowI}\$\$}
+{\ttfamily \color{unibayellowI}\textbackslash [	\color{nounibaredI}\textbackslash\color{nounibaredI}sum\textbackslash  limits\_\color{black}\{i=1\}\color{nounibaredI}\^{}\color{black}\{n+1\} (n \color{nounibaredI}\textbackslash \color{nounibaredI}cdot \color{black}2) - 5 \color{unibayellowI}\textbackslash ]}
 
 \medskip
 
 \begin{block}{Indizes und Potenzen}
-Durch {\ttfamily \^{}\{\} und \_\{\} } werden Inhalte hoch- und tiefgestellt. \\
+Durch {\ttfamily \color{nounibaredI}\^{}\color{black}\{\} und \color{nounibaredI}\_\color{black}\{\} } werden Inhalte hoch- und tiefgestellt.
+
 \begin{center}
-$x_{i,j} = i^{j}$ \\ {\ttfamily \color{unibayellowI}\$	\color{nounibaredI}x\_\{i,j\} = i\^{}\{j\} \color{unibayellowI}\$}
+{\ttfamily \color{unibayellowI}\$%
+\color{black}x\color{nounibaredI}\_\color{black}\{i,j\}\color{black}~= i\color{nounibaredI}\^{}\color{black}\{j\}\color{unibayellowI}\$}
+
+\medskip
+ 
+$x_{i,j} = i^{j}$
 \end{center}
 
 \vspace{-2mm}
@@ -222,7 +229,7 @@ Logische Verknüpfungen:\\
 $ \land, \lor, \oplus, \lnot $
 \end{column}
 \begin{column}{.6\textwidth}
-{\ttfamily \color{unibayellowI} \$ \color{nounibaredI}\textbackslash land\color{black}, \color{nounibaredI}\textbackslash lor\color{black}, \color{nounibaredI}\textbackslash oplus, \color{nounibaredI}\textbackslash lnot \color{unibayellowI} \$ }
+{\ttfamily \color{unibayellowI} \$ \color{nounibaredI}\textbackslash land\color{black}, \color{nounibaredI}\textbackslash lor\color{black}, \color{nounibaredI}\textbackslash oplus\color{black}, \color{nounibaredI}\textbackslash lnot \color{unibayellowI} \$ }
 \end{column}
 \end{columns}
 \bigskip
@@ -243,7 +250,7 @@ Vergleiche:\\
 $ <, \leq, =, \neq, \geq, > $
 \end{column}
 \begin{column}{.6\textwidth}
-{\ttfamily \color{unibayellowI} \$ \color{black} < \color{nounibaredI}\textbackslash leq\color{black}, =,  \color{nounibaredI}\textbackslash neq\color{black}, \color{nounibaredI}\textbackslash geq\color{black}, > \color{unibayellowI} \$ }
+{\ttfamily \color{unibayellowI} \$ \color{black} <, \color{nounibaredI}\textbackslash leq\color{black}, =,  \color{nounibaredI}\textbackslash neq\color{black}, \color{nounibaredI}\textbackslash geq\color{black}, > \color{unibayellowI} \$ }
 \end{column}
 \end{columns}
 
@@ -371,10 +378,10 @@ $ \left\lbrace  \frac{1}{2} \right\rbrace $
 \begin{columns}
 \begin{column}{.2\textwidth}
 \centering
-$ \left[ \frac{1}{2} \right . $
+$ \left[ \frac{1}{2} \right] $
 \end{column}
 \begin{column}{.8\textwidth}
-{\ttfamily \color{unibayellowI} \$ \color{nounibaredI}\textbackslash left\color{black}[ \color{nounibaredI}\textbackslash frac\color{black}\{1\}\{2\} \color{nounibaredI}\textbackslash right \color{black}  . \color{unibayellowI} \$ }
+{\ttfamily \color{unibayellowI} \$ \color{nounibaredI}\textbackslash left\color{black}[ \color{nounibaredI}\textbackslash frac\color{black}\{1\}\{2\} \color{nounibaredI}\textbackslash right\color{black}] \color{unibayellowI} \$ }
 \end{column}
 \end{columns}
 
@@ -442,7 +449,7 @@ $ \leftrightarrow $
 \bigskip
 
 \begin{exampleblock}{Tipp}
-\TeX studio bietet eine graphische Auswahl für sehr viele mathematische Symbole (und mehr \smiley)
+\TeX studio bietet eine graphische Auswahl für sehr viele mathematische Symbole (und mehr \smiley).
 \end{exampleblock}
 %\vspace{-8mm}
 
