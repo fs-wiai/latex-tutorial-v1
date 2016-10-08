@@ -2,7 +2,7 @@
 
 \begin{frame}
 \frametitle{Fu\ss noten}
-\framesubtitle{Einbau von Fu\ss noten}
+\framesubtitle{Setzen von Fu\ss noten}
 \begin{exampleblock}{Neue Pakete in diesem Abschnitt}
 \begin{itemize}
 \item url
@@ -11,9 +11,9 @@
 \end{exampleblock}
 \begin{block}{Neue Befehle in diesem Abschnitt}
 \begin{itemize}
-\item \color{nounibaredI}\textbackslash footnote
-\item \textbackslash footnotemark\color{nounibagreenI}[]\color{nounibaredI}
-\item \textbackslash url\color{black}
+\item \color{nounibaredI}\textbackslash footnote\color{black}\{Fu\ss notentext\}
+\item \color{nounibaredI}\textbackslash footnotemark\color{nounibagreenI}[Nummer]\color{nounibaredI}
+\item \textbackslash url\color{black}\{https://wiai.de\}
 \end{itemize}
 \end{block}
 \end{frame}
@@ -32,10 +32,10 @@
 \begin{column}{0.5\textwidth}
 \begin{ttfamily}\color{nounibaredI}\textbackslash footnote\color{black}\{Fu\ss notentext\}\end{ttfamily} Erstellt eine Fußnote an dieser Stelle mit automatischer Nummerierung.
 
-\begin{ttfamily}\color{nounibaredI}\textbackslash footnote\color{nounibagreenI}[Zahl]\color{black}\{Fu\ss notentext\}\end{ttfamily} Eine manuelle Nummerierung ist ebenfalls möglich. 
+\begin{ttfamily}\color{nounibaredI}\textbackslash footnote\color{nounibagreenI}[Nummer]\color{black}\{Fu\ss notentext\}\end{ttfamily} Eine manuelle Nummerierung ist ebenfalls möglich. 
 
-\begin{ttfamily}\color{nounibaredI}\textbackslash footnotemark\color{nounibagreenI}[Zahl]\color{black}\end{ttfamily}
-Eine Zahl kann auch ohne Fußnotentext eingetragen werden
+\begin{ttfamily}\color{nounibaredI}\textbackslash footnotemark\color{nounibagreenI}[Nummer]\color{black}\end{ttfamily}
+Eine Zahl kann auch ohne Fußnotentext eingetragen werden.
 \end{column}
 \end{columns}
 \bigskip
@@ -56,7 +56,7 @@ Achtung: Manuelle Numerierungen werden nicht automatisch angepasst!
 \end{ttfamily}
 \end{column}
 \begin{column}{0.5\textwidth}
-\begin{ttfamily}\color{nounibaredI}\textbackslash url\color{black}\{http:\textbackslash\textbackslash www.example.com\}\end{ttfamily}\\ 
+\begin{ttfamily}\color{nounibaredI}\textbackslash url\color{black}\{https://wiai.de\}\end{ttfamily}\\ 
 Erstellt einen klickbaren Link.
 \bigskip
 \end{column}

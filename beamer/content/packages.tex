@@ -9,7 +9,7 @@ Sonderzeichen}
 \begin{multicols}{2}
 \begin{itemize}
   \item \begin{ttfamily}\color{nounibaredI}\textbackslash usepackage\color{black}\{Paket\}
-  \item \color{nounibaredI}\textbackslash befehl\color{nounibagreenI}[evtl\_optionen]\color{black}\{\\Formatierter\_Text\}
+  \item \color{nounibaredI}\textbackslash befehl\color{nounibagreenI}[evtl\_optionen]\color{black}\{\\Formatierter Text\}
   \item \color{unibablueI}\textbackslash begin\color{black}\{Umgebung\}
   \item \color{unibablueI}\textbackslash end\color{black}\{Umgebung\}
   \item \color{nounibaredI}$\backslash\backslash$\color{black}
@@ -103,7 +103,7 @@ Standardtextes und die Sprache.\\
 
 \item Für Bücher:\\
 \textbf{scrbook}, \textbf{book}\\
-{\ttfamily book} unterscheidet in der Regel zwischen linker und rechter Seite, wobei Unterschiede z.B. die Lage der Seitenzahl links oder rechts sein können
+{\ttfamily book} unterscheidet  zwischen linker und rechter Seite, wobei Unterschiede z. B. die Position der Seitenzahl links oder rechts sein können
 
 \item \textit{Für Präsentationen:\\
 \textbf{beamer}, \textbf{seminar}, \textbf{texpower}}\\
@@ -111,7 +111,7 @@ Standardtextes und die Sprache.\\
 
 \end{itemize}
 
-Für den \underline{europäischen} Raum sind die Dokumentklassen des \glqq KOMA-Scripts\grqq zu präferieren.\\
+Im europäischen Raum sind die Dokumentklassen des \glqq KOMA-Scripts\grqq ~"ublich.\\
 Die dazugehörigen Klassen beginnen mit \glqq scr\grqq .\\
 \end{frame}
 
@@ -166,7 +166,7 @@ Definiert den Zeichen-\\satz, der verwendet werden soll. Es sollte immer
 allen Betriebssystemen l"auft\\[5mm]
 
 \begin{ttfamily}\textbf{fontenc}\end{ttfamily}\\
-z.B. Umlaute\\
+z. B. Umlaute\\
 \end{column}
 \end{columns}
 \end{frame}
@@ -199,7 +199,7 @@ Umlaute, Kompilierungsfehler uvm., wenn es nicht nur „Windows“-User gibt.)
 
 \begin{frame}
 \frametitle{Ein erstes Anwendungsbeispiel}
-\framesubtitle{Pakete 2}
+\framesubtitle{Pakete cont'd}
 \begin{columns}
 \begin{column}{0.55\textwidth}
 \begin{ttfamily}\footnotesize
@@ -237,7 +237,7 @@ Die vorgestellten Packages sollten in jedem Dokument eingebunden werden!
 \end{column}
 
 \begin{column}{0.45\textwidth}
-\image{\textwidth}{image/minidocument.png}{Der Code von der linken Seite als .pdf.}{listing:minidocument}
+\image{\textwidth}{image/minidocument.png}{Der Code von der linken Seite als .PDF.}{listing:minidocument}
 \end{column}
 \end{columns}
 \end{frame}
@@ -296,10 +296,9 @@ Noch eine Ebene darunter.\\
 Weitere Untergliederungsmöglichkeiten (neben \begin{ttfamily}\color{unibablueI}\textbackslash section\color{black}s\end{ttfamily}):
 \begin{itemize}
 \item  \begin{ttfamily}\color{unibablueI}\textbackslash part\color{black}\{\}\end{ttfamily}\\
-Definiert größeren Teil und füllt eine ganze Seite
+Definiert größeren Teil und füllt eine ganze Seite.
 \item \begin{ttfamily}\color{unibablueI}\textbackslash chapter\color{black}\{\}\end{ttfamily}\\
-Gliedert in einzelne Kapitel\\
-Nur {\ttfamily book} und {\ttfamily report}
+Gliedert in einzelne Kapitel, nur in {\ttfamily book} und {\ttfamily report}.
 \end{itemize}
 
 
@@ -400,7 +399,7 @@ Dies ist zu 100 \color{nounibaredII}\textbackslash \% \color{black} kein Komment
 \begin{column}{0.5\textwidth}
 Sonderzeichen:
 \begin{itemize}
-\item Sind meist auch Steuerzeichen, z.B. wird das \% - Zeichen für Kommentare verwendet
+\item Sind meist auch Steuerzeichen, z. B. wird das \% - Zeichen für Kommentare verwendet
 \item Um sie trotzdem verwenden zu können, müssen sie mit dem '\color{nounibaredI}\textbackslash \color{black}' (Backslash) eingeführt bzw. escaped werden
 \end{itemize}
 \end{column}
@@ -464,7 +463,7 @@ benötigt.\\
 %\bigskip 
 \begin{block}{Hinweis}
 \footnotesize Manchmal muss das \ss ~mit \color{nounibaredI} \textbackslash ss \color{black}gebildet werden, ansonsten reicht es das Packet {\ttfamily babel} einzubinden.\\
-Ein Leerzeichen (z.B. nach Sonderzeichen) wird durch ein \color{nounibaredI} $\sim$ \color{black} (Tilde) erzwungen.
+Ein Leerzeichen (z. B. nach Sonderzeichen) wird durch ein \color{nounibaredI} $\sim$ \color{black} (Tilde) erzwungen.
 \end{block}
 \vspace{-8mm}
 
