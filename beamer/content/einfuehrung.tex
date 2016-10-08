@@ -12,10 +12,9 @@
 \begin{column}{.3\textwidth}
 \textbf{Sinnvoll}\\[3mm]
 \begin{itemize}
-\item Artikel
-\item Bücher
 \item wissenschaftliche Arbeiten
-\item Bewerbungen
+\item Bücher
+\item Lebenslauf \& Bewerbungen
 \end{itemize}
 \end{column}
 \begin{column}{.30\textwidth}
@@ -48,7 +47,7 @@
 \textbf{G}et}{img:worddoc}
 \end{column}
 \begin{column}{.3\textwidth}
-\image{\textwidth}{image/codescreen.png}{\textbf{W}hat \textbf{W}ill \textbf{I} \textbf{G}et?}{img:codescreen}
+\image{\textwidth}{image/codescreen.png}{What Will I Get?}{img:codescreen}
 %% Compile Animation
 \end{column}
 \end{columns}
@@ -67,7 +66,7 @@
 \image{.8\textwidth}{image/miktex.jpg}{Compiler (z.B. MikTeX)}{img:miktex}
 \end{column}
 \begin{column}{0.25\textwidth}
-\image{.6\textwidth}{image/pdflogo.png}{sch\"ones, lesbares und druckbares Dokument}{img:pdf}
+\image{.6\textwidth}{image/pdflogo.png}{Sch\"ones, lesbares und druckbares Dokument}{img:pdf}
 \end{column}
 \end{columns}
 \end{frame}
@@ -79,13 +78,14 @@
 \begin{frame}
 \frametitle{Einf\"uhrung}
 \framesubtitle{Vorteile \& Nachteile}
-Vorteile
+\textbf{Vorteile}
 \begin{itemize}
 \item  dynamische Verzeichnisse und Referenzen
 \item  automatische Layouts
 \item  einfaches verteiltes Arbeiten möglich
 \end{itemize}
-Nachteile
+
+\textbf{Nachteile}
 \begin{itemize}
 \item  Was kommt später raus?
 \item  viele, zum Teil komplexe Befehle
@@ -100,7 +100,7 @@ Nachteile
 \framesubtitle{\LaTeX - Compiler}
 \begin{columns}[t]
 \begin{column}{.4\textwidth}
-\textbf{Software unter Windows:}\\
+\textbf{Windows:}\\
 \begin{itemize}
   \item MikTex (http://www.miktex.org)\\
    2 Varianten: Basic oder  Complete
@@ -109,17 +109,17 @@ enthält MikTex, TeXnicCenter und Ghostscript – einfache Installation\\
 \end{itemize}
 \end{column}
 \begin{column}{.6\textwidth}
-\textbf{Software unter *nix:}
+\textbf{Unix}
 \begin{itemize}
-  \item TeXLive\\
+  \item \textbf{Linux:} TeXLive\\
 Pakete unter Ubuntu: {\ttfamily texlive-full} ist das Meta-Paket mit allen
-ben\"otigten Paketen. Enthält auch Folgende:
+ben\"otigten Paketen. Enthält auch folgende:
 \begin{itemize}
   \item {\ttfamily texlive-base
   \item texlive-lang-german}
 \end{itemize}
 Installation: {\ttfamily sudo apt-get install texlive-full}
-\item MacOS: MacTeX (http://www.tug.org/mactex/2009)\\
+\item \textbf{MacOS:} MacTeX (http://www.tug.org/mactex/2009)\\
 \end{itemize}
 \end{column}
 \end{columns}
@@ -162,11 +162,11 @@ Installation: {\ttfamily sudo apt-get install texlive-full}
 \frametitle{Einf\"uhrung}
 \framesubtitle{Freie Editoren -- Cross-Platform}
 \begin{itemize}
-  \item TeXstudio\footnote{http://sourceforge.net/projects/texstudio/?source=dlp}\\
+  \item TeXstudio\footnote{\url{http://sourceforge.net/projects/texstudio}}\\
   Sehr solide und mächtig, verwenden wir hier im Tutorium.
-  \item TeXMaker\footnote{http://www.xm1math.net/texmaker}\\
-   Grundlage von TeXstudio, ähnlich aber weniger mächtig.
-  \item TeXlipse\footnote{http://texlipse.sourceforge.net/}\\ F"ur fortgeschrittene User, Plugin f"ur
+  \item TeXMaker\footnote{\url{http://www.xm1math.net/texmaker}}\\
+   Grundlage von TeXstudio, etwas schlanker, wird kaum noch weiterentwickelt.
+  \item TeXlipse\footnote{\url{http://texlipse.sourceforge.net}}\\ F"ur fortgeschrittene User, Plugin f"ur
   Eclipse. Gute IDE-Unterst\"utzung, Code-Completion, Autobuilds, Versionsverwaltung etc.
 \end{itemize}
 \end{frame}
@@ -178,15 +178,15 @@ Installation: {\ttfamily sudo apt-get install texlive-full}
 \frametitle{Online}
 \framesubtitle{Multiediting -- auch Kollaborativ}
 \begin{itemize}
-  \item ShareLatex\footnote{https://www.sharelatex.com/, https://github.com/sharelatex/}\\
-  Teilweise Open-Source, Hosted-Version kostenlos für Single-User
-  \item Overleaf\footnote{https://www.overleaf.com/}\\
-  Teilweise Kostenpflichtig, Hosted
-  \item FlyLatex\footnote{https://github.com/alabid/flylatex}\\ 
-  OpenSource, weniger mächtig
+  \item ShareLatex\footnote{\url{https://www.sharelatex.com}, \url{https://github.com/sharelatex}}\\
+  Teilweise Open Source, Onlineversion kostenlos für Einzelbenutzer
+  \item Overleaf\footnote{\url{https://www.overleaf.com}}\\
+  Teilweise kostenpflichtig, hosted
+  \item FlyLatex\footnote{\url{https://github.com/alabid/flylatex}}\\ 
+  Open Source, weniger mächtig
   \item Viele Weitere ...
   \vspace{7mm}
-  \item Es gibt auch Git!
+  \item In der Uni wird auch oft git\footnote{\url{https://git-scm.com}} zur Synchronisation verwendet.
 \end{itemize}
 \end{frame}
 
