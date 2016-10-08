@@ -58,9 +58,10 @@
 
 %% Sprache
 \ifthenelse{\equal{\lang}{ngerman}}{\usepackage[ngerman]{babel}}{\usepackage[\lang]{babel}}
-%\mode<presentation>{
-%% XXX without this the number does not appear
-%\AtBeginDocument{\def\figurename{{\scshape Fig.~\thefigure}}}
+
+% Abbildung -> Abb.
+\addto\captionsngerman{\renewcommand{\figurename}{Abb.}}
+
 %}
 %%\usepackage{abstract}
 
