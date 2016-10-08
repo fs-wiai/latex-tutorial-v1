@@ -3,20 +3,20 @@
 \frametitle{Referenzen}
 \framesubtitle{Abbildungen einfügen – A closer look}
 \begin{tabbing}
-\begin{ttfamily}\color{nounibaredI}\textbackslash label\color{black}\{Labelname\}\end{ttfamily} \=Mit diesem Befehl
-setzt man ein Label. Später im\\\> Text kann man dann durch eine Referenz auf dieses\\
-\> Label verweisen.\\
+\begin{ttfamily}\color{nounibaredI}\textbackslash label\color{black}\{Schl"ussel\}\end{ttfamily} \= Mit diesem Befehl weist man einen Schl"ussel zu. Später\\
+\> im Text kann man dann durch eine Referenz auf diese\\
+\> Stelle verweisen.\\
 \> Dies geschieht mit dem Befehl
-\begin{ttfamily}\color{nounibaredI}\textbackslash ref\color{black}\{Labelname\}\end{ttfamily}.
+\begin{ttfamily}\color{nounibaredI}\textbackslash ref\color{black}\{Schl"ussel\}\end{ttfamily}.
 \end{tabbing}
 \begin{ttfamily}Der kleine Tux ist ein Allesfresser. Egal ob Gem"use oder
-Schnittlauch, nichts ist vor ihm sicher. (siehe Bild
-\color{nounibaredI}\textbackslash ref\color{black}\{img:tux1\})\end{ttfamily}\\[3mm]
+Schnittlauch, nichts ist vor ihm sicher (siehe Abb.
+\color{nounibaredI}\textbackslash ref\color{black}\{img:tux1\}).\end{ttfamily}\\[3mm]
 \textbf{Ergebnis:}\\[3mm]
 \begin{minipage}{\textwidth}\begin{rm}
 Der kleine Tux ist ein Allesfresser. Egal ob Gem"use oder
-Schnittlauch, nichts ist vor ihm sicher. (siehe Bild
-1)\end{rm} \end{minipage}\\[3mm]
+Schnittlauch, nichts ist vor ihm sicher (siehe Abb.
+1).\end{rm} \end{minipage}\\[3mm]
 %\begin{exampleblock}{Und warum das Ganze?}
 %Durch solche Referenzen wird immer auf das richtige Bild verwiesen, auch wenn zwischendurch noch weitere Bilder einfügt wurden.
 %\end{exampleblock}
@@ -37,13 +37,13 @@ Mit dem Package \textit{cleveref} wird die Referenz direkt in der richtigen Spra
 \textbf{Ergebnis:}\\[3mm]
 
 \begin{rm}
-siehe Abbildung 1 \end{rm}\\[3mm]
+siehe Abb. 1 \end{rm}\\[3mm]
 
 \medskip
 
 \begin{block}{Hinweis}
-\begin{ttfamily}\color{nounibaredI}\textbackslash cref\color{black}\{sec:intro\}\end{ttfamily} funktioniert auch mit verweisen auf Sections, Tabellen usw. Diese werden ebenso korrekt beschriftet, müssen aber gelabelt werden: \begin{ttfamily}\color{nounibaredI}\textbackslash section\color{black}\{Introduction\}\color{nounibaredI}\textbackslash label\color{black}\{sec:intro\}\end{ttfamily}\\[3mm] %\label{sec:Introduction}
-Schreibt man \begin{ttfamily}\color{nounibaredI}\textbackslash Cref\color{black}\{img:tux1\}\end{ttfamily} groß, wird das beschreibende Wort mit einem Großbuchstaben begonnen.
+\begin{ttfamily}\color{nounibaredI}\textbackslash cref\color{black}\{sec:intro\}\end{ttfamily} funktioniert auch mit Verweisen auf Sections, Tabellen usw\ldots ~Auch sie m"ussen mit Schl"usseln versehen werden: \begin{ttfamily}\color{nounibaredI}\textbackslash section\color{black}\{Introduction\color{nounibaredI}\textbackslash label\color{black}\{sec:intro\}\}\end{ttfamily}\\[3mm] %\label{sec:Introduction}
+Schreibt man \begin{ttfamily}\color{nounibaredI}\textbackslash Cref\color{black}\{img:tux1\}\end{ttfamily} groß, wird der Begriff mit einem Großbuchstaben begonnen.
 \end{block}
 
 \end{frame}

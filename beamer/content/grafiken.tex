@@ -13,8 +13,8 @@
 \begin{itemize}
 \item \color{nounibaredI}\textbackslash includegraphics\color{black}\{Datei\}
 \item \color{nounibaredI}\textbackslash caption\color{black}\{Bildunterschrift\}
-\item \begin{ttfamily}\color{nounibaredI}\textbackslash label\color{black}\{Label\}
-\item \color{nounibaredI}\textbackslash ref\color{black}\{Referenz\}\end{ttfamily}
+\item \begin{ttfamily}\color{nounibaredI}\textbackslash label\color{black}\{Schl"ussel\}
+\item \color{nounibaredI}\textbackslash ref\color{black}\{Schl"ussel\}\end{ttfamily}
 \end{itemize}
 \end{block}
 
@@ -81,7 +81,7 @@ Seite\\[5mm]
 \frametitle{Grafiken}
 \framesubtitle{Positionierung von Abbildungen II }
 Trotz Definition einer Positionsumgebung verrutscht das Bild oft, da es nicht immer m\"oglich ist das Bild an passender Stelle einzufügen.\\
-\textbf{L\"osung:} Das Packet {\ttfamily float} liefert in den meisten F\"allen bessere Positionierungen.
+\textbf{L\"osung:} Das Packet {\ttfamily float} erzwingt die Positionierung an genau dieser Stelle im Text (allerdings ohne R"ucksicht auf entstehende Leerfl"achen).
 
 \begin{columns}
 \begin{column}{.5\textwidth}
