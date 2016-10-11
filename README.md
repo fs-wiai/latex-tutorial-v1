@@ -9,3 +9,10 @@ Nach möglichkeiten, die Informationen im VC als HTML-Code exportieren und hier 
 
 Weitere TODOs in der [TODO.md](TODO.md)
 
+
+Anregung
+--------
+
+USB-Stick(s) mit allen Installations-Dateien (MikTex, MacTex, TexStudio Win/Mac) sowie Kurs-Dateien (Vorgaben, Aufgaben, Folien) bereit halten, falls jemand am Laptop kein Internet hat und auch noch keine ba-Nummer.
+
+
