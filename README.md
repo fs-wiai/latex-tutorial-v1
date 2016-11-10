@@ -1,18 +1,11 @@
-Latex-Tutorium
-==============
+# Latex-Tutorium der Fachschaft WIAI
 
 
-Für den Export als Handout für die Teilnehmer bitte den Handout-Export-Parameter verwenden!
-Für die Präsentations-Folien den handout-parameter in der presentation.tex bitte auskommentieren.
 
-Nach möglichkeiten, die Informationen im VC als HTML-Code exportieren und hier in html Dateien aktuell halten zur Versionierung.
+## Hintergrund
 
-Weitere TODOs in der [TODO.md](TODO.md)
+Dies ist das semesterweise angebotene Tutorium der Fachschafts Wirtschaftsinformatik und Angewandte Informatik (WIAI) der Otto-Friedrich-Universität Bamberg.
 
 
-Anregung
---------
-
-USB-Stick(s) mit allen Installations-Dateien (MikTex, MacTex, TexStudio Win/Mac) sowie Kurs-Dateien (Vorgaben, Aufgaben, Folien) bereit halten, falls jemand am Laptop kein Internet hat und auch noch keine ba-Nummer.
-
+Powered by Prof. Dr. Udo R. Krieger, Professur für Informatik - insbesondere Kommunikationsdienste, Telekommunikationssysteme und Rechnernetze, Otto-Friedrich-Universität Bamberg
 
