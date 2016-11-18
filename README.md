@@ -1,6 +1,6 @@
 # LaTeX Tuturial of the Fachschaft WIAI
 
-This tutorial for the typesetting system [LaTeX](https://www.latex-project.org/) comprises the most general topics for writing a beautiful, high-quality thesis.
+This tutorial for the typesetting system [**LaTeX**](https://www.latex-project.org) comprises the most general topics for writing a beautiful, high-quality thesis.
 
 * Basic formatting
 * Footnotes
@@ -8,14 +8,16 @@ This tutorial for the typesetting system [LaTeX](https://www.latex-project.org/)
 * Formulas
 * Tables
 * Enumerations
-* Literature Management
+* Literature management
 * Best practices for large documents 
 
-The tutorial is designed as a **one-day crash course** for **non-programmers** to learn LaTeX. The didactic concept is an alteration between **lectures** about the beforementioned topics and **hands-on exercises** where the learners are asked to recreate documents with LaTeX. 
+The tutorial is designed as a **one-day crash course** for **non-programmers** to learn LaTeX.
+The didactic concept is an alteration between **lectures** about the beforementioned topics and **hands-on exercises** where the learners are asked to recreate documents with LaTeX. 
 
 ## Background
 
-Since 2010 this tutorial is offered for the freshman and other interested students each semester at the University of Bamberg. It is powered by [Prof. Dr. Udo R. Krieger](https://www.uni-bamberg.de/ktr/mitarbeiter/krieger), [Professorship for Computer Science](https://www.uni-bamberg.de/ktr), Communication Services, Telecommunication Systems and Computer Networks at the [University of Bamberg](https://www.uni-bamberg.de/ktr/mitarbeiter/krieger).
+Since 2010 this tutorial is offered for the freshman and other interested students each semester at the University of Bamberg.
+It is powered by [Prof. Dr. Udo R. Krieger](https://www.uni-bamberg.de/ktr/mitarbeiter/krieger), [Professorship for Computer Science](https://www.uni-bamberg.de/ktr), Communication Services, Telecommunication Systems and Computer Networks at the [University of Bamberg](https://www.uni-bamberg.de/ktr/mitarbeiter/krieger).
 
 The original authors were
 
@@ -24,7 +26,7 @@ The original authors were
 * Martin Sticht, &
 * Michael Timpelan,
 
-and the tutorial is maintained by members of the Fachschaft WIAI.
+and the tutorial is maintained by members of the [Fachschaft WIAI](https://wiai.de).
 
 ## Software Used
 
@@ -32,5 +34,19 @@ To accomplish this tutorial it is required to install
 * an up-to-date [**LaTeX compiler**](https://www.latex-project.org/get) (software that translates your LaTeX code into a beautiful PDF),
 * a **LaTeX editor**, e.g., [TeXstudio](http://www.texstudio.org), &
 * any **PDF viewer**.
+
+## Contents of this Repository
+
+
+* [**English Slides**](English/beamer)
+* [**English Exercises**](English/tasks)
+* [**German Slides**](Deutsch/beamer)
+* [**German Exercises**](Deutsch/aufgaben)
+
+## License
+
+The tutorial is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/). Please attribute **Fachschaft WIAI, University of Bamberg** as author.
+
+You can read the full license text [here](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
 
 
