@@ -1,4 +1,4 @@
-# LaTeX Tuturial of the Fachschaft WIAI
+# LaTeX Tutorial of the Fachschaft WIAI
 
 This tutorial for the typesetting system [**LaTeX**](https://www.latex-project.org) comprises the most general topics for writing a beautiful, high-quality thesis or scientific paper.
 
@@ -48,7 +48,7 @@ and the tutorial is maintained by members of the [Fachschaft WIAI](https://wiai.
 
 ## Contributing
 
-You are very welcome to suggest improvements/fix errors by submitting an [Issue](Issues) or by creating a pull request. Note that due to the temporal limitations of a one-day tutorial, we might not merge any new section/feature to maintain the scope.
+You are very welcome to suggest improvements/fix errors by submitting an [issue](Issues) or by creating a pull request. Note that due to the temporal limitations of a one-day tutorial, we might not merge any new section/feature to maintain the scope.
 
 
 ## License
