@@ -34,7 +34,7 @@ To accomplish this tutorial it is required to install
 ## Background
 
 Since 2009 this tutorial is offered for the freshman and other interested students each semester at the University of Bamberg.
-It is powered by [Prof. Dr. Udo R. Krieger](https://www.uni-bamberg.de/ktr/mitarbeiter/krieger), [Professorship for Computer Science](https://www.uni-bamberg.de/ktr), Communication Services, Telecommunication Systems and Computer Networks at the [University of Bamberg](https://www.uni-bamberg.de/ktr/mitarbeiter/krieger).
+It is powered by [Prof. Dr. Udo R. Krieger](https://www.uni-bamberg.de/ktr/mitarbeiter/krieger), [Professorship for Computer Science](https://www.uni-bamberg.de/ktr), Communication Services, Telecommunication Systems and Computer Networks at the [University of Bamberg](https://www.uni-bamberg.de).
 
 The original authors were
 
