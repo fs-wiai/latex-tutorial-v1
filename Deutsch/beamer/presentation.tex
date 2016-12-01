@@ -16,9 +16,17 @@
 % Options ngerman, english
 \newcommand{\lang}{ngerman}
 
-\documentclass[10pt,\lang ,
-%draft,
-handout,
+\ifdefined\ishandout
+\newcommand{\handoutmode}{handout}
+\else
+\newcommand{\handoutmode}{}
+\fi
+
+
+
+\documentclass[10pt,
+\lang ,
+\handoutmode ,
 compress
 ]{beamer}
 % Für den Header
