@@ -1,12 +1,18 @@
 \newcommand{\lang}{english}
 
-\documentclass[10pt,\lang ,
-%draft,
-%handout,
+\ifdefined\ishandout
+\newcommand{\handoutmode}{handout}
+\else
+\newcommand{\handoutmode}{}
+\fi
+
+\documentclass[10pt,
+\lang ,
+\handoutmode ,
 compress
 ]{beamer}
-% Für den Header
-% Modify for different languages
+
+
 \usepackage{ifthen}
 
 \newcommand{\unibastring}{\ifthenelse{\equal{\lang}{ngerman}}{University of Bamberg}{University of Bamberg}}
