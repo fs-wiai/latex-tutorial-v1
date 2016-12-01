@@ -1,6 +1,6 @@
 # LaTeX Tutorial of the Fachschaft WIAI
 
-This tutorial for the typesetting system [**LaTeX**](https://www.latex-project.org) comprises the most general topics for writing a beautiful, high-quality thesis or scientific paper.
+This tutorial for the typesetting system [**LaTeX**](https://www.latex-project.org) comprises the most important topics for writing a beautiful, high-quality thesis or scientific paper.
 
 * Basic formatting
 * Footnotes
@@ -12,20 +12,20 @@ This tutorial for the typesetting system [**LaTeX**](https://www.latex-project.o
 * Best practices for writing large documents 
 
 The tutorial is designed as a **one-day crash course** for **non-programmers** to learn LaTeX.
-The didactic concept is an alteration between **lectures** about the beforementioned topics and **hands-on exercises** where the learners are asked to recreate documents with LaTeX. 
+The didactic concept is an alteration between **lectures** about the beforementioned topics and **hands-on exercises** where the learner's task is to recreate simple documents using LaTeX. 
 
 
 ## Contents of this Repository
-
 
 * [**English Slides**](English/beamer)
 * [**English Exercises**](English/tasks)
 * [**German Slides**](Deutsch/beamer)
 * [**German Exercises**](Deutsch/aufgaben)
 
+
 ## Software Used
 
-To accomplish this tutorial it is required to install
+To work on this tutorial it is required to install
 * an up-to-date [**LaTeX compiler**](https://www.latex-project.org/get) (software that translates your LaTeX code into a beautiful PDF),
 * a **LaTeX editor**, e.g., [TeXstudio](http://www.texstudio.org), &
 * any **PDF viewer**.
@@ -33,7 +33,7 @@ To accomplish this tutorial it is required to install
 
 ## Background
 
-Since 2009 this tutorial is offered for the freshman and other interested students each semester at the University of Bamberg.
+Since 2009 this tutorial is offered for the freshman and other interested students at the University of Bamberg.
 It is powered by [Prof. Dr. Udo R. Krieger](https://www.uni-bamberg.de/ktr/mitarbeiter/krieger), [Professorship for Computer Science](https://www.uni-bamberg.de/ktr), Communication Services, Telecommunication Systems and Computer Networks at the [University of Bamberg](https://www.uni-bamberg.de).
 
 The original authors were
@@ -48,7 +48,7 @@ and the tutorial is maintained by members of the [Fachschaft WIAI](https://wiai.
 
 ## Contributing
 
-You are very welcome to suggest improvements/fix errors by submitting an [issue](issues) or by creating a pull request. Note that due to the temporal limitations of a one-day tutorial, we might not merge any new section/feature to maintain the scope. In case of doubts just open an [issue](issues) and we can discuss your suggestion before you implement it.
+You are very welcome to suggest improvements/fix errors by submitting an [issue](issues) or by creating a pull request. Note that due to the temporal limitations of a one-day tutorial, we might not merge new sections/features to maintain the scope. In case of doubts just open an [issue](issues) so we can discuss your suggestions before you implement them.
 
 
 ## License
