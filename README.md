@@ -34,7 +34,7 @@ To accomplish this tutorial it is required to install
 ## Background
 
 Since 2009 this tutorial is offered for the freshman and other interested students each semester at the University of Bamberg.
-It is powered by [Prof. Dr. Udo R. Krieger](https://www.uni-bamberg.de/ktr/mitarbeiter/krieger), [Professorship for Computer Science](https://www.uni-bamberg.de/ktr), Communication Services, Telecommunication Systems and Computer Networks at the [University of Bamberg](https://www.uni-bamberg.de/ktr/mitarbeiter/krieger).
+It is powered by [Prof. Dr. Udo R. Krieger](https://www.uni-bamberg.de/ktr/mitarbeiter/krieger), [Professorship for Computer Science](https://www.uni-bamberg.de/ktr), Communication Services, Telecommunication Systems and Computer Networks at the [University of Bamberg](https://www.uni-bamberg.de).
 
 The original authors were
 
@@ -48,7 +48,7 @@ and the tutorial is maintained by members of the [Fachschaft WIAI](https://wiai.
 
 ## Contributing
 
-You are very welcome to suggest improvements/fix errors by submitting an [issue](Issues) or by creating a pull request. Note that due to the temporal limitations of a one-day tutorial, we might not merge any new section/feature to maintain the scope.
+You are very welcome to suggest improvements/fix errors by submitting an [issue](issues) or by creating a pull request. Note that due to the temporal limitations of a one-day tutorial, we might not merge any new section/feature to maintain the scope. In case of doubts just open an [issue](issues) and we can discuss your suggestion before you implement it.
 
 
 ## License
@@ -72,3 +72,4 @@ The licensor cannot revoke these freedoms as long as you follow the license term
 ---
 
 This is the [short version](https://creativecommons.org/licenses/by-sa/4.0/) of the license, please refer to the [full legal text](https://creativecommons.org/licenses/by-sa/4.0/legalcode) for the details.
+
