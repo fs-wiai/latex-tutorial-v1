@@ -60,7 +60,9 @@ and the tutorial is maintained by members of the [Fachschaft WIAI](https://wiai.
 
 ## Contributing
 
-You are very welcome to suggest improvements/fix errors by submitting an [issue](https://github.com/fs-wiai/LaTeX-Tutorial/issues) or by creating a pull request. Note that due to the temporal limitations of a one-day tutorial, we might not merge new sections/features to maintain the scope. In case of doubts just open an [issue](https://github.com/fs-wiai/LaTeX-Tutorial/issues) so we can discuss your suggestions before you implement them.
+You are very welcome to suggest improvements/fix errors by submitting an [issue](https://github.com/fs-wiai/LaTeX-Tutorial/issues) or by creating a pull request.
+Note that due to the temporal limitations of a one-day tutorial, we might not merge new sections/features to maintain the scope.
+In case of doubts just open an [issue](https://github.com/fs-wiai/LaTeX-Tutorial/issues) so we can discuss your suggestions before you implement them.
 
 
 ## License
@@ -68,6 +70,7 @@ You are very welcome to suggest improvements/fix errors by submitting an [issue]
 The tutorial is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/). Please attribute **Fachschaft WIAI, University of Bamberg** as author.
 
 ---
+
 **This license means that you are free to:**
 
 * **Share** — copy and redistribute the material in any medium or format
@@ -80,8 +83,8 @@ The licensor cannot revoke these freedoms as long as you follow the license term
 **Under the following terms:**
 
 * **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-
 * **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+
 ---
 
 This is the [short version](https://creativecommons.org/licenses/by-sa/4.0/) of the license, please refer to the [full legal text](https://creativecommons.org/licenses/by-sa/4.0/legalcode) for the details.
