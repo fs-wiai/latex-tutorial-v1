@@ -60,7 +60,7 @@ and the tutorial is maintained by members of the [Fachschaft WIAI](https://wiai.
 
 ## Contributing
 
-You are very welcome to suggest improvements/fix errors by submitting an [issue](issues) or by creating a pull request. Note that due to the temporal limitations of a one-day tutorial, we might not merge new sections/features to maintain the scope. In case of doubts just open an [issue](issues) so we can discuss your suggestions before you implement them.
+You are very welcome to suggest improvements/fix errors by submitting an [issue](https://github.com/fs-wiai/LaTeX-Tutorial/issues) or by creating a pull request. Note that due to the temporal limitations of a one-day tutorial, we might not merge new sections/features to maintain the scope. In case of doubts just open an [issue](https://github.com/fs-wiai/LaTeX-Tutorial/issues) so we can discuss your suggestions before you implement them.
 
 
 ## License
@@ -80,6 +80,7 @@ The licensor cannot revoke these freedoms as long as you follow the license term
 **Under the following terms:**
 
 * **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
 * **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
 ---
 
