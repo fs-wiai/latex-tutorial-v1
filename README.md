@@ -30,6 +30,18 @@ To work on this tutorial it is required to install
 * a **LaTeX editor**, e.g., [TeXstudio](http://www.texstudio.org), &
 * any **PDF viewer**.
 
+## Compiling the Sources
+
+The PDFs can be created by compiling the LaTeX sources located in [English/beamer](English/beamer) and [Deutsch/beamer](Deutsch/beamer).
+The compiler has to be invoked via `pdflatex presentation.tex` at least two times.
+For convenience there are `Makefile`s available for building the the presentation and the handout version of the tutorial
+```Makefile
+# Usage
+make handout      # Compiles the sources to handout.pdf without organisational slides
+make presentation # Compiles the sources to presentation.pdf used for presentation
+
+```
+
 
 ## Background
 
