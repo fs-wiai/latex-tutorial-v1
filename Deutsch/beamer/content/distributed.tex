@@ -4,13 +4,15 @@
 \framesubtitle{\ldots und dabei den vollen Charme von \LaTeX ~erleben!}
 \begin{block}{Neue Befehle in diesem Abschnitt}
 \begin{itemize}
+\begin{ttfamily}
   \item \color{nounibaredI}\textbackslash input\color{black}\{\}
   \item \color{nounibaredI}\textbackslash tableofcontents\color{black}
   \item \color{nounibaredI}\textbackslash listoffigures\color{black}
   \item \color{nounibaredI}\textbackslash listoftables\color{black}
   \item \color{nounibaredI}\textbackslash vspace\color{black}\{\}
   \item \color{nounibaredI}\textbackslash today\color{black}
-\item \color{unibablueI}\textbackslash begin\color{black}\{titlepage\} \ldots \color{unibablueI}\textbackslash end\color{black}\{titlepage\} 
+  \item \color{unibablueI}\textbackslash begin\color{black}\{titlepage\} \ldots \color{unibablueI}\textbackslash end\color{black}\{titlepage\} 
+\end{ttfamily}
 \end{itemize}
 \end{block}
 \end{frame}
@@ -49,18 +51,19 @@ Dazu muss man die einzelnen Dateien anpassen.
 
 \begin{frame}
 \frametitle{\ldots ~und das wollen wir nun machen:}
-Es muss \textbf{alles} (einschlie\ss lich) vor und nach \color{unibablueI}\textbackslash begin\color{black}- 
-und\color{unibablueI}~\textbackslash end\color{black}\{document\} gel\"oscht werden:\\[5mm]
+\hspace{-5mm}
+Es muss \textbf{alles} (einschlie\ss lich) vor und nach \texttt{\color{unibablueI}\textbackslash begin}\color{black}- 
+und \texttt{\color{unibablueI}~\textbackslash end\color{black}\{document\}} gel\"oscht werden:\\[5mm]
 \begin{columns}
-\begin{column}{.47\textwidth}
-\sout{\color{nounibaredI}\color{nounibaredI}\textbackslash documentclass\color{black}\color{nounibagreenI}[pdftex]\color{black}\{article\} \\
+\begin{column}{.60\textwidth}
+\sout{\color{nounibaredI}\color{nounibaredI}\textbackslash documentclass\color{black}\color{nounibagreenI}[pdftex]\color{black}\{article\}\\
 \color{nounibaredI}\textbackslash usepackage\color{black}\{babel\}\\
 \color{nounibaredI}\color{unibablueI}\textbackslash\color{unibablueI}begin\color{black}\color{black}\{document\} }\\
 Dieses Dokument kann nun mit dem Befehl \color{nounibaredI}\color{nounibaredI}\textbackslash input\color{nounibaredI}\color{black}\{Dateiname\} in LaTeX eingebunden werden.\color{nounibaredI}\color{nounibaredI}\textbackslash \color{nounibaredI}\textbackslash \color{black}  \\
 \sout{\color{nounibaredI}\color{unibablueI}\textbackslash\color{unibablueI}end\color{black}\color{black}\{document\} }
 \end{column}
-\begin{column}{.47\textwidth}
-Mit dem Befehl \color{nounibaredI}\textbackslash input\color{black}\{pfad/zur/datei\} kann man danach
+\begin{column}{.37\textwidth}
+Mit dem Befehl \texttt{\color{nounibaredI}\textbackslash input\color{black}\{pfad/zur/datei\}} kann man danach
  diese in eine andere {\ttfamily .tex}-Datei einbinden.
 
 \end{column}
@@ -218,10 +221,10 @@ Fachschaft WIAI\color{nounibaredI}\color{nounibaredI}\textbackslash normalsize\c
 \framesubtitle{Befehle zur Seitennummerierung}
 \begin{block}{Seitennummerierung}
 \begin{itemize}
-\item \color{nounibaredI}\textbackslash thispagestyle\color{black}\{empty\} -- Keine Seitennmumerierung
-\item \color{nounibaredI}\textbackslash setcounter\color{black}\{page\}\{1\} -- Setzt die Seitennummerierung auf einen bestimmten Wert
-\item \color{nounibaredI}\textbackslash pagenumbering\color{black}\{Roman$\mid$roman$\mid$arabic$\mid$Alph$\mid$alph\} -- Definiert die Seitenz\"ahlung
-\item \color{nounibaredI}\textbackslash  newpage \color{black}-- Erzeugt eine neue Seite
+\item \texttt{\color{nounibaredI}\textbackslash thispagestyle\color{black}\{empty\}} -- Keine Seitennmumerierung
+\item \texttt{\color{nounibaredI}\textbackslash setcounter\color{black}\{page\}\{1\}} -- Setzt die Seitennummerierung auf einen bestimmten Wert
+\item \texttt{\color{nounibaredI}\textbackslash pagenumbering\color{black}\{Roman$\mid$roman$\mid$arabic$\mid$Alph$\mid$alph\}} -- Definiert die Seitenz\"ahlung
+\item \texttt{\color{nounibaredI}\textbackslash newpage \color{black}} -- Erzeugt eine neue Seite
 \end{itemize}
 \end{block}
 \end{frame}

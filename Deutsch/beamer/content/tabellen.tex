@@ -12,6 +12,7 @@
 
 \begin{block}{Neue Befehle in diesem Abschnitt}
 \begin{itemize}
+\begin{ttfamily}
 \item \color{unibablueI}\textbackslash begin\color{black}\{tabular\} \dots
 ~\color{unibablueI}\textbackslash end\color{black}\{tabular\}
 \item \color{unibablueI}\textbackslash begin\color{black}\{table\} \dots
@@ -24,6 +25,7 @@
 \item \color{nounibaredI}\& \color{black}
 \item \color{nounibaredI}\textbackslash hline\color{black}
 \item \color{nounibaredI}\textbackslash multicolumn\color{black}\{Spaltenzahl\}\{Spaltenausrichtung\}\{Text\}
+\end{ttfamily}
 \end{itemize}
 \end{block}
 
@@ -92,10 +94,10 @@ Hier werden die definierten Spalten mit Inhalt gefüllt und horizontal getrennt.
 \begin{tabbing}[H]p{Spaltenbreite}
 xxx\=\kill
 \textbf{Befehle:}\\
-\color{nounibaredI}\&\color{black} \>= dient zur horizontalen Trennung von Zellen\\
-\color{nounibaredI}\textbackslash \textbackslash \color{black} \>=  neue Zeile\\
-\color{nounibaredI}\textbackslash hline\color{black} \>= setzt eine waagerechte Tabellenlinie\\[2mm]
-\color{nounibaredI}\textbackslash multicolumn\color{black}\{Spaltenzahl\}\{Spaltenausrichtung\}\{Text\}\\[2mm]
+\texttt{\color{nounibaredI}\&} \color{black} \>= dient zur horizontalen Trennung von Zellen\\
+\texttt{\color{nounibaredI}\textbackslash \textbackslash} \color{black} \>=  neue Zeile\\
+\texttt{\color{nounibaredI}\textbackslash hline} \color{black} \>= setzt eine waagerechte Tabellenlinie\\[2mm]
+\texttt{\color{nounibaredI}\textbackslash multicolumn \color{black}\{Spaltenzahl\}\{Spaltenausrichtung\}\{Text\}}\\[2mm]
 \>= Verbindet beliebig viele Spalten miteinander.\\
 \end{tabbing}
 \end{frame}
@@ -180,7 +182,7 @@ Nummer & Ort & Spieler 1 & Spieler 2 & Ergebnis \\
 \framesubtitle{Weiteres Beispiel}
 
 \begin{block}{Hinweis}
-Zeilenumbrüche in Zellen von \color{nounibaredI}\textbackslash p\color{black}\{\} Spalten können mit \color{nounibaredI}\textbackslash newline\color{black}~ erzielt werden. Es bricht dort aber auch automatisch um.
+Zeilenumbrüche in Zellen von \texttt{\color{nounibaredI}\textbackslash p\color{black}\{\}} Spalten können mit \texttt{\color{nounibaredI}\textbackslash newline\color{black}}~ erzielt werden. Es bricht dort aber auch automatisch um.
 \end{block}
 
 \medskip

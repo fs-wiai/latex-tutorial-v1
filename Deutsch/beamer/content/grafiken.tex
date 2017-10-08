@@ -12,10 +12,12 @@
 
 \begin{block}{Neue Befehle in diesem Abschnitt}
 \begin{itemize}
+\begin{ttfamily}
 \item \color{nounibaredI}\textbackslash includegraphics\color{black}\{Datei\}
 \item \color{nounibaredI}\textbackslash caption\color{black}\{Bildunterschrift\}
-\item \begin{ttfamily}\color{nounibaredI}\textbackslash label\color{black}\{Schl"ussel\}
-\item \color{nounibaredI}\textbackslash ref\color{black}\{Schl"ussel\}\end{ttfamily}
+\item \color{nounibaredI}\textbackslash label\color{black}\{Schl"ussel\}
+\item \color{nounibaredI}\textbackslash ref\color{black}\{Schl"ussel\}
+\end{ttfamily}
 \end{itemize}
 \end{block}
 
@@ -28,7 +30,7 @@
 \framesubtitle{Abbildungen einfügen}
 \begin{tabbing}
 \textbackslash includegraphics[option]\{Datei\}x\=\kill
-\hspace{-5mm}
+\hspace{-10mm}
 \begin{ttfamily}
 \color{unibablueI}\textbackslash begin\color{black}\{figure\}\color{nounibagreenI}[option]\color{black}
 \end{ttfamily}
@@ -39,8 +41,10 @@
 \>\begin{ttfamily}\color{nounibagreenI}[p]\color{black}\end{ttfamily} = Platzierung auf einer eigenen
 Seite\\[5mm]
 ~\\[5mm]
-\hspace{-5mm}
-\color{nounibaredI}\textbackslash includegraphics\color{nounibagreenI}[option]\color{black}\{datei\}
+\hspace{-10mm}
+\begin{ttfamily}
+\small\color{nounibaredI}\textbackslash includegraphics\color{nounibagreenI}[option]\color{black}\{datei\}
+\end{ttfamily}
 \>\textbf{Mögliche Optionen für das Einfügen:}\\
 \>\begin{ttfamily}\color{nounibagreenI}[width=300pt]\color{black}\end{ttfamily}= Skalieren auf eine Breite\\
 \>\begin{ttfamily}\color{nounibagreenI}[height=5cm]\color{black}\end{ttfamily}= Skalieren auf eine Höhe\\
@@ -61,7 +65,7 @@ Seite\\[5mm]
 \input{content/listings/graphic_escaped.tex}}}
 
 \begin{alertblock}{Obacht!}
-\color{nounibaredI}\textbackslash label\color{black}\{\} immer nach \color{nounibaredI}\textbackslash caption\color{black}\{\}
+\texttt{\color{nounibaredI}\textbackslash label\color{black}\{\}} immer nach \texttt{\color{nounibaredI}\textbackslash caption\color{black}\{\}}
 \end{alertblock}
 \end{column}
 
