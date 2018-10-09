@@ -9,10 +9,10 @@ This tutorial for the typesetting system [**LaTeX**](https://www.latex-project.o
 * Tables
 * Enumerations
 * Literature management
-* Best practices for writing large documents 
+* Best practices for writing large documents
 
 The tutorial is designed as a **one-day crash course** for **non-programmers** to learn LaTeX.
-The didactic concept is an alteration between **lectures** about the beforementioned topics and **hands-on exercises** where the learner's task is to recreate simple documents using LaTeX. 
+The didactic concept is an alteration between **lectures** about the beforementioned topics and **hands-on exercises** where the learner's task is to recreate simple documents using LaTeX.
 
 
 ## Contents of this Repository
@@ -27,14 +27,15 @@ The didactic concept is an alteration between **lectures** about the beforementi
 
 To work on this tutorial it is required to install
 * an up-to-date [**LaTeX compiler**](https://www.latex-project.org/get) (software that translates your LaTeX code into a beautiful PDF),
-* a **LaTeX editor**, e.g., [TeXstudio](http://www.texstudio.org), &
+* a **LaTeX editor**, e.g., [TeXstudio](http://www.texstudio.org), as well as
 * any **PDF viewer**.
 
 ## Compiling the Sources
 
 The PDFs can be created by compiling the LaTeX sources located in [English/beamer](English/beamer) and [Deutsch/beamer](Deutsch/beamer).
 The compiler has to be invoked via `pdflatex presentation.tex` at least two times.
-For convenience there are `Makefile`s available for building the the presentation and the handout version of the tutorial
+For convenience there are `Makefile`s available for building the presentation and the handout version of the tutorial.
+
 ```Makefile
 # Usage
 make handout      # Compiles the sources to handout.pdf without organisational slides
@@ -45,7 +46,7 @@ make presentation # Compiles the sources to presentation.pdf used for presentati
 
 ## Background
 
-Since 2009 this tutorial is offered for the freshman and other interested students at the University of Bamberg.
+Since 2009 this tutorial is offered for the freshmen and other interested students at the University of Bamberg.
 It is powered by [Prof. Dr. Udo R. Krieger](https://www.uni-bamberg.de/ktr/mitarbeiter/krieger), [Professorship for Computer Science](https://www.uni-bamberg.de/ktr), Communication Services, Telecommunication Systems and Computer Networks at the [University of Bamberg](https://www.uni-bamberg.de).
 
 The original authors were
