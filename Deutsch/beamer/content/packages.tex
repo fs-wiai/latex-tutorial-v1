@@ -1,5 +1,26 @@
-
 \section{Formatierung}
+
+\begin{frame}
+    \frametitle{Ein erstes Anwendungsbeispiel}
+    \framesubtitle{Anatomie eines \LaTeX-Befehls}
+
+    \begin{center}
+        \color{nounibaredI}\textbackslash befehl\color{nounibagreenI}[optionale Parameter]\color{black}\{obligatorische Parameter\}
+    \end{center}
+
+    \begin{itemize}
+        \item beginnt mit Backslash \color{nounibaredI}\texttt{\textbackslash}\color{black}
+        \item gefolgt von Namen des Befehls (hier: \color{nounibaredI}befehl\color{black})
+        \item danach optionale Parameter in eckigen Klammern
+            \begin{itemize}
+                \item ggf.\ nur als einzelnes Schlüsselwort: \color{nounibagreenI}\texttt{[option]}\color{black}
+                \item ggf.\ als Key-Value-Paare: z.\,B. \color{nounibagreenI}[key=value]\color{black}
+                \item mehrere Optionen durch Komma getrennt: \color{nounibagreenI}[option1,option2]\color{black}
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------
 
 \begin{frame}
 \frametitle{Ein erstes Anwendungsbeispiel}
@@ -9,7 +30,6 @@ Sonderzeichen}
 \begin{multicols}{2}
 \begin{itemize}
   \item \begin{ttfamily}\color{nounibaredI}\textbackslash usepackage\color{black}\{Paket\}
-  \item \color{nounibaredI}\textbackslash befehl\color{nounibagreenI}[evtl\_optionen]\color{black}\{\\Formatierter Text\}
   \item \color{unibablueI}\textbackslash begin\color{black}\{Umgebung\}
   \item \color{unibablueI}\textbackslash end\color{black}\{Umgebung\}
   \item \color{nounibaredI}$\backslash\backslash$\color{black}
