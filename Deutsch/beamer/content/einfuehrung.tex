@@ -1,8 +1,8 @@
-\section{Intro} 
+\section{Intro}
 
 \subsection{Anwendungsbereiche, Sinn \& Zweck}
 \begin{frame}[t]
-\frametitle{Einf\"uhrung}
+\frametitle{Einführung}
 \framesubtitle{Sinn -- Unsinn -- Wahnsinn}
 \bigskip
 \bigskip
@@ -30,7 +30,7 @@
 \begin{itemize}
 \item Einkaufszettel
 \item Brainstorming
-\item \ldots 
+\item \ldots
 \end{itemize}
 \end{column}
 \end{columns}
@@ -40,28 +40,32 @@
 
 \subsection{Vorteile \& Nachteile}
 \begin{frame}
-\frametitle{Einf\"uhrung}
+\frametitle{Einführung}
 \framesubtitle{Vorteile \& Nachteile}
 \textbf{Vorteile}
 \begin{itemize}
-\item  dynamische Verzeichnisse und Referenzen
-\item  automatische Layouts
-\item  einfaches verteiltes Arbeiten möglich
+\item  automatisch generierte Abbildungs- und Inhaltsverzeichnisse
+\item  vorgefertigte Layouts
+\item  verschiedene Dokumenttypen (Briefe, Präsentationen etc.)
+\item  Aufteilen in Unterdokumente möglich
+\item  Versionsverwaltung möglich (wird hier \textbf{nicht} vorgestellt)
+\item  viele Erweiterungen (z.B. für Syntax-Highlighting)
 \end{itemize}
 
 \textbf{Nachteile}
 \begin{itemize}
-\item  Was kommt später raus?
+\item  Resultat nicht sofort ersichtlich
 \item  viele, zum Teil komplexe Befehle
+\item  erhebliche Unterschiede zu Textverarbeitungsprogrammen wie Word/OpenOffice/LibreOffice
 \end{itemize}
 \end{frame}
 
 
 %-------------------------------------------------------------------------------
 
-\begin{frame} 
+\begin{frame}
 \frametitle{Vom Code zum Dokument}
-\framesubtitle{Kein WYSIWYG} 
+\framesubtitle{Kein WYSIWYG}
 \begin{columns}
 \begin{column}{.7\textwidth}
 \image{\textwidth}{image/worddoc.jpg}{\textbf{W}hat \textbf{Y}ou \textbf{S}ee \textbf{I}s \textbf{W}hat \textbf{Y}ou
@@ -77,7 +81,7 @@
 %-------------------------------------------------------------------------------
 
 \begin{frame}
-\frametitle{Einf\"uhrung}
+\frametitle{Einführung}
 \framesubtitle{Vorgehensweise}
 \begin{columns}[onlytextwidth]
 \begin{column}{0.40\textwidth}
@@ -96,24 +100,24 @@
 
 %-------------------------------------------------------------------------------
 
-\subsection{\LaTeX --Compiler}
+\subsection{\LaTeX-Distributionen}
 \begin{frame}
-\frametitle{Einf\"uhrung}
-\framesubtitle{\LaTeX - Compiler}
+\frametitle{Einführung}
+\framesubtitle{\LaTeX -Compiler}
 \begin{columns}[t]
 \begin{column}{.4\textwidth}
-\textbf{Windows:}\\
+\textbf{Windows}\\
 \begin{itemize}
   \item MikTex (\url{https://miktex.org})\\
-   2 Varianten: Basic oder Complete
-  \item ProTeXt (\url{https://www.tug.org/protext})\\ 
+   Zwei Varianten: Basic oder Complete
+  \item ProTeXt (\url{https://www.tug.org/protext})\\
    enthält MikTex, TeXnicCenter und Ghostscript – einfache Installation\\
 \end{itemize}
 \end{column}
 \begin{column}{.6\textwidth}
-\textbf{Unix}
+\textbf{Unixartige Betriebssysteme}
 \begin{itemize}
-  \item \textbf{Linux:} TeXLive\\
+  \item \textbf{Linux:} TeX Live\\
 Pakete unter Ubuntu: {\ttfamily texlive-full} ist das Meta-Paket mit allen
 ben\"otigten Paketen. Enthält auch folgende:
 \begin{itemize}
@@ -121,7 +125,7 @@ ben\"otigten Paketen. Enthält auch folgende:
   \item texlive-lang-german}
 \end{itemize}
 Installation: {\ttfamily sudo apt-get install texlive-full}
-\item \textbf{MacOS:} MacTeX (\url{https://www.tug.org/mactex/})\\
+\item \textbf{macOS:} MacTeX (\url{https://www.tug.org/mactex/})\\
 \end{itemize}
 \end{column}
 \end{columns}
@@ -133,7 +137,7 @@ Installation: {\ttfamily sudo apt-get install texlive-full}
 %
 %\subsubsection{*nix}
 %\begin{frame}
-%\frametitle{Einf\"uhrung}
+%\frametitle{Einführung}
 %\framesubtitle{Freie Editoren -- Linus \& MacOS }
 %\begin{itemize}
 % \item Kile\footnote{http://kile.sourceforge.net/}\\KDE-Programm, auch unter Gnome\slash Unity etc.
@@ -149,7 +153,7 @@ Installation: {\ttfamily sudo apt-get install texlive-full}
 
 %\subsubsection{Windows}
 %\begin{frame}
-%\frametitle{Einf\"uhrung}
+%\frametitle{Einführung}
 %\framesubtitle{Freie Editoren -- Windows}
 %\begin{itemize}
 %\item TeXnicCenter\footnote{http://www.texniccenter.org/}
@@ -161,36 +165,21 @@ Installation: {\ttfamily sudo apt-get install texlive-full}
 
 \subsubsection{Cross-Platform}
 \begin{frame}
-\frametitle{Einf\"uhrung}
+\frametitle{Einführung}
 \framesubtitle{Freie Editoren -- Cross-Platform}
 \begin{itemize}
-  \item TeXstudio\footnote{\url{http://texstudio.sourceforge.net/}}\\
-  Sehr solide und mächtig, verwenden wir hier im Tutorium.
-  \item TeXMaker\footnote{\url{http://www.xm1math.net/texmaker}}\\
-   Grundlage von TeXstudio, etwas schlanker mit weniger Funktionen.
-  \item TeXlipse\footnote{\url{http://texlipse.sourceforge.net}}\\ F"ur fortgeschrittene User, Plugin f"ur
-  Eclipse. Gute IDE-Unterst\"utzung, Code-Completion, Autobuilds, Versionsverwaltung etc.
+  \item \textbf{TeXstudio}\footnote{\url{http://texstudio.sourceforge.net/}}\\
+  sehr solide und mächtig, im Tutorium verwendet
+  \item \textbf{TeXMaker}\footnote{\url{http://www.xm1math.net/texmaker}}\\
+   Grundlage von TeXstudio, etwas schlanker, weniger Funktionen
+  \item \textbf{TeXlipse}\footnote{\url{http://texlipse.sourceforge.net}}\\ Für fortgeschrittene User, Plugin für
+  Eclipse. Gute IDE-Unterstützung, Code-Completion, Autobuilds, Versionsverwaltung etc.
+  \item \textbf{ShareLaTeX}\footnote{\url{https://www.sharelatex.com}}\\
+  online, teilweise Open Source
+  \item In der Uni wird auch oft \textbf{Git}\footnote{\url{https://git-scm.com}} zur Versionsverwaltung verwendet.
 \end{itemize}
 \end{frame}
 
-%-------------------------------------------------------------------------------
-
-\subsubsection{In der Cloud}
-\begin{frame}
-\frametitle{Online}
-\framesubtitle{Multiediting -- auch Kollaborativ}
-\begin{itemize}
-  \item Overleaf\footnote{\url{https://www.overleaf.com}}\\
-  F\"ur kleine Projekte (60 Dateien) kostenlos
-  \item ShareLatex\footnote{\url{https://www.sharelatex.com}, \url{https://github.com/sharelatex}}\\
-  Teilweise Open Source, kostenlos für Einzelbenutzer, zuletzt von Overleaf aufgekauft
-  \item FlyLatex\footnote{\url{https://github.com/alabid/flylatex}}\\ 
-  Open Source, weniger mächtig
-  \item Viele Weitere\ldots
-  \vspace{7mm}
-  \item In der Uni wird auch oft Git\footnote{\url{https://git-scm.com}} zur Synchronisation verwendet.
-\end{itemize}
-\end{frame}
 
 
 %-------------------------------------------------------------------------------
@@ -221,6 +210,6 @@ Installation: {\ttfamily sudo apt-get install texlive-full}
 \item \begin{ttfamily}\color{unibablueI}\textbackslash end\color{black}\{document\}\end{ttfamily}
 \end{itemize}
 \end{block}
-Das ist alles was man f\"ur ein \LaTeX -Dokument braucht. Und das probieren wir jetzt aus!
+Das ist alles, was man für ein \LaTeX -Dokument braucht. Und das probieren wir jetzt aus!
 
 \end{frame}
