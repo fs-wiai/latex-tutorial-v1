@@ -255,38 +255,3 @@ F"ur Tabellen, die länger als eine Seite sind, wird eine Tabelle benötigt die 
 \color{unibablueI}\textbackslash end\color{black}\{longtable\}
 \end{ttfamily}
 \end{frame}
-
-%-----------------------------------------------------------------------------
-
-\begin{frame}
-\frametitle{Einrückungen durch „tabbing“}
-%\framesubtitle{Exkurs}
-\begin{block}{Steuerung}
-\begin{itemize}
-\item[\begin{ttfamily}\color{nounibaredI}\textbackslash =\end{ttfamily}]\color{black}eine Tabulatorstelle setzen 
-\item[\begin{ttfamily}\color{nounibaredI}\textbackslash $>$\end{ttfamily}]eine Tabulatorstelle ansteuern
-\end{itemize}
-\end{block}
-
-\begin{columns}
-\begin{column}{.5\textwidth}
-\begin{ttfamily}{\scriptsize
-\input{content/listings/tabbing_escaped.tex}}
-\end{ttfamily}
-\end{column}
-\begin{column}{.5\textwidth}
-\begin{tabbing}
-Mitarb\=eiter:\\
-A  \> Daniel\\
-B  \> Martin\\
-C  \> Linus\\
-xxx\=xxx\=xxxxxxx\kill
-\> Gremien\\
-\>\> Klausuren\\
-\>\> Emails\\
-\end{tabbing}
-\end{column}
-\end{columns}
-
-Durch den Befehl\begin{ttfamily} \color{nounibaredI}\textbackslash kill\color{black}\end{ttfamily} wird der Zeileninhalt nicht angezeigt. Dadurch können Formatierungen vorgenommen werden, ohne den zugehörigen Text anzuzeigen.
-\end{frame}
