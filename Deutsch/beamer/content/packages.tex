@@ -221,16 +221,15 @@ z. B. Umlaute\\
 \end{column}
 \begin{column}{0.4\textwidth}
 \vspace*{2pt}\\
-Wird ein Dokument geöffnet, wird automatisch der richtige Zeichensatz benutzt.
-Beim Erstellen neuer Dokumente wird die Datei in dem Format gespeichert, das im
- Editor voreingestellt ist. In den TeXstudio-Einstelllungen muss derselbe Zeichensatz verwendet werden, der
-auch im erstellten \LaTeX -Dokument verwendet wird.\\
+Beim Erstellen neuer Dokumente wird die Datei mit der Zeichenkodierung gespeichert, die im
+ Editor voreingestellt ist. In den TeXstudio-Einstellungen muss derselbe Zeichensatz verwendet werden, der
+auch im erstellten \LaTeX-Dokument verwendet wird.
 \end{column}
 \end{columns}
 \vspace*{4pt}
 \textbf{Bei Gruppenarbeiten muss jedes Mitglied zwingend \underline{UTF-8} im
 Editor einstellen, sonst ist Ärger so gut wie vorprogrammiert!} (Kaputte
-Umlaute, Kompilierungsfehler uvm., wenn es nicht nur Windows-User gibt.)
+Umlaute, Kompilierungsfehler uvm.)
 \end{frame}
 
 %-------------------------------------------------------
@@ -280,12 +279,12 @@ Die vorgestellten Packages sollten in jedem Dokument eingebunden werden!
 Automatisches Inhaltsverzeichnis\\[3mm]
 \begin{ttfamily}\color{nounibaredI}\textbackslash newpage\color{black}\end{ttfamily}\\
 Seitenumbruch\\[3mm]
-\begin{ttfamily}\color{unibablueI}\textbackslash section\color{black}\{Titel\}\end{ttfamily}\\
+\begin{ttfamily}\color{unibablueI}\textbackslash section\color{black}\{Kapitel\}\end{ttfamily}\\
 Ein neuer Abschnitt mit dem in \begin{ttfamily}\{\}\end{ttfamily} angegebenen Titel
 beginnt.\\[3mm]
-\begin{ttfamily}\color{unibablueI}\textbackslash subsection\color{black}\{Titel\}\end{ttfamily}\\
+\begin{ttfamily}\color{unibablueI}\textbackslash subsection\color{black}\{Unterkapitel\}\end{ttfamily}\\
 Ein Unterabschnitt.\\[3mm]
-\begin{ttfamily}\color{unibablueI}\textbackslash subsubsection\color{black}\{Titel\}\end{ttfamily}\\
+\begin{ttfamily}\color{unibablueI}\textbackslash subsubsection\color{black}\{Unterunterkapitel\}\end{ttfamily}\\
 Noch eine Ebene darunter.\\
 \end{column}
 \end{columns}
@@ -314,12 +313,12 @@ Noch eine Ebene darunter.\\
 \frametitle{Abschnitte}
 \framesubtitle{Part \& Chapter}
 
-Weitere Untergliederungsmöglichkeiten (neben \begin{ttfamily}\color{unibablueI}\textbackslash section\color{black}s\end{ttfamily}):
+Weitere Untergliederungsmöglichkeiten für Bücher (d.\,h., nur in {\ttfamily book} neben \begin{ttfamily}\color{unibablueI}\textbackslash section\color{black}s\end{ttfamily}):
 \begin{itemize}
 \item  \begin{ttfamily}\color{unibablueI}\textbackslash part\color{black}\{\}\end{ttfamily}\\
 Definiert größeren Teil und füllt eine ganze Seite.
 \item \begin{ttfamily}\color{unibablueI}\textbackslash chapter\color{black}\{\}\end{ttfamily}\\
-Gliedert in einzelne Kapitel, nur in {\ttfamily book} und {\ttfamily report}.
+Gliedert in einzelne Kapitel.
 \end{itemize}
 
 
@@ -454,11 +453,11 @@ $\color{nounibaredII}\backslash$\color{nounibaredII}textit\color{black}\{Einige
 Sonderzeichen:\}\\
 \color{nounibaredII}\textbackslash \% \textbackslash \$ \textbackslash \& \textbackslash \{ \textbackslash \}
 \textbackslash \_ \textbackslash \# \textbackslash S \textbackslash copyright\\
-\textbackslash slash \~ ~ \color{unibayellowI}\$\color{nounibaredII}$\color{nounibaredII}\backslash$backslash\color{unibayellowI}\$\color{nounibaredII}  ~\textbackslash euro \\
+\textbackslash euro \\
 
 $\color{nounibaredII}\backslash$\color{nounibaredII}textit\color{black}\{Binde-\slash
 Gedanken-\slash Trennstriche:\} \\
-- -- --- \color{unibayellowI}\$\color{black}-\color{unibayellowI}\$\color{black} (letzteres mathematisches Minus) \\
+- -- --- \\
 
 $\color{nounibaredII}\backslash$\color{nounibaredII}textit\color{black}\{Anf"uhrungszeichen aus \begin{ttfamily}ngerman\end{ttfamily}:\} \\
 \color{nounibaredII}\textbackslash glqq \textbackslash grqq \textbackslash flqq \textbackslash frqq\\
@@ -467,10 +466,10 @@ $\color{nounibaredII}\backslash$\color{nounibaredII}textit\color{black}\{Anf"uhr
 \end{column}
 \begin{column}{0.5\textwidth}
 \textit{Einige Sonderzeichen:}    \\
-\% \$ \& \{ \} \_ \# \S ~ \copyright \slash ~ \textbackslash  \euro \\
+\% \$ \& \{ \} \_ \# \S \ \copyright \ \euro \\
 
 \textit{Binde-\slash Gedanken-\slash Trennstriche:} \\
-- -- --- $-$ (letzteres mathematisches Minus) \\
+- -- --- (Viertel-, Halb- und Geviertstrich) \\
 
 \textit{Anführungszeichen aus ngerman:} \\
 \glqq \grqq \flqq \frqq\\[5mm]
@@ -486,8 +485,9 @@ benötigt.\\
 
 %\bigskip 
 \begin{block}{Hinweis}
-\footnotesize Manchmal muss das \ss ~mit \color{nounibaredI} \textbackslash ss \color{black}gebildet werden, ansonsten reicht es das Package {\ttfamily babel} einzubinden.\\
-Ein Leerzeichen (z. B. nach Sonderzeichen) wird durch ein \color{nounibaredI} $\sim$ \color{black} (Tilde) erzwungen.
+    \footnotesize Merkhilfe: \textbf{g}erman/\textbf{f}rench \textbf{l}eft/\textbf{r}ight \textbf{q}uote \textbf{q}uote (vgl.\ einfache Anführungszeichen)\\
+
+    Ein nicht trennbares Leerzeichen (z.\,B. nach Sonderzeichen) wird durch eine \color{nounibaredI} $\sim$ \color{black} (Tilde) erzeugt.
 \end{block}
 \vspace{-8mm}
 
@@ -511,11 +511,11 @@ Ein Leerzeichen (z. B. nach Sonderzeichen) wird durch ein \color{nounibaredI} $\
 
 \bigskip
 
-\begin{tabular}{|c|c|c|c|c|}
+\begin{tabular}{|c|c|c|c|}
 \hline
-\ttfamily \color{nounibaredII}\ttfamily \textbackslash slash \color{black} &\color{unibayellowI}\$\color{nounibaredII}\ttfamily $\color{nounibaredII}\backslash$backslash\color{unibayellowI}\$\color{nounibaredII}& \color{nounibaredII} \ttfamily \textbackslash textbackslash \color{black} & \color{nounibaredII} \ttfamily \textbackslash euro \color{black}& \ttfamily \~ ~ \rmfamily \\
+\ttfamily \color{nounibaredII}\ttfamily \textbackslash slash \color{black} & \color{nounibaredII} \ttfamily \textbackslash textbackslash \color{black} & \color{nounibaredII} \ttfamily \textbackslash euro \color{black} & \ttfamily \~ ~ \rmfamily \\
  \hline
-\slash & $\backslash$ & \textbackslash & \euro & ~  \\
+\slash & \textbackslash & \euro & ~  \\
  \hline
 \end{tabular} 
 
@@ -523,9 +523,9 @@ Ein Leerzeichen (z. B. nach Sonderzeichen) wird durch ein \color{nounibaredI} $\
 
 \begin{tabular}{|c|c|c|c|c|c|c|c|}
 \hline
-\ttfamily \color{nounibaredII}\ttfamily \textbackslash glqq \color{black} & \color{nounibaredII} \ttfamily \textbackslash grqq \color{black} & \color{nounibaredII} \ttfamily \textbackslash flqq \color{black}&  \color{nounibaredII} \ttfamily \textbackslash frqq \color{black} & \ttfamily - & \ttfamily -- & \ttfamily --- & \color{unibayellowI}\$\color{nounibaredII}\ttfamily \color{nounibaredII}-\color{unibayellowI}\$\color{nounibaredII} \rmfamily \\
+\ttfamily \color{nounibaredII}\ttfamily \textbackslash glqq \color{black} & \color{nounibaredII} \ttfamily \textbackslash grqq \color{black} & \color{nounibaredII} \ttfamily \textbackslash flqq \color{black}&  \color{nounibaredII} \ttfamily \textbackslash frqq \color{black} & \ttfamily - & \ttfamily -- & \ttfamily --- \\
  \hline
-\glqq & \grqq & \flqq & \frqq & - & --  & --- & - \\
+\glqq & \grqq & \flqq & \frqq & - & --  & --- \\
  \hline
 \end{tabular} 
 

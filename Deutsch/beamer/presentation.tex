@@ -135,8 +135,13 @@ compress
     \frametitle{Missverständnisse? Fragt nach!}
     \begin{figure}
       \centering
-      \includegraphics[height=6cm]{image/questions.png}
-      \caption{\small Quelle: \url{https://xkcd.com/1256/}}
+        \begin{tikzpicture}
+            \draw (0, 0) node[inner sep=0] {\includegraphics[height=6cm]{image/questions.png}};
+            \scalebox{1.5}{%
+                \node [rotate=45,font=\Huge] at (0, 0) {\contour{white}{\textbf Stellt Fragen!}};
+            }
+        \end{tikzpicture}
+        \caption{\small Quelle: \url{https://xkcd.com/1256/}}
     \end{figure}
 \end{frame}
 
